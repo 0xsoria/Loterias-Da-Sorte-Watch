@@ -17,17 +17,27 @@ struct FirstStyleTable: View {
     }
     
     var body: some View {
-        List(self.game.headers, id: \.self) { header in
+        List {
             VStack {
-                Text(header)
-                    .foregroundColor(self.game.gameData.lotteryGame.colorFromGame().newColor)
+                Text(game.headers[0])
                 Text(self.game.gameData.concourseNumber)
-                    .foregroundColor(self.game.gameData.lotteryGame.colorFromGame().newColor)
             }
             VStack {
-                Text(header)
-                .foregroundColor(self.game.gameData.lotteryGame.colorFromGame().newColor)
-                Text("")
+                Text(game.headers[1])
+                Text(arrayDataStringToStringWithThreeSpaces(content: self.game.gameData.numbers))
+            }
+            VStack {
+                Text(game.headers[2])
+                Text(game.gameData.prize)
+            }
+            VStack {
+                Text(game.headers[3])
+                Text(game.gameData.winners)
+            }
+            
+            VStack {
+                Text(game.headers[4])
+                Text(game.gameData.date)
             }
         }
     }

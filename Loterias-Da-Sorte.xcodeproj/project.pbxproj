@@ -192,22 +192,16 @@
 			children = (
 				1502884C247225C200C794BC /* Models */,
 				15028828247220FC00C794BC /* Networking */,
-				150288012472101A00C794BC /* ContentView.swift */,
-				150288032472101A00C794BC /* HostingController.swift */,
-				150288052472101A00C794BC /* ExtensionDelegate.swift */,
-				150288072472101A00C794BC /* ComplicationController.swift */,
+				151F9DA9247239F30023B57D /* LotteryNamesView */,
+				151F9DAA247239FF0023B57D /* HostingController */,
+				151F9DAB24723A160023B57D /* Complication */,
 				150288092472101B00C794BC /* Assets.xcassets */,
 				1502880E2472101B00C794BC /* Info.plist */,
+				151F9DAD24723A4F0023B57D /* Delegate */,
 				1502880B2472101B00C794BC /* Preview Content */,
-				1502881C2472115100C794BC /* ContentViewData.swift */,
-				1502881E247211CC00C794BC /* LotteryGames.swift */,
-				150288202472120B00C794BC /* LotteryColor.swift */,
-				1502886224722BC800C794BC /* FirstStyleTable.swift */,
-				150288222472178200C794BC /* MainView.swift */,
-				1502882424721DB500C794BC /* TypeOfGame.swift */,
-				1502882624721E5F00C794BC /* GameDetailView.swift */,
-				150288382472244400C794BC /* MyExtensions.swift */,
-				15028866247235BA00C794BC /* Extensions.swift */,
+				151F9DA8247239D40023B57D /* DetailViews */,
+				151F9DA7247239C00023B57D /* MainView */,
+				151F9DAC24723A3C0023B57D /* ExtensionsAndHelpers */,
 			);
 			path = "Loterias-Da-Sorte WatchKit Extension";
 			sourceTree = "<group>";
@@ -236,6 +230,8 @@
 		15028833247223DE00C794BC /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				1502886424722CAF00C794BC /* GameDetailData.swift */,
+				1502881E247211CC00C794BC /* LotteryGames.swift */,
 				150288342472240100C794BC /* SenaConcourseData.swift */,
 				150288362472242400C794BC /* NextGameWorker.swift */,
 				1502883A2472247700C794BC /* LotteryProperties.swift */,
@@ -256,7 +252,6 @@
 			children = (
 				1502884D247225D600C794BC /* LotteryInfo */,
 				15028833247223DE00C794BC /* Models */,
-				1502886424722CAF00C794BC /* GameDetailData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -274,6 +269,67 @@
 				1502885C2472267C00C794BC /* Federal.swift */,
 			);
 			path = LotteryInfo;
+			sourceTree = "<group>";
+		};
+		151F9DA7247239C00023B57D /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				1502882424721DB500C794BC /* TypeOfGame.swift */,
+				150288222472178200C794BC /* MainView.swift */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		151F9DA8247239D40023B57D /* DetailViews */ = {
+			isa = PBXGroup;
+			children = (
+				1502882624721E5F00C794BC /* GameDetailView.swift */,
+				1502886224722BC800C794BC /* FirstStyleTable.swift */,
+			);
+			path = DetailViews;
+			sourceTree = "<group>";
+		};
+		151F9DA9247239F30023B57D /* LotteryNamesView */ = {
+			isa = PBXGroup;
+			children = (
+				150288012472101A00C794BC /* ContentView.swift */,
+				1502881C2472115100C794BC /* ContentViewData.swift */,
+			);
+			path = LotteryNamesView;
+			sourceTree = "<group>";
+		};
+		151F9DAA247239FF0023B57D /* HostingController */ = {
+			isa = PBXGroup;
+			children = (
+				150288032472101A00C794BC /* HostingController.swift */,
+			);
+			path = HostingController;
+			sourceTree = "<group>";
+		};
+		151F9DAB24723A160023B57D /* Complication */ = {
+			isa = PBXGroup;
+			children = (
+				150288072472101A00C794BC /* ComplicationController.swift */,
+			);
+			path = Complication;
+			sourceTree = "<group>";
+		};
+		151F9DAC24723A3C0023B57D /* ExtensionsAndHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				150288202472120B00C794BC /* LotteryColor.swift */,
+				150288382472244400C794BC /* MyExtensions.swift */,
+				15028866247235BA00C794BC /* Extensions.swift */,
+			);
+			path = ExtensionsAndHelpers;
+			sourceTree = "<group>";
+		};
+		151F9DAD24723A4F0023B57D /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				150288052472101A00C794BC /* ExtensionDelegate.swift */,
+			);
+			path = Delegate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

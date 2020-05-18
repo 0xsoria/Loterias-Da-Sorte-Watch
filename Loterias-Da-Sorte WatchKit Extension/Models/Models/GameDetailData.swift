@@ -12,6 +12,7 @@ struct GameDetailData {
     
     private let gameDetailTitles: [String] = ["Concurso", "Números", "Prêmio", "Data", "Ganhadores"]
     private let nextGamesTitles: [String] = ["Concurso", "Data", "Prêmio Estimado"]
+    
     let megaQuinaFacilMania = ["Concurso", "Dezenas Sorteadas", "Prêmio", "Ganhadores", "Data do Sorteio"]
     
     let duplaSena = ["Concurso", "Dezenas - Primeiro Sorteio", "Prêmio - Primeiro Sorteio", "Ganhadores - Primeiro Sorteio", "Dezenas - Segundo Sorteio", "Prêmio - Segundo Sorteio", "Ganhadores - Segundo Sorteio", "Data do Sorteio"]
