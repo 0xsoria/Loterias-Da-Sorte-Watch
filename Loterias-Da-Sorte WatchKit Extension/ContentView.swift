@@ -9,13 +9,27 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    private let data = ContentViewData()
+    private let typeOfGame: TypeOfGame
+    
+    init(typeOfGame: TypeOfGame) {
+        self.typeOfGame = typeOfGame
+    }
+    
     var body: some View {
-        Text("Hello, World!")
+        List {
+            ForEach(self.data.lotteries, id: \.self) { lottery in
+                NavigationLink(destination: GameDetailView(gameDetailData: GameDetail(lottery: lottery, typeOfGame: self.typeOfGame))) {
+                    Text(lottery.rawValue)
+                }.navigationBarTitle(self.typeOfGame.rawValue)
+            }
+        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(typeOfGame: .last)
     }
 }
