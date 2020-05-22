@@ -27,11 +27,9 @@
 		1502882C2472211E00C794BC /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1502882B2472211E00C794BC /* Router.swift */; };
 		1502882E2472213D00C794BC /* PlistKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1502882D2472213D00C794BC /* PlistKeys.swift */; };
 		150288302472217D00C794BC /* LotteryNetworkingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1502882F2472217D00C794BC /* LotteryNetworkingError.swift */; };
-		15028832247221D900C794BC /* NextDetailRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15028831247221D900C794BC /* NextDetailRequester.swift */; };
 		150288352472240100C794BC /* SenaConcourseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150288342472240100C794BC /* SenaConcourseData.swift */; };
 		150288372472242400C794BC /* NextGameWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150288362472242400C794BC /* NextGameWorker.swift */; };
 		150288392472244400C794BC /* MyExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150288382472244400C794BC /* MyExtensions.swift */; };
-		1502883B2472247700C794BC /* LotteryProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1502883A2472247700C794BC /* LotteryProperties.swift */; };
 		1502883D247224BF00C794BC /* LotteryNetworkingWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1502883C247224BF00C794BC /* LotteryNetworkingWorker.swift */; };
 		1502883F247224E900C794BC /* QuinaConcourseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1502883E247224E900C794BC /* QuinaConcourseData.swift */; };
 		150288412472251000C794BC /* LotofacilConcourseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150288402472251000C794BC /* LotofacilConcourseData.swift */; };
@@ -48,6 +46,7 @@
 		151F9DAF24723AC90023B57D /* SecondStyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151F9DAE24723AC90023B57D /* SecondStyleView.swift */; };
 		153AAE8024773B9000BA6827 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153AAE7F24773B9000BA6827 /* SettingsView.swift */; };
 		153AAE842477445D00BA6827 /* NextGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153AAE832477445D00BA6827 /* NextGameView.swift */; };
+		153AAE8A2477693700BA6827 /* GameDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153AAE892477693700BA6827 /* GameDetailModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,11 +115,9 @@
 		1502882B2472211E00C794BC /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		1502882D2472213D00C794BC /* PlistKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlistKeys.swift; sourceTree = "<group>"; };
 		1502882F2472217D00C794BC /* LotteryNetworkingError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotteryNetworkingError.swift; sourceTree = "<group>"; };
-		15028831247221D900C794BC /* NextDetailRequester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextDetailRequester.swift; sourceTree = "<group>"; };
 		150288342472240100C794BC /* SenaConcourseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SenaConcourseData.swift; sourceTree = "<group>"; };
 		150288362472242400C794BC /* NextGameWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextGameWorker.swift; sourceTree = "<group>"; };
 		150288382472244400C794BC /* MyExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyExtensions.swift; sourceTree = "<group>"; };
-		1502883A2472247700C794BC /* LotteryProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotteryProperties.swift; sourceTree = "<group>"; };
 		1502883C247224BF00C794BC /* LotteryNetworkingWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotteryNetworkingWorker.swift; sourceTree = "<group>"; };
 		1502883E247224E900C794BC /* QuinaConcourseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuinaConcourseData.swift; sourceTree = "<group>"; };
 		150288402472251000C794BC /* LotofacilConcourseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotofacilConcourseData.swift; sourceTree = "<group>"; };
@@ -137,6 +134,7 @@
 		151F9DAE24723AC90023B57D /* SecondStyleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondStyleView.swift; sourceTree = "<group>"; };
 		153AAE7F24773B9000BA6827 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		153AAE832477445D00BA6827 /* NextGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextGameView.swift; sourceTree = "<group>"; };
+		153AAE892477693700BA6827 /* GameDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,9 +191,9 @@
 				151F9DA7247239C00023B57D /* MainView */,
 				1502884C247225C200C794BC /* Models */,
 				15028828247220FC00C794BC /* Networking */,
+				153AAE8824775ADE00BA6827 /* NextGame */,
 				1502880B2472101B00C794BC /* Preview Content */,
 				153AAE8724775AD700BA6827 /* Settings */,
-				153AAE8824775ADE00BA6827 /* NextGame */,
 			);
 			path = "Loterias-Da-Sorte WatchKit Extension";
 			sourceTree = "<group>";
@@ -212,7 +210,6 @@
 			isa = PBXGroup;
 			children = (
 				150288292472210D00C794BC /* Requester.swift */,
-				15028831247221D900C794BC /* NextDetailRequester.swift */,
 				1502882B2472211E00C794BC /* Router.swift */,
 				1502882D2472213D00C794BC /* PlistKeys.swift */,
 				1502882F2472217D00C794BC /* LotteryNetworkingError.swift */,
@@ -228,7 +225,6 @@
 				1502881E247211CC00C794BC /* LotteryGames.swift */,
 				150288342472240100C794BC /* SenaConcourseData.swift */,
 				150288362472242400C794BC /* NextGameWorker.swift */,
-				1502883A2472247700C794BC /* LotteryProperties.swift */,
 				1502883C247224BF00C794BC /* LotteryNetworkingWorker.swift */,
 				1502883E247224E900C794BC /* QuinaConcourseData.swift */,
 				150288402472251000C794BC /* LotofacilConcourseData.swift */,
@@ -237,6 +233,7 @@
 				150288462472257800C794BC /* DuplaSenaConcourseData.swift */,
 				150288482472258F00C794BC /* DiaDeSorteConcourseData.swift */,
 				1502884A2472259A00C794BC /* FederalConcourseData.swift */,
+				153AAE892477693700BA6827 /* GameDetailModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -472,10 +469,10 @@
 				150288432472254500C794BC /* LotomaniaConcourseData.swift in Sources */,
 				1502882724721E5F00C794BC /* GameDetailView.swift in Sources */,
 				1502882C2472211E00C794BC /* Router.swift in Sources */,
-				15028832247221D900C794BC /* NextDetailRequester.swift in Sources */,
 				1502881F247211CC00C794BC /* LotteryGames.swift in Sources */,
 				150288082472101A00C794BC /* ComplicationController.swift in Sources */,
 				150288302472217D00C794BC /* LotteryNetworkingError.swift in Sources */,
+				153AAE8A2477693700BA6827 /* GameDetailModel.swift in Sources */,
 				150288022472101A00C794BC /* ContentView.swift in Sources */,
 				150288452472256200C794BC /* TimemaniaConcourseData.swift in Sources */,
 				1502881D2472115100C794BC /* ContentViewData.swift in Sources */,
@@ -483,7 +480,6 @@
 				150288212472120B00C794BC /* LotteryColor.swift in Sources */,
 				1502882A2472210D00C794BC /* Requester.swift in Sources */,
 				150288392472244400C794BC /* MyExtensions.swift in Sources */,
-				1502883B2472247700C794BC /* LotteryProperties.swift in Sources */,
 				150288062472101A00C794BC /* ExtensionDelegate.swift in Sources */,
 				1502886524722CAF00C794BC /* GameDetailData.swift in Sources */,
 				1502884B2472259A00C794BC /* FederalConcourseData.swift in Sources */,
@@ -579,6 +575,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -633,6 +630,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

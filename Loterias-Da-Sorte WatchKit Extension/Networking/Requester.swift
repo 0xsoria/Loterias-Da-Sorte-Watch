@@ -12,13 +12,13 @@ final class Requester {
     
     //MARK: - Properties
     
-    var configuration: URLSessionConfiguration = {
+    private var configuration: URLSessionConfiguration = {
         let config = URLSessionConfiguration.default
         config.timeoutIntervalForRequest = 20.0
         return config
     }()
     
-    var session: URLSession {
+    private var session: URLSession {
         return URLSession(configuration: self.configuration)
     }
     
