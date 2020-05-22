@@ -30,7 +30,7 @@ struct NextGameView: View {
                 Text("Prêmio Estimado")
                 Text(self.gameModel.gameData.nextGame.prize.convertToDecimal())
             }
-        }.foregroundColor(self.gameModel.gameData.lotteryGame.colorFromGame().newColor)
+        }.foregroundColor(self.gameModel.gameData.lotteryGame.colorFromGame().newColor).navigationBarTitle(self.gameModel.gameData.lotteryGame.rawValue)
     }
 }
 

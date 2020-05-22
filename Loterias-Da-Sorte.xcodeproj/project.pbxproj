@@ -48,7 +48,6 @@
 		151F9DAF24723AC90023B57D /* SecondStyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151F9DAE24723AC90023B57D /* SecondStyleView.swift */; };
 		153AAE8024773B9000BA6827 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153AAE7F24773B9000BA6827 /* SettingsView.swift */; };
 		153AAE842477445D00BA6827 /* NextGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153AAE832477445D00BA6827 /* NextGameView.swift */; };
-		153AAE862477460700BA6827 /* NextGameRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153AAE852477460700BA6827 /* NextGameRequester.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -138,7 +137,6 @@
 		151F9DAE24723AC90023B57D /* SecondStyleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondStyleView.swift; sourceTree = "<group>"; };
 		153AAE7F24773B9000BA6827 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		153AAE832477445D00BA6827 /* NextGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextGameView.swift; sourceTree = "<group>"; };
-		153AAE852477460700BA6827 /* NextGameRequester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextGameRequester.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,9 +194,8 @@
 				1502884C247225C200C794BC /* Models */,
 				15028828247220FC00C794BC /* Networking */,
 				1502880B2472101B00C794BC /* Preview Content */,
-				153AAE7F24773B9000BA6827 /* SettingsView.swift */,
-				153AAE832477445D00BA6827 /* NextGameView.swift */,
-				153AAE852477460700BA6827 /* NextGameRequester.swift */,
+				153AAE8724775AD700BA6827 /* Settings */,
+				153AAE8824775ADE00BA6827 /* NextGame */,
 			);
 			path = "Loterias-Da-Sorte WatchKit Extension";
 			sourceTree = "<group>";
@@ -313,6 +310,22 @@
 				150288052472101A00C794BC /* ExtensionDelegate.swift */,
 			);
 			path = Delegate;
+			sourceTree = "<group>";
+		};
+		153AAE8724775AD700BA6827 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				153AAE7F24773B9000BA6827 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		153AAE8824775ADE00BA6827 /* NextGame */ = {
+			isa = PBXGroup;
+			children = (
+				153AAE832477445D00BA6827 /* NextGameView.swift */,
+			);
+			path = NextGame;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -466,7 +479,6 @@
 				150288022472101A00C794BC /* ContentView.swift in Sources */,
 				150288452472256200C794BC /* TimemaniaConcourseData.swift in Sources */,
 				1502881D2472115100C794BC /* ContentViewData.swift in Sources */,
-				153AAE862477460700BA6827 /* NextGameRequester.swift in Sources */,
 				1502883F247224E900C794BC /* QuinaConcourseData.swift in Sources */,
 				150288212472120B00C794BC /* LotteryColor.swift in Sources */,
 				1502882A2472210D00C794BC /* Requester.swift in Sources */,
