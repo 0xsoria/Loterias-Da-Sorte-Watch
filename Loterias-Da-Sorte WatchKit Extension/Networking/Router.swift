@@ -9,40 +9,22 @@
 import Foundation
 
 enum Router {
-    case newAnalytics(date: String, view: String, lottery: String, onSession: Int)
     case lastGame(lottery: LotteryGamesNoSpace)
     case gameWithNumber(number: Int, lottery: LotteryGamesNoSpace)
-    case statistics(lottery: LotteryGamesNoSpace)
-    case similarGames(lottery: LotteryGamesNoSpace, numbers: String)
     
-    private static let newAnalyticsBaseURL = PlistKey.analyticsURL.rawValue
-    private static let lotteryBaseURL = PlistKey.lotteryAPIURL.rawValue
-    private static let similarGamesBaseURL = PlistKey.similarGamesURL.rawValue
-    private static let statisticsBaseURL = PlistKey.statisticsAPIURL.rawValue
+    private static let lotteryBaseURL = PlistKey.lotteryAPIURL.getData()
     
     var path: String {
         switch self {
-        case .newAnalytics:
-            return "/"
         case .lastGame(let lotteryGame):
-            return "loteria=\(lotteryGame.rawValue)&token=\(PlistKey.lotteryAPIKEY.rawValue)"
+            return "loteria=\(lotteryGame.rawValue)&token=\(PlistKey.lotteryAPIKEY.getData())"
         case .gameWithNumber(let number, let game):
-            return "loteria=\(game.rawValue)&token=\(PlistKey.lotteryAPIKEY.rawValue)&=concurso\(number)"
-        case .similarGames(let game, let numbers):
-            return "/\(game.rawValue)/search?term=\(numbers)"
-        case .statistics(let game):
-            return "/estatisticas/\(game)"
+            return "loteria=\(game.rawValue)&token=\(PlistKey.lotteryAPIKEY.getData())&=concurso\(number)"
         }
     }
     
     func url() -> URL? {
         switch self {
-        case .newAnalytics(let date, let view, let lottery, let onSession):
-            var urlBase = Router.newAnalyticsBaseURL
-            let base = Router.newAnalytics(date: date, view: view, lottery: lottery, onSession: onSession).path
-            urlBase.append(base)
-            guard let url = URL(string: base) else { return nil }
-            return url
         case .lastGame(let game):
             var base = Router.lotteryBaseURL
             let parameters = Router.lastGame(lottery: game).path
@@ -53,18 +35,6 @@ enum Router {
             var base = Router.lotteryBaseURL
             let parameters = Router.gameWithNumber(number: number, lottery: lottery).path
             base.append(parameters)
-            guard let url = URL(string: base) else { return nil }
-            return url
-        case .similarGames(let lottery, let numbers):
-            var base = Router.similarGamesBaseURL
-            let parameters = Router.similarGames(lottery: lottery, numbers: numbers).path
-            base.append(parameters)
-            guard let url = URL(string: base) else { return nil }
-            return url
-        case .statistics(let lottery):
-            var base = Router.statisticsBaseURL
-            let urlBase = Router.statistics(lottery: lottery).path
-            base.append(urlBase)
             guard let url = URL(string: base) else { return nil }
             return url
         }

@@ -12,7 +12,7 @@ struct DuplaSenaConcourseData: Codable {
     let nome: String
     let numero_concurso: Int
     let data_concurso: String
-    let data_concurso_milliseconds: Int
+    let data_concurso_milliseconds: Int64
     let local_realizacao: String
     let rateio_processamento: Bool
     let acumulou: Bool
@@ -24,13 +24,26 @@ struct DuplaSenaConcourseData: Codable {
     let local_ganhadores: [GameLocal]
     let arrecadacao_total: DoubleIntLottery
     let data_proximo_concurso: String
-    let data_proximo_concurso_milliseconds: Int
+    let data_proximo_concurso_milliseconds: Int64
     let valor_estimado_proximo_concurso: DoubleIntLottery
     let valor_acumulado_especial: DoubleIntLottery
     let nome_acumulado_especial: String
     
     func duplasenaWorkerDataToLotteryWorker() -> LotteryNetworkingWorker {
-        return LotteryNetworkingWorker(lotteryGameString: "duplasena", lotteryGame: .duplasena, lotteryGameNoSpace: .duplasena, concourseNumber: String(self.numero_concurso), numbers: self.dezenas, date: self.data_concurso, accumulatedValue: self.valor_acumulado.returnString(), prize: self.getDuplaPrize(data: self.premiacao, winners: .sena), winners: self.setWinnersPrize(data: self.premiacao, winners: .sena), duplaSenaSecondSetOfNumbers: self.dezenas_2, teamOrDay: nil, duplaSenaTeamOrDayPrize: self.getDuplaPrize(data: self.premiacao_2, winners: .sena), duplaSenaTeamOrDayWinners: self.setWinnersPrize(data: self.premiacao_2, winners: .sena), federalPrize: nil, rateioProcessamento: self.rateio_processamento, acumulou: self.acumulou)
+        return LotteryNetworkingWorker(lotteryGameString: "duplasena",
+                                       lotteryGame: .duplasena,
+                                       lotteryGameNoSpace: .duplasena,
+                                       concourseNumber: String(self.numero_concurso),
+                                       numbers: self.dezenas,
+                                       date: self.data_concurso,
+                                       accumulatedValue: self.valor_acumulado.returnString(),
+                                       prize: self.prizeSetter(data: self.premiacao, winners: .sena),
+                                       winners: self.winnersSetter(data: self.premiacao, winners: .sena),
+                                       duplaSenaSecondSetOfNumbers: self.dezenas_2,
+                                       teamOrDay: nil,
+                                       duplaSenaTeamOrDayPrize: self.prizeSetter(data: self.premiacao_2, winners: .sena),
+                                       duplaSenaTeamOrDayWinners: self.prizeSetter(data: self.premiacao_2, winners: .sena),
+                                       federalPrize: nil, rateioProcessamento: self.rateio_processamento, acumulou: self.acumulou, nextGame: self.convertToNextGame())
     }
     
     func convertToNextGame() -> NextGameWorker {
@@ -56,6 +69,20 @@ struct DuplaSenaConcourseData: Codable {
             return String(game.quantidade_ganhadores)
         }
         return String()
+    }
+    
+    func winnersSetter(data: [GamePrize], winners: DuplaSenaWinners) -> String {
+        if self.acumulou {
+            return "Nenhum ganhador."
+        }
+        return setWinnersPrize(data: data, winners: winners)
+    }
+    
+    func prizeSetter(data: [GamePrize], winners: DuplaSenaWinners) -> String {
+        if self.acumulou {
+            return "Acumulou - \(self.valor_acumulado.returnString().convertToDecimal())"
+        }
+        return getDuplaPrize(data: data, winners: winners)
     }
 }
 

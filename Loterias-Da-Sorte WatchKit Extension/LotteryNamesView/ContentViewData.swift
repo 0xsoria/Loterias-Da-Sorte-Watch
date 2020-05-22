@@ -9,10 +9,5 @@
 import Foundation
 
 final class ContentViewData {
-    
     let lotteries: [LotteryGames] = [.megasena, .quina, .lotofacil, .lotomania, .duplasena, .timemania, .diadesorte, .federal]
-    
 }
-
-
-

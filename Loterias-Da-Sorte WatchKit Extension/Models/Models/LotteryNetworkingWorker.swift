@@ -26,8 +26,9 @@ struct LotteryNetworkingWorker: LotteryCommonData, LotteryComplementaryData {
     var federalPrize: [FederalGamePrize]?
     var rateioProcessamento: Bool
     var acumulou: Bool
+    var nextGame: NextGameWorker
     
-    init(lotteryGameString: String, lotteryGame: LotteryGames, lotteryGameNoSpace: LotteryGamesNoSpace, concourseNumber: String, numbers: [String], date: String, accumulatedValue: String, prize: String, winners: String, duplaSenaSecondSetOfNumbers: [String]?, teamOrDay: String?, duplaSenaTeamOrDayPrize: String?, duplaSenaTeamOrDayWinners: String?, federalPrize: [FederalGamePrize]?, rateioProcessamento: Bool, acumulou: Bool) {
+    init(lotteryGameString: String, lotteryGame: LotteryGames, lotteryGameNoSpace: LotteryGamesNoSpace, concourseNumber: String, numbers: [String], date: String, accumulatedValue: String, prize: String, winners: String, duplaSenaSecondSetOfNumbers: [String]?, teamOrDay: String?, duplaSenaTeamOrDayPrize: String?, duplaSenaTeamOrDayWinners: String?, federalPrize: [FederalGamePrize]?, rateioProcessamento: Bool, acumulou: Bool, nextGame: NextGameWorker) {
         self.lotteryGameString = lotteryGameString
         self.lotteryGame = lotteryGame
         self.lotteryGameNoSpace = lotteryGameNoSpace
@@ -44,7 +45,24 @@ struct LotteryNetworkingWorker: LotteryCommonData, LotteryComplementaryData {
         self.federalPrize = federalPrize
         self.rateioProcessamento = rateioProcessamento
         self.acumulou = acumulou
+        self.nextGame = nextGame
     }
+    
+    init() {
+        self.lotteryGameString = String()
+        self.lotteryGame = .megasena
+        self.lotteryGameNoSpace = .megasena
+        self.concourseNumber = String()
+        self.numbers = []
+        self.date = String()
+        self.accumulatedValue = String()
+        self.prize = String()
+        self.winners = String()
+        self.rateioProcessamento = false
+        self.acumulou = false
+        self.nextGame = NextGameWorker(lotteryGame: self.lotteryGame, lotteryGameNoSpace: self.lotteryGameNoSpace, date: self.date, prize: self.prize, concourseNumber: self.concourseNumber)
+    }
+    
     
     enum FederalPrizes {
         case first
@@ -58,23 +76,23 @@ struct LotteryNetworkingWorker: LotteryCommonData, LotteryComplementaryData {
         switch prize {
         case .first:
             for game in data where game.faixa == 1 {
-                return game.valor_total.returnString()
+                return game.valor_total.returnString().convertToDecimal()
             }
         case .second:
             for game in data where game.faixa == 2 {
-                return game.valor_total.returnString()
+                return game.valor_total.returnString().convertToDecimal()
             }
         case .third:
             for game in data where game.faixa == 3 {
-                return game.valor_total.returnString()
+                return game.valor_total.returnString().convertToDecimal()
             }
         case .fourth:
             for game in data where game.faixa == 4 {
-                return game.valor_total.returnString()
+                return game.valor_total.returnString().convertToDecimal()
             }
         case .fifth:
             for game in data where game.faixa == 5 {
-                return game.valor_total.returnString()
+                return game.valor_total.returnString().convertToDecimal()
             }
         }
         return String()

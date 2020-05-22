@@ -9,12 +9,17 @@
 import Foundation
 
 public enum PlistKey: String {
-    case analyticsNewKey = "ANALYTICS_NEW_KEY"
-    case analyticsURL = "ANALYTICS_NEW_URL"
+    
     case lotteryAPIKEY = "LOTTERY_API_KEY"
     case lotteryAPIURL = "LOTTERY_API_URL"
-    case similarGamesURL = "SIMILAR_GAMES_URL"
-    case statisticsAPIKEY = "STATISTICS_API_KEY"
-    case statisticsAPIURL = "STATISTICS_API_URL"
-    case metric = "METRICKIT_URL"
+    
+    
+    func getData() -> String {
+        switch self {
+        case .lotteryAPIKEY:
+            return Bundle.main.object(forInfoDictionaryKey: "LOTTERY_API_KEY") as? String ?? ""
+        case .lotteryAPIURL:
+            return Bundle.main.object(forInfoDictionaryKey: "LOTTERY_API_URL") as? String ?? ""
+        }
+    }
 }

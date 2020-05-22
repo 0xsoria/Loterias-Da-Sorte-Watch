@@ -16,20 +16,44 @@ struct GameDetail {
 struct GameDetailView: View {
     
     private let gameDetailData: GameDetail
-    private var gameResults: GameDetailModel?
-    private let gameDetailRequester: GameRequesterProtocol
+    @ObservedObject var gameDetailRequester = GameDetailRequester()
     
     init(gameDetailData: GameDetail) {
         self.gameDetailData = gameDetailData
-        if gameDetailData.typeOfGame == .last {
-            gameDetailRequester = GameDetailRequester(lottery: gameDetailData.lottery)
-            return
-        }
-        gameDetailRequester = NextGameDetailRequester(lottery: gameDetailData.lottery)
+        self.gameDetailRequester.lottery = gameDetailData.lottery
     }
     
     var body: some View {
-        Text("")
+        if let data = self.gameDetailRequester.returnData {
+            return AnyView(self.lastOrNextVIew(typeOfGame: self.gameDetailData.typeOfGame, model: data))
+            
+        }
+        return AnyView(Text("Carregando resultados...").onAppear(perform: {
+            self.gameDetailRequester.request(lottery: self.gameDetailData.lottery)
+        }))
+    }
+    
+    func viewDefinition(lottery: GameDetailModel) -> some View {
+        switch lottery.gameData.lotteryGame {
+        case .megasena, .quina, .lotofacil, .lotomania:
+            return AnyView(FirstStyleTable(game: lottery))
+        case .duplasena, .timemania, .diadesorte:
+            return AnyView(SecondStyleView(game: lottery))
+        case .federal:
+            return AnyView(ThirdStyleView(game: lottery))
+        }
+    }
+    
+    func lastOrNextVIew(typeOfGame: TypeOfGame, model: GameDetailModel) -> some View {
+        switch typeOfGame {
+        case .last:
+            return AnyView(self.viewDefinition(lottery: model))
+        case .next:
+            return AnyView(NextGameView(gameModel: model))
+        case .settings:
+            return AnyView(Text("Erro"))
+            
+        }
     }
 }
 

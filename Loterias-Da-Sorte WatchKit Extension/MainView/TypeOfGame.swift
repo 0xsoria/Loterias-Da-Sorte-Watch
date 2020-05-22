@@ -11,4 +11,5 @@ import Foundation
 enum TypeOfGame: String {
     case last = "Últimos Jogos"
     case next = "Próximos Jogos"
+    case settings = "Informações"
 }

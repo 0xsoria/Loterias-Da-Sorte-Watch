@@ -21,7 +21,7 @@ struct ContentView: View {
         List {
             ForEach(self.data.lotteries, id: \.self) { lottery in
                 NavigationLink(destination: GameDetailView(gameDetailData: GameDetail(lottery: lottery, typeOfGame: self.typeOfGame))) {
-                    Text(lottery.rawValue)
+                    Text(lottery.rawValue).foregroundColor(lottery.colorFromGame().newColor)
                 }.navigationBarTitle(self.typeOfGame.rawValue)
             }
         }

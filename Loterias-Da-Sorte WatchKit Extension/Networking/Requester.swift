@@ -23,7 +23,7 @@ final class Requester {
     }
     
     //MARK: - Methods
-    func myRequest<T>(router: Router, onCompletion: @escaping (Result<T, LotteryNetworkError>) -> Void) where T : Decodable, T : Encodable {
+    func myRequest(router: Router, onCompletion: @escaping (Result<Data, LotteryNetworkError>) -> Void) {
         guard let url = router.url() else {
             onCompletion(.failure(.noResponse))
             return
@@ -35,7 +35,7 @@ final class Requester {
         dataTask.resume()
     }
     
-    private func response<T: Codable>(completion: @escaping (Result<T, LotteryNetworkError>) -> Void) -> ((Data?, URLResponse?, Error?) -> Void) {
+    private func response(completion: @escaping (Result<Data, LotteryNetworkError>) -> Void) -> ((Data?, URLResponse?, Error?) -> Void) {
         return { data, response, error in
             if error == nil {
                 guard let response = response as? HTTPURLResponse else {
@@ -47,12 +47,9 @@ final class Requester {
                         completion(.failure(.noData))
                         return
                     }
-                    do {
-                        let returnData = try JSONDecoder().decode(T.self, from: data)
-                        completion(.success(returnData))
-                    } catch {
-                        completion(.failure(.invalidJSON))
-                    }
+                    
+                    completion(.success(data))
+                    
                 } else {
                     completion(.failure(.responseStatusCode(code: response.statusCode)))
                 }

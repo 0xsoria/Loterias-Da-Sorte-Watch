@@ -103,45 +103,6 @@ func diadesorteNumberToMonth(monthInNumber: String?) -> String {
     }
 }
 
-func stringToLotteryProperty(gameName: String) -> Lottery {
-    switch gameName {
-    case LotteryGames.megasena.rawValue:
-        return Lottery(quantityOfNumbersToBeDraw: MegaSenaLottery().quantityOfNumbersToBeDraw, minimumQuantityOfNumbersYouChoose: MegaSenaLottery().minimumQuantityOfNumbersYouChoose, maxQuantityOfNumbersYouChoose: MegaSenaLottery().maxQuantityOfNumbersYouChoose, quantityOfNumbersAvailable: MegaSenaLottery().quantityOfNumbersAvailable, nameOfTheGame: MegaSenaLottery().nameOfTheGame, nameOfTheGameWOSpaces: MegaSenaLottery().nameOfTheGameWOSpaces, rangeOfNumbersYouChoose: MegaSenaLottery().rangeOfNumbersYouChoose, quantityOfNumbersNecessaryToWin: MegaSenaLottery().quantityOfNumbersNecessaryToWin, drawnNumbers: MegaSenaLottery().drawnNumbers, concourseNumber: MegaSenaLottery().councourseNumber, teamOrData: nil, duplaSenaSecondSet: nil, federalPrize: nil)
-    case LotteryGames.quina.rawValue:
-        return Lottery(quantityOfNumbersToBeDraw: QuinaLottery().quantityOfNumbersToBeDraw,
-                       minimumQuantityOfNumbersYouChoose: QuinaLottery().minimumQuantityOfNumbersYouChoose,
-                       maxQuantityOfNumbersYouChoose: QuinaLottery().maxQuantityOfNumbersYouChoose,
-                       quantityOfNumbersAvailable: QuinaLottery().quantityOfNumbersAvailable,
-                       nameOfTheGame: QuinaLottery().nameOfTheGame, nameOfTheGameWOSpaces: QuinaLottery().nameOfTheGameWOSpaces,
-                       rangeOfNumbersYouChoose: QuinaLottery().rangeOfNumbersYouChoose,
-                       quantityOfNumbersNecessaryToWin: QuinaLottery().quantityOfNumbersNecessaryToWin,
-                       drawnNumbers: QuinaLottery().drawnNumbers,
-                       concourseNumber: QuinaLottery().councourseNumber, teamOrData: nil, duplaSenaSecondSet: nil, federalPrize: nil)
-    case LotteryGames.lotofacil.rawValue:
-        return Lottery(quantityOfNumbersToBeDraw: LotoFacilLottery().quantityOfNumbersToBeDraw,
-                       minimumQuantityOfNumbersYouChoose: LotoFacilLottery().minimumQuantityOfNumbersYouChoose,
-                       maxQuantityOfNumbersYouChoose: LotoFacilLottery().maxQuantityOfNumbersYouChoose,
-                       quantityOfNumbersAvailable: LotoFacilLottery().quantityOfNumbersAvailable,
-                       nameOfTheGame: LotoFacilLottery().nameOfTheGame, nameOfTheGameWOSpaces: LotoFacilLottery().nameOfTheGameWOSpaces,
-                       rangeOfNumbersYouChoose: LotoFacilLottery().rangeOfNumbersYouChoose,
-                       quantityOfNumbersNecessaryToWin: LotoFacilLottery().quantityOfNumbersNecessaryToWin,
-                       drawnNumbers: LotoFacilLottery().drawnNumbers,
-                       concourseNumber: LotoFacilLottery().councourseNumber, teamOrData: nil, duplaSenaSecondSet: nil, federalPrize: nil)
-    case LotteryGames.timemania.rawValue:
-        return Lottery(quantityOfNumbersToBeDraw: TimeManiaLottery().quantityOfNumbersToBeDraw, minimumQuantityOfNumbersYouChoose: TimeManiaLottery().minimumQuantityOfNumbersYouChoose, maxQuantityOfNumbersYouChoose: TimeManiaLottery().maxQuantityOfNumbersYouChoose, quantityOfNumbersAvailable: TimeManiaLottery().quantityOfNumbersAvailable, nameOfTheGame: TimeManiaLottery().nameOfTheGame, nameOfTheGameWOSpaces: TimeManiaLottery().nameOfTheGameWOSpaces, rangeOfNumbersYouChoose: TimeManiaLottery().rangeOfNumbersYouChoose, quantityOfNumbersNecessaryToWin: TimeManiaLottery().quantityOfNumbersNecessaryToWin, drawnNumbers: TimeManiaLottery().drawnNumbers, concourseNumber: TimeManiaLottery().councourseNumber, teamOrData: TimeManiaLottery().teamOrData, duplaSenaSecondSet: TimeManiaLottery().duplaSenaSecondSet, federalPrize: TimeManiaLottery().federalPrize)
-    case LotteryGames.duplasena.rawValue:
-        return Lottery(quantityOfNumbersToBeDraw: DuplaSenaLottery().quantityOfNumbersToBeDraw, minimumQuantityOfNumbersYouChoose: DuplaSenaLottery().minimumQuantityOfNumbersYouChoose, maxQuantityOfNumbersYouChoose: DuplaSenaLottery().maxQuantityOfNumbersYouChoose, quantityOfNumbersAvailable: DuplaSenaLottery().quantityOfNumbersAvailable, nameOfTheGame: DuplaSenaLottery().nameOfTheGame, nameOfTheGameWOSpaces: DuplaSenaLottery().nameOfTheGameWOSpaces, rangeOfNumbersYouChoose: DuplaSenaLottery().rangeOfNumbersYouChoose, quantityOfNumbersNecessaryToWin: DuplaSenaLottery().quantityOfNumbersNecessaryToWin, drawnNumbers: DuplaSenaLottery().drawnNumbers, concourseNumber: DuplaSenaLottery().councourseNumber, teamOrData: DuplaSenaLottery().teamOrData, duplaSenaSecondSet: DuplaSenaLottery().duplaSenaSecondSet, federalPrize: DuplaSenaLottery().federalPrize)
-    case LotteryGames.lotomania.rawValue:
-        return Lottery(quantityOfNumbersToBeDraw: LotoManiaLottery().quantityOfNumbersToBeDraw, minimumQuantityOfNumbersYouChoose: LotoManiaLottery().minimumQuantityOfNumbersYouChoose, maxQuantityOfNumbersYouChoose: LotoManiaLottery().maxQuantityOfNumbersYouChoose, quantityOfNumbersAvailable: LotoManiaLottery().quantityOfNumbersAvailable, nameOfTheGame: LotoManiaLottery().nameOfTheGame, nameOfTheGameWOSpaces: LotoManiaLottery().nameOfTheGameWOSpaces, rangeOfNumbersYouChoose: LotoManiaLottery().rangeOfNumbersYouChoose, quantityOfNumbersNecessaryToWin: LotoManiaLottery().quantityOfNumbersNecessaryToWin, drawnNumbers: LotoManiaLottery().drawnNumbers, concourseNumber: LotoManiaLottery().councourseNumber, teamOrData: LotoManiaLottery().teamOrData, duplaSenaSecondSet: LotoManiaLottery().duplaSenaSecondSet, federalPrize: LotoManiaLottery().federalPrize)
-    case LotteryGames.diadesorte.rawValue:
-        return Lottery(quantityOfNumbersToBeDraw: DiaDeSorteLottery().quantityOfNumbersToBeDraw, minimumQuantityOfNumbersYouChoose: DiaDeSorteLottery().minimumQuantityOfNumbersYouChoose, maxQuantityOfNumbersYouChoose: DiaDeSorteLottery().maxQuantityOfNumbersYouChoose, quantityOfNumbersAvailable: DiaDeSorteLottery().quantityOfNumbersAvailable, nameOfTheGame: DiaDeSorteLottery().nameOfTheGame, nameOfTheGameWOSpaces: DiaDeSorteLottery().nameOfTheGameWOSpaces, rangeOfNumbersYouChoose: DiaDeSorteLottery().rangeOfNumbersYouChoose, quantityOfNumbersNecessaryToWin: DiaDeSorteLottery().quantityOfNumbersNecessaryToWin, drawnNumbers: DiaDeSorteLottery().drawnNumbers, concourseNumber: DiaDeSorteLottery().councourseNumber, teamOrData: DiaDeSorteLottery().teamOrData, duplaSenaSecondSet: DiaDeSorteLottery().duplaSenaSecondSet, federalPrize: DiaDeSorteLottery().federalPrize)
-    case LotteryGames.federal.rawValue:
-        return Lottery(quantityOfNumbersToBeDraw: FederalLottery().quantityOfNumbersToBeDraw, minimumQuantityOfNumbersYouChoose: FederalLottery().minimumQuantityOfNumbersYouChoose, maxQuantityOfNumbersYouChoose: FederalLottery().maxQuantityOfNumbersYouChoose, quantityOfNumbersAvailable: FederalLottery().quantityOfNumbersAvailable, nameOfTheGame: FederalLottery().nameOfTheGame, nameOfTheGameWOSpaces: FederalLottery().nameOfTheGameWOSpaces, rangeOfNumbersYouChoose: FederalLottery().rangeOfNumbersYouChoose, quantityOfNumbersNecessaryToWin: FederalLottery().quantityOfNumbersNecessaryToWin, drawnNumbers: FederalLottery().drawnNumbers, concourseNumber: FederalLottery().councourseNumber, teamOrData: FederalLottery().teamOrData, duplaSenaSecondSet: FederalLottery().duplaSenaSecondSet, federalPrize: FederalLottery().federalPrize)
-    default:
-        return Lottery(quantityOfNumbersToBeDraw: MegaSenaLottery().quantityOfNumbersToBeDraw, minimumQuantityOfNumbersYouChoose: MegaSenaLottery().minimumQuantityOfNumbersYouChoose, maxQuantityOfNumbersYouChoose: MegaSenaLottery().maxQuantityOfNumbersYouChoose, quantityOfNumbersAvailable: MegaSenaLottery().quantityOfNumbersAvailable, nameOfTheGame: MegaSenaLottery().nameOfTheGame, nameOfTheGameWOSpaces: MegaSenaLottery().nameOfTheGameWOSpaces, rangeOfNumbersYouChoose: MegaSenaLottery().rangeOfNumbersYouChoose, quantityOfNumbersNecessaryToWin: MegaSenaLottery().quantityOfNumbersNecessaryToWin, drawnNumbers: MegaSenaLottery().drawnNumbers, concourseNumber: MegaSenaLottery().councourseNumber, teamOrData: nil, duplaSenaSecondSet: nil, federalPrize: nil)
-    }
-}
-
 /**
  It receives the game (worker) chosen by user and transforms in the type **Lottery**.
  */

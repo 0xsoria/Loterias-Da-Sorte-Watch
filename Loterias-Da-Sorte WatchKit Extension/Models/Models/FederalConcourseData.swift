@@ -12,21 +12,36 @@ struct FederalConcourseData: Codable {
     let nome: String
     let numero_concurso: Int
     let data_concurso: String
-    let data_concurso_milliseconds: Int
+    let data_concurso_milliseconds: Int64
     let local_realizacao: String
     let rateio_processamento: Bool
     let premiacao: [FederalGamePrize]
     let concurso_proximo: Int
-    let data_proximo_concurso: String
-    let data_proximo_concurso_milliseconds: Int
+    let data_proximo_concurso: String?
+    let data_proximo_concurso_milliseconds: Int64
     let valor_estimado_proximo_concurso: DoubleIntLottery
     
     func federalWorkerDataToLotteryWorker() -> LotteryNetworkingWorker {
-        return LotteryNetworkingWorker(lotteryGameString: "federal", lotteryGame: .federal, lotteryGameNoSpace: .federal, concourseNumber: String(self.numero_concurso), numbers: [], date: self.data_concurso, accumulatedValue: String(), prize: String(), winners: String(), duplaSenaSecondSetOfNumbers: nil, teamOrDay: nil, duplaSenaTeamOrDayPrize: nil, duplaSenaTeamOrDayWinners: nil, federalPrize: self.premiacao, rateioProcessamento: self.rateio_processamento, acumulou: false)
+        return LotteryNetworkingWorker(lotteryGameString: "federal",
+                                       lotteryGame: .federal,
+                                       lotteryGameNoSpace: .federal,
+                                       concourseNumber: String(self.numero_concurso),
+                                       numbers: [],
+                                       date: self.data_concurso,
+                                       accumulatedValue: String(),
+                                       prize: String(),
+                                       winners: String(),
+                                       duplaSenaSecondSetOfNumbers: nil,
+                                       teamOrDay: nil,
+                                       duplaSenaTeamOrDayPrize: nil,
+                                       duplaSenaTeamOrDayWinners: nil,
+                                       federalPrize: self.premiacao,
+                                       rateioProcessamento: self.rateio_processamento,
+                                       acumulou: false, nextGame: self.convertToNextGame())
     }
     
     func convertToNextGame() -> NextGameWorker {
-        return NextGameWorker(lotteryGame: .federal, lotteryGameNoSpace: .federal, date: self.data_proximo_concurso, prize: self.valor_estimado_proximo_concurso.returnString(), concourseNumber: String(self.numero_concurso + 1))
+        return NextGameWorker(lotteryGame: .federal, lotteryGameNoSpace: .federal, date: self.data_proximo_concurso ?? "Data a ser definida", prize: self.valor_estimado_proximo_concurso.returnString(), concourseNumber: String(self.numero_concurso + 1))
     }
     
     enum FederalPrizes {

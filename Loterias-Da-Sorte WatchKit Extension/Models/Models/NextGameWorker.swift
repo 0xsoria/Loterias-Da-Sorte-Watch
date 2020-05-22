@@ -22,27 +22,6 @@ struct NextGameWorker: LotteryCommonData {
         self.prize = prize
         self.concourseNumber = concourseNumber
     }
-    
-    func convertToLottery() -> LotteryProperties {
-        switch self.lotteryGameNoSpace {
-        case .megasena:
-            return MegaSenaLottery()
-        case .quina:
-            return QuinaLottery()
-        case .lotofacil:
-            return LotoFacilLottery()
-        case .lotomania:
-            return LotoManiaLottery()
-        case .diadesorte:
-            return DiaDeSorteLottery()
-        case .timemania:
-            return TimeManiaLottery()
-        case .federal:
-            return FederalLottery()
-        case .duplasena:
-            return DuplaSenaLottery()
-        }
-    }
 }
 
 extension NextGameWorker: Hashable {

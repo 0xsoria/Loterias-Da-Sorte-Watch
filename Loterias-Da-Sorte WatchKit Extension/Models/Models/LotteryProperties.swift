@@ -13,7 +13,7 @@ protocol LotteryProperties {
     var minimumQuantityOfNumbersYouChoose: Int { get set }
     var maxQuantityOfNumbersYouChoose: Int { get set }
     var quantityOfNumbersAvailable: Int { get set }
-    var allNumbers: [String] { get set }
+    var allNumbers: [String] { get }
     var nameOfTheGame: LotteryGames { get set }
     var nameOfTheGameWOSpaces: LotteryGamesNoSpace { get set }
     var rangeOfNumbersYouChoose: ClosedRange<Int> { get set }

@@ -10,16 +10,23 @@ import SwiftUI
 
 struct MainView: View {
     
-    private let rowNames: [TypeOfGame] = [.last, .next]
+    private let rowNames: [TypeOfGame] = [.last, .next, .settings]
     
     var body: some View {
         List {
             ForEach(self.rowNames, id: \.self) { names in
-                NavigationLink(destination: ContentView(typeOfGame: names)) {
+                NavigationLink(destination: self.viewSetter(type: names)) {
                     Text(names.rawValue)
                 }.navigationBarTitle("Loterias Da Sorte")
             }
         }
+    }
+    
+    private func viewSetter(type: TypeOfGame) -> some View {
+        if type == .settings {
+            return AnyView(SettingsView())
+        }
+        return AnyView(ContentView(typeOfGame: type))
     }
 }
 
