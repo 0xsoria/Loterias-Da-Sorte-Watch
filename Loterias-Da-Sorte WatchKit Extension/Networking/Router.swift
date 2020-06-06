@@ -12,14 +12,14 @@ enum Router {
     case lastGame(lottery: LotteryGamesNoSpace)
     case gameWithNumber(number: Int, lottery: LotteryGamesNoSpace)
     
-    private static let lotteryBaseURL = PlistKey.lotteryAPIURL.getData()
+    private static let lotteryBaseURL = "https://\(PlistKey.lotteryAPIURL.getData())"
     
     var path: String {
         switch self {
         case .lastGame(let lotteryGame):
-            return "loteria=\(lotteryGame.rawValue)&token=\(PlistKey.lotteryAPIKEY.getData())"
+            return "/app/resultado?loteria=\(lotteryGame.rawValue)&token=\(PlistKey.lotteryAPIKEY.getData())"
         case .gameWithNumber(let number, let game):
-            return "loteria=\(game.rawValue)&token=\(PlistKey.lotteryAPIKEY.getData())&=concurso\(number)"
+            return "/app/resultado?loteria=\(game.rawValue)&token=\(PlistKey.lotteryAPIKEY.getData())&=concurso\(number)"
         }
     }
     
