@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct NextGameWorker: LotteryCommonData {
+struct NextGameWorker {
     var lotteryGame: LotteryGames
     var lotteryGameNoSpace: LotteryGamesNoSpace
     var date: String
@@ -28,23 +28,4 @@ extension NextGameWorker: Hashable {
     func hash(into hasher: inout Hasher) {
         hasher.combine(concourseNumber)
     }
-}
-
-protocol LotteryCommonData {
-    var lotteryGame: LotteryGames { get set }
-    var lotteryGameNoSpace: LotteryGamesNoSpace { get set }
-    var concourseNumber: String { get set }
-    var date: String { get set }
-    var prize: String { get set }
-}
-
-protocol LotteryComplementaryData {
-    var numbers: [String] { get set }
-    var accumulatedValue: String { get set }
-    var winners: String { get set }
-    var duplaSenaSecondSetOfNumbers: [String]? { get set }
-    var teamOrDay: String? { get set }
-    var duplaSenaTeamOrDayPrize: String? { get set }
-    var duplaSenaTeamOrDayWinners: String? { get set }
-    var federalPrize: [FederalGamePrize]? { get set }
 }

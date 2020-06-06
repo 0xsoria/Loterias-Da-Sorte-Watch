@@ -102,10 +102,3 @@ func diadesorteNumberToMonth(monthInNumber: String?) -> String {
         return ""
     }
 }
-
-/**
- It receives the game (worker) chosen by user and transforms in the type **Lottery**.
- */
-func transformingLotteryPropertiesInLottery(sender: LotteryProperties) -> Lottery {
-    return Lottery(quantityOfNumbersToBeDraw: sender.quantityOfNumbersToBeDraw, minimumQuantityOfNumbersYouChoose: sender.minimumQuantityOfNumbersYouChoose, maxQuantityOfNumbersYouChoose: sender.maxQuantityOfNumbersYouChoose, quantityOfNumbersAvailable: sender.quantityOfNumbersAvailable, nameOfTheGame: sender.nameOfTheGame, nameOfTheGameWOSpaces: sender.nameOfTheGameWOSpaces, rangeOfNumbersYouChoose: sender.rangeOfNumbersYouChoose, quantityOfNumbersNecessaryToWin: sender.quantityOfNumbersNecessaryToWin, drawnNumbers: sender.drawnNumbers, concourseNumber: sender.councourseNumber, teamOrData: sender.teamOrData, duplaSenaSecondSet: sender.duplaSenaSecondSet, federalPrize: sender.federalPrize)
-}

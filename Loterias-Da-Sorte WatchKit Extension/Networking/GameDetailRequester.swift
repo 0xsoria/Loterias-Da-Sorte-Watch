@@ -10,16 +10,6 @@ import Combine
 import Foundation
 import SwiftUI
 
-struct GameDetailModel {
-    var gameData: LotteryNetworkingWorker
-    var headers: [String] = []
-    
-    init(gameData: LotteryNetworkingWorker, headers: [String]) {
-        self.gameData = gameData
-        self.headers = headers
-    }
-}
-
 final class GameDetailRequester: ObservableObject {
     
     private let didChange = PassthroughSubject<GameDetailModel, Never>()
