@@ -71,27 +71,6 @@ public enum LotteryColor {
             return Color.black
         }
     }
-    
-    func coloringItem(lottery: LotteryGames) -> LotteryColor {
-        switch lottery {
-        case .megasena:
-            return .megasena
-        case .quina:
-            return .quina
-        case .lotofacil:
-            return .lotofacil
-        case .lotomania:
-            return .lotoMania
-        case .diadesorte:
-            return .diaDeSorte
-        case .duplasena:
-            return .duplaSena
-        case .federal:
-            return .federal
-        case .timemania:
-            return .timeMania
-        }
-    }
 }
 
 extension UIColor {

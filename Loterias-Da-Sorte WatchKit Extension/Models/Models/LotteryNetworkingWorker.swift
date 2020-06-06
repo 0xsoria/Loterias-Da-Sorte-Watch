@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct LotteryNetworkingWorker: LotteryCommonData, LotteryComplementaryData {
+struct LotteryNetworkingWorker {
     
     var lotteryGameString: String
     var lotteryGame: LotteryGames
