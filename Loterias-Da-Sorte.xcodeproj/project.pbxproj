@@ -151,7 +151,7 @@
 		150287E22472101900C794BC = {
 			isa = PBXGroup;
 			children = (
-				150287F12472101900C794BC /* Loterias-Da-Sorte WatchKit App */,
+				150287F12472101900C794BC /* Loterias-Da-Sorte-WatchKit App */,
 				150288002472101A00C794BC /* Loterias-Da-Sorte WatchKit Extension */,
 				150287EA2472101900C794BC /* Products */,
 			);
@@ -167,14 +167,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		150287F12472101900C794BC /* Loterias-Da-Sorte WatchKit App */ = {
+		150287F12472101900C794BC /* Loterias-Da-Sorte-WatchKit App */ = {
 			isa = PBXGroup;
 			children = (
 				150287F22472101900C794BC /* Interface.storyboard */,
 				150287F52472101A00C794BC /* Assets.xcassets */,
 				150287F72472101A00C794BC /* Info.plist */,
 			);
-			path = "Loterias-Da-Sorte WatchKit App";
+			path = "Loterias-Da-Sorte-WatchKit App";
 			sourceTree = "<group>";
 		};
 		150288002472101A00C794BC /* Loterias-Da-Sorte WatchKit Extension */ = {
