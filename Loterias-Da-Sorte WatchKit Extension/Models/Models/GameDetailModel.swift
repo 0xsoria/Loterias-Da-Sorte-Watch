@@ -17,3 +17,9 @@ struct GameDetailModel {
         self.headers = headers
     }
 }
+extension GameDetailModel: Hashable {
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(self.gameData)
+        hasher.combine(self.headers)
+    }
+}

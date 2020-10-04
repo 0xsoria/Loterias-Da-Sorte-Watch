@@ -14,7 +14,7 @@ protocol LotteryNetworkServiceable {
 
 final class LotteryNetworkService: LotteryNetworkServiceable {
     
-    let networkService: NetworkServiceable
+    private var networkService: NetworkServiceable
     
     init(networkService: NetworkServiceable) {
         self.networkService = networkService
@@ -33,6 +33,11 @@ final class LotteryNetworkService: LotteryNetworkServiceable {
     
     func requestFor(lottery: LotteryGamesNoSpace, completion: @escaping ((Result<GameDetailModel, NetworkError>) -> Void)) {
         let router = Router.lastGame(lottery: lottery).stringURL()
+        
+        #if MOCK
+        self.setupForMock(lottery: lottery)
+        #endif
+        
         self.networkService.request(url: router) { (result: Result<Data, NetworkError>) in
             switch result {
             case .success(let data):
@@ -45,6 +50,11 @@ final class LotteryNetworkService: LotteryNetworkServiceable {
                 }
             }
         }
+    }
+    
+    private func setupForMock(lottery: LotteryGamesNoSpace) {
+        self.networkService = MockNetwork(fileName:
+                                            MockFileName.fileName(lottery: lottery).rawValue)
     }
     
     private func checkLottery(lottery: LotteryGamesNoSpace, data: Data, completion: @escaping ((Result<GameDetailModel, NetworkError>) -> Void)) {

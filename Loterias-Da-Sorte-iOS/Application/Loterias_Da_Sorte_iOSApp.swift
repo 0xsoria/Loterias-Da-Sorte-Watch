@@ -15,7 +15,9 @@ struct Loterias_Da_Sorte_iOSApp: App {
     var body: some Scene {
         WindowGroup {
             TabView {
-                MainLotteryView()
+                MainLotteryView(service:
+                                    LotteryNetworkService(networkService:
+                                                            NetworkService()))
                     .tabItem {
                         Text("Loterias")
                     }

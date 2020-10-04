@@ -9,7 +9,7 @@
 import Foundation
 import SwiftUI
 
-protocol LastGamesResultable {
+protocol LastGamesResultable: ObservableObject {
     var games: [GameDetailModel] { get set }
     func getLastResultsFor(lottery: LotteryGamesNoSpace)
 }
@@ -18,7 +18,7 @@ final class LastGamesResultsInteractor: LastGamesResultable, ObservableObject {
 
     private let service: LotteryNetworkServiceable
     @Published var returnData: GameDetailModel?
-    var games: [GameDetailModel] = GameModel.allLotteries
+    @Published var games: [GameDetailModel] = GameModel.allLotteries
 
     init(service: LotteryNetworkServiceable) {
         self.service = service
@@ -29,7 +29,7 @@ final class LastGamesResultsInteractor: LastGamesResultable, ObservableObject {
             switch result {
             case .success(let successData):
                 self.returnData = successData
-                print(successData)
+                self.updatesGames(lottery: successData)
             case .failure(let failureData):
                 print(failureData)
             }
@@ -50,6 +50,13 @@ final class LastGamesResultsInteractor: LastGamesResultable, ObservableObject {
 final class GameModel {
     static var allLotteries: [GameDetailModel] = [
         GameDetailModel(gameData: LotteryNetworkingWorker(game: .megasena),
-                        headers: GameDetailData().megaQuinaFacilMania)
+                        headers: GameDetailData().megaQuinaFacilMania),
+        GameDetailModel(gameData: LotteryNetworkingWorker(game: .quina), headers: GameDetailData().megaQuinaFacilMania),
+        GameDetailModel(gameData: LotteryNetworkingWorker(game: .lotofacil), headers: GameDetailData().megaQuinaFacilMania),
+        GameDetailModel(gameData: LotteryNetworkingWorker(game: .lotomania), headers: GameDetailData().megaQuinaFacilMania),
+        GameDetailModel(gameData: LotteryNetworkingWorker(game: .duplasena), headers: GameDetailData().duplaSena),
+        GameDetailModel(gameData: LotteryNetworkingWorker(game: .timemania), headers: GameDetailData().time),
+        GameDetailModel(gameData: LotteryNetworkingWorker(game: .diadesorte), headers: GameDetailData().dia),
+        GameDetailModel(gameData: LotteryNetworkingWorker(game: .federal), headers: GameDetailData().federal)
     ]
 }
