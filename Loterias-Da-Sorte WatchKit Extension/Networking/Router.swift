@@ -23,6 +23,21 @@ enum Router {
         }
     }
     
+    func stringURL() -> String {
+        switch self {
+        case .lastGame(let game):
+            var base = Router.lotteryBaseURL
+            let parameters = Router.lastGame(lottery: game).path
+            base.append(parameters)
+            return base
+        case .gameWithNumber(let number, let lottery):
+            var base = Router.lotteryBaseURL
+            let parameters = Router.gameWithNumber(number: number, lottery: lottery).path
+            base.append(parameters)
+            return base
+        }
+    }
+    
     func url() -> URL? {
         switch self {
         case .lastGame(let game):

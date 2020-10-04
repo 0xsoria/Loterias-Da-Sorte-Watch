@@ -63,6 +63,30 @@ struct LotteryNetworkingWorker {
         self.nextGame = NextGameWorker(lotteryGame: self.lotteryGame, lotteryGameNoSpace: self.lotteryGameNoSpace, date: self.date, prize: self.prize, concourseNumber: self.concourseNumber)
     }
     
+    init(game: LotteryGames) {
+        self.lotteryGameString = String()
+        self.lotteryGame = game
+        self.lotteryGameNoSpace = game.convertToLotteryNoSpace()
+        self.concourseNumber = String()
+        self.numbers = []
+        self.date = String()
+        self.accumulatedValue = String(0)
+        self.prize = String()
+        self.winners = String()
+        self.duplaSenaSecondSetOfNumbers = nil
+        self.teamOrDay = nil
+        self.duplaSenaTeamOrDayPrize = nil
+        self.duplaSenaTeamOrDayWinners = nil
+        self.federalPrize = nil
+        self.rateioProcessamento = false
+        self.acumulou = false
+        self.nextGame = NextGameWorker(lotteryGame: game,
+                                       lotteryGameNoSpace: game.convertToLotteryNoSpace(),
+                                       date: String(),
+                                       prize: String(),
+                                       concourseNumber: String())
+    }
+    
     
     enum FederalPrizes {
         case first
@@ -128,19 +152,19 @@ struct LotteryNetworkingWorker {
 extension LotteryNetworkingWorker: Equatable {
     static func == (lhs: LotteryNetworkingWorker, rhs: LotteryNetworkingWorker) -> Bool {
         return lhs.lotteryGameString == rhs.lotteryGameString   &&
-        lhs.lotteryGame == rhs.lotteryGame &&
-        lhs.lotteryGameNoSpace == rhs.lotteryGameNoSpace &&
-        lhs.concourseNumber == rhs.concourseNumber &&
-        lhs.numbers == rhs.numbers &&
-        lhs.date == rhs.date &&
-        lhs.accumulatedValue == rhs.accumulatedValue &&
-        lhs.prize == rhs.prize &&
-        lhs.winners == rhs.winners &&
-        lhs.duplaSenaSecondSetOfNumbers == rhs.duplaSenaSecondSetOfNumbers &&
-        lhs.teamOrDay == rhs.teamOrDay &&
-        lhs.duplaSenaTeamOrDayPrize == rhs.duplaSenaTeamOrDayPrize &&
-        lhs.duplaSenaTeamOrDayWinners == rhs.duplaSenaTeamOrDayWinners &&
-        lhs.federalPrize == rhs.federalPrize
+            lhs.lotteryGame == rhs.lotteryGame &&
+            lhs.lotteryGameNoSpace == rhs.lotteryGameNoSpace &&
+            lhs.concourseNumber == rhs.concourseNumber &&
+            lhs.numbers == rhs.numbers &&
+            lhs.date == rhs.date &&
+            lhs.accumulatedValue == rhs.accumulatedValue &&
+            lhs.prize == rhs.prize &&
+            lhs.winners == rhs.winners &&
+            lhs.duplaSenaSecondSetOfNumbers == rhs.duplaSenaSecondSetOfNumbers &&
+            lhs.teamOrDay == rhs.teamOrDay &&
+            lhs.duplaSenaTeamOrDayPrize == rhs.duplaSenaTeamOrDayPrize &&
+            lhs.duplaSenaTeamOrDayWinners == rhs.duplaSenaTeamOrDayWinners &&
+            lhs.federalPrize == rhs.federalPrize
     }
 }
 

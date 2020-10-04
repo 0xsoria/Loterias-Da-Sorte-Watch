@@ -8,26 +8,8 @@
 
 import SwiftUI
 
-enum LotteryName: String {
-    case megaSena
-}
-
 protocol Lottery {
     var name: LotteryName { get set }
-}
-
-protocol LastLotteryResultable {
-    var lotteries: [Lottery] { get set }
-    func getLastResultsFor(lottery: LotteryName)
-}
-
-final class LastLotteryResults: LastLotteryResultable {
-    
-    var lotteries: [Lottery] = []
-    
-    func getLastResultsFor(lottery: LotteryName) {
-        
-    }
 }
 
 struct MainLotteryView: View {
