@@ -63,7 +63,7 @@ struct LotteryNetworkingWorker {
         self.nextGame = NextGameWorker(lotteryGame: self.lotteryGame, lotteryGameNoSpace: self.lotteryGameNoSpace, date: self.date, prize: self.prize, concourseNumber: self.concourseNumber)
     }
     
-    init(game: LotteryGames) {
+    init(game: LotteryGames) {        
         self.lotteryGameString = String()
         self.lotteryGame = game
         self.lotteryGameNoSpace = game.convertToLotteryNoSpace()
@@ -152,19 +152,19 @@ struct LotteryNetworkingWorker {
 extension LotteryNetworkingWorker: Equatable {
     static func == (lhs: LotteryNetworkingWorker, rhs: LotteryNetworkingWorker) -> Bool {
         return lhs.lotteryGameString == rhs.lotteryGameString   &&
-            lhs.lotteryGame == rhs.lotteryGame &&
-            lhs.lotteryGameNoSpace == rhs.lotteryGameNoSpace &&
-            lhs.concourseNumber == rhs.concourseNumber &&
-            lhs.numbers == rhs.numbers &&
-            lhs.date == rhs.date &&
-            lhs.accumulatedValue == rhs.accumulatedValue &&
-            lhs.prize == rhs.prize &&
-            lhs.winners == rhs.winners &&
-            lhs.duplaSenaSecondSetOfNumbers == rhs.duplaSenaSecondSetOfNumbers &&
-            lhs.teamOrDay == rhs.teamOrDay &&
-            lhs.duplaSenaTeamOrDayPrize == rhs.duplaSenaTeamOrDayPrize &&
-            lhs.duplaSenaTeamOrDayWinners == rhs.duplaSenaTeamOrDayWinners &&
-            lhs.federalPrize == rhs.federalPrize
+        lhs.lotteryGame == rhs.lotteryGame &&
+        lhs.lotteryGameNoSpace == rhs.lotteryGameNoSpace &&
+        lhs.concourseNumber == rhs.concourseNumber &&
+        lhs.numbers == rhs.numbers &&
+        lhs.date == rhs.date &&
+        lhs.accumulatedValue == rhs.accumulatedValue &&
+        lhs.prize == rhs.prize &&
+        lhs.winners == rhs.winners &&
+        lhs.duplaSenaSecondSetOfNumbers == rhs.duplaSenaSecondSetOfNumbers &&
+        lhs.teamOrDay == rhs.teamOrDay &&
+        lhs.duplaSenaTeamOrDayPrize == rhs.duplaSenaTeamOrDayPrize &&
+        lhs.duplaSenaTeamOrDayWinners == rhs.duplaSenaTeamOrDayWinners &&
+        lhs.federalPrize == rhs.federalPrize
     }
 }
 

@@ -11,7 +11,7 @@ import SwiftUI
 
 protocol LastGamesResultable {
     var games: [GameDetailModel] { get set }
-    func getLastResultsFor(lottery: LotteryName)
+    func getLastResultsFor(lottery: LotteryGamesNoSpace)
 }
 
 final class LastGamesResultsInteractor: LastGamesResultable, ObservableObject {
@@ -24,7 +24,7 @@ final class LastGamesResultsInteractor: LastGamesResultable, ObservableObject {
         self.service = service
     }
 
-    func getLastResultsFor(lottery: LotteryName) {
+    func getLastResultsFor(lottery: LotteryGamesNoSpace) {
         self.requestFromService(lottery: lottery) { (result: Result<GameDetailModel, NetworkError>) in
             switch result {
             case .success(let successData):
@@ -36,7 +36,7 @@ final class LastGamesResultsInteractor: LastGamesResultable, ObservableObject {
         }
     }
     
-    func requestFromService(lottery: LotteryName, completion: @escaping ((Result<GameDetailModel, NetworkError>) -> Void)) {
+    func requestFromService(lottery: LotteryGamesNoSpace, completion: @escaping ((Result<GameDetailModel, NetworkError>) -> Void)) {
         self.service.request(lottery: lottery, completion: completion)
     }
     

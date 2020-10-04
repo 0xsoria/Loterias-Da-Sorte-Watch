@@ -10,8 +10,15 @@ import Foundation
 @testable import Loterias_Da_Sorte_iOS
 
 final class NetworkSpy: NetworkServiceable {
+    
+    let fileName: String
+    
+    init(fileName: String) {
+        self.fileName = fileName
+    }
+    
     func request(url: String, completion: @escaping ((Result<Data, NetworkError>) -> Void)) {
-        let file = Bundle.main.url(forResource: "SenaLast", withExtension: "json")!
+        let file = Bundle.main.url(forResource: self.fileName, withExtension: "json")!
         let data = try! Data(contentsOf: file)
         completion(.success(data))
     }

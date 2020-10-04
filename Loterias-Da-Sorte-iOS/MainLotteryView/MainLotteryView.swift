@@ -8,10 +8,6 @@
 
 import SwiftUI
 
-protocol Lottery {
-    var name: LotteryName { get set }
-}
-
 struct MainLotteryView: View {
     var body: some View {
         Text("Hello, World!")

@@ -8,18 +8,3 @@
 
 import Foundation
 
-enum LotteryName: String {
-    case megaSena
-    case quina
-}
-
-extension LotteryName {
-    var lotteryGame: LotteryGamesNoSpace {
-        switch self {
-        case .megaSena:
-            return .megasena
-        case .quina:
-            return .quina
-        }
-    }
-}
