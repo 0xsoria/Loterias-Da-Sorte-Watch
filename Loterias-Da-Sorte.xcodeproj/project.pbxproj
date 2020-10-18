@@ -98,6 +98,7 @@
 		154B9313252ABFB2006C1E45 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15028866247235BA00C794BC /* Extensions.swift */; };
 		154B931F25316BA0006C1E45 /* GamesPick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154B931E25316BA0006C1E45 /* GamesPick.swift */; };
 		154B93322534E480006C1E45 /* GamesResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154B93312534E480006C1E45 /* GamesResults.swift */; };
+		15A2BB6B253CDA3A00417979 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15A2BB6A253CDA3A00417979 /* LaunchScreen.storyboard */; };
 		15A7EFED253CAB6900105C0C /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A7EFEC253CAB6900105C0C /* Color+Extensions.swift */; };
 		15A7EFF3253CABD600105C0C /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A7EFEC253CAB6900105C0C /* Color+Extensions.swift */; };
 		15A7F000253CC73600105C0C /* GamesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A7EFFF253CC73600105C0C /* GamesModel.swift */; };
@@ -231,6 +232,7 @@
 		154B930C252A4BCB006C1E45 /*  MainViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " MainViewRow.swift"; sourceTree = "<group>"; };
 		154B931E25316BA0006C1E45 /* GamesPick.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesPick.swift; sourceTree = "<group>"; };
 		154B93312534E480006C1E45 /* GamesResults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamesResults.swift; sourceTree = "<group>"; };
+		15A2BB6A253CDA3A00417979 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		15A7EFEC253CAB6900105C0C /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
 		15A7EFFF253CC73600105C0C /* GamesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -459,6 +461,7 @@
 				154B924E2526B3DD006C1E45 /* LotteryName.swift */,
 				154B92EE252A3A8E006C1E45 /* GameDetailView.swift */,
 				15A7EFEC253CAB6900105C0C /* Color+Extensions.swift */,
+				15A2BB6A253CDA3A00417979 /* LaunchScreen.storyboard */,
 			);
 			path = "Loterias-Da-Sorte-iOS";
 			sourceTree = "<group>";
@@ -782,6 +785,7 @@
 				154B92E8252A341C006C1E45 /* FederalLast.json in Resources */,
 				154B92C5252A2EF2006C1E45 /* LotoFacilLast.json in Resources */,
 				154B92A0252A1DD6006C1E45 /* QuinaLast.json in Resources */,
+				15A2BB6B253CDA3A00417979 /* LaunchScreen.storyboard in Resources */,
 				154B92E1252A33BC006C1E45 /* DiaLast.json in Resources */,
 				154B917D252426D6006C1E45 /* Assets.xcassets in Resources */,
 			);
