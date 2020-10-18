@@ -18,10 +18,12 @@ struct Loterias_Da_Sorte_iOSApp: App {
                 MainLotteryView()
                     .tabItem {
                         Text("Loterias")
+                        Image("bw")
                     }
                 SettingView()
                     .tabItem {
                         Text("Configurações")
+                        Image("settings")
                     }
             }
         }
