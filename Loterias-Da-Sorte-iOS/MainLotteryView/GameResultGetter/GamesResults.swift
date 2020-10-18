@@ -11,7 +11,7 @@ import SwiftUI
 
 protocol GamesResultable: ObservableObject {
     var games: [GameDetailModel] { get set }
-    func getLastResultsFor(lottery: LotteryGamesNoSpace)
+    func getLastResultsFor(lottery: LotteryGamesNoSpace, completionError: @escaping ((Bool) -> Void))
     func requestFromService(lottery: LotteryGamesNoSpace, completion: @escaping ((Result<GameDetailModel, NetworkError>) -> Void))
     func updatesGames(lottery: GameDetailModel)
 }
@@ -28,14 +28,14 @@ final class GamesResults: GamesResultable, ObservableObject {
         self.service = service
     }
 
-    func getLastResultsFor(lottery: LotteryGamesNoSpace) {
+    func getLastResultsFor(lottery: LotteryGamesNoSpace, completionError: @escaping ((Bool) -> Void)) {
         self.requestFromService(lottery: lottery) { (result: Result<GameDetailModel, NetworkError>) in
             switch result {
             case .success(let successData):
                 self.returnData = successData
                 self.updatesGames(lottery: successData)
-            case .failure(let failureData):
-                print(failureData)
+            case .failure:
+                completionError(true)
             }
         }
     }
@@ -57,23 +57,23 @@ final class GamesResults: GamesResultable, ObservableObject {
         }
     }
     
-    func checkIfRequestOrNot(game: GameDetailModel) {
+    func checkIfRequestOrNot(game: GameDetailModel, completionError: @escaping ((Bool) -> Void)) {
         if self.selection.contains(game) {
             self.selection.remove(game)
         } else {
-            self.lotteryRequest(game: game, forGameType: .last)
+            self.lotteryRequest(game: game, forGameType: .last, completionError: completionError)
         }
     }
         
-    func checkIfRequestOrNotForNextGame(game: GameDetailModel) {
+    func checkIfRequestOrNotForNextGame(game: GameDetailModel, completionError: @escaping ((Bool) -> Void)) {
         if self.nextGamesSelection.contains(game) {
             self.nextGamesSelection.remove(game)
         } else {
-            self.lotteryRequest(game: game, forGameType: .next)
+            self.lotteryRequest(game: game, forGameType: .next, completionError: completionError)
         }
     }
     
-    private func lotteryRequest(game: GameDetailModel, forGameType: GameType) {
+    private func lotteryRequest(game: GameDetailModel, forGameType: GameType, completionError: @escaping ((Bool) -> Void)) {
         self.requestFromService(lottery: game.gameData.lotteryGameNoSpace) { (result: Result<GameDetailModel, NetworkError>) in
             switch result {
             case .success(let data):
@@ -83,8 +83,8 @@ final class GamesResults: GamesResultable, ObservableObject {
                     return
                 }
                 self.nextLotterySelection(data)
-            case .failure(let error):
-                print(error)
+            case .failure:
+                completionError(true)
             }
         }
     }

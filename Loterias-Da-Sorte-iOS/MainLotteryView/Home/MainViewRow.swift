@@ -140,6 +140,10 @@ struct MainViewRow: View {
     private func loadDetails() {
         self.isLoading = true
         self.tapAction()
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 15) {
+            self.isLoading = false
+        }
     }
 }
 

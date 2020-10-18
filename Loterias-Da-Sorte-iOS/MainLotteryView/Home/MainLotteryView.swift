@@ -18,6 +18,7 @@ struct MainLotteryView: View {
     //MARK: - State
     @StateObject var gameResult: GamesResults = GamesResults(service: LotteryNetworkService(networkService: NetworkService()))
     @State private var segmentIndex: GamesPick = .last
+    @State private var showingAlert = false
 
     //MARK: - Views
     var body: some View {
@@ -38,7 +39,9 @@ struct MainLotteryView: View {
                             destination: GameDetailView(),
                             label: {
                                 MainViewRow(gameDetail: game, isExpanded: self.gameResult.selection.contains(game), tapAction: {
-                                    self.gameResult.checkIfRequestOrNot(game: game)
+                                    self.gameResult.checkIfRequestOrNot(game: game, completionError: { result in
+                                        self.showingAlert = result
+                                    })
                                 }, remove: {
                                     self.gameResult.remove(game: game)
                                 }).animation(.linear(duration: 0.4))
@@ -52,7 +55,9 @@ struct MainLotteryView: View {
                         MainNextGameRow(gameDetail: game,
                                         isExpanded: self.gameResult.nextGamesSelection.contains(game),
                                         tapAction: {
-                                            self.gameResult.checkIfRequestOrNotForNextGame(game: game)
+                                            self.gameResult.checkIfRequestOrNotForNextGame(game: game, completionError: { result in
+                                                self.showingAlert = result
+                                            })
                                         }, remove: {
                                             self.gameResult.removeNextGame(game: game)
                                         }).animation(.linear(duration: 0.4))
@@ -64,6 +69,12 @@ struct MainLotteryView: View {
         }.onAppear(perform: {
             self.gameResult.cleanGames()
             UITableViewCell.appearance().selectionStyle = .none
+        }).alert(isPresented: self.$showingAlert, content: {
+            Alert(title: Text("Ops!"),
+                  message: Text("Erro ao carregar o jogo, tente novamete!"),
+                  dismissButton: .default(Text("Beleza"), action: {
+                self.showingAlert = false
+            }))
         })
     }
     
