@@ -11,6 +11,7 @@ import Foundation
 struct GameDetailModel {
     var gameData: LotteryNetworkingWorker
     var headers: [String] = []
+    let id = UUID()
     
     init(gameData: LotteryNetworkingWorker, headers: [String]) {
         self.gameData = gameData
@@ -23,3 +24,5 @@ extension GameDetailModel: Hashable {
         hasher.combine(self.headers)
     }
 }
+
+extension GameDetailModel: Identifiable {}

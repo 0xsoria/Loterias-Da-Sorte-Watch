@@ -10,6 +10,7 @@ import Foundation
 
 struct LotteryNetworkingWorker {
     
+    let id = UUID()
     var lotteryGameString: String
     var lotteryGame: LotteryGames
     var lotteryGameNoSpace: LotteryGamesNoSpace
@@ -185,3 +186,5 @@ extension LotteryNetworkingWorker: Hashable {
         hasher.combine(concourseNumber)
     }
 }
+
+extension LotteryNetworkingWorker: Identifiable {}

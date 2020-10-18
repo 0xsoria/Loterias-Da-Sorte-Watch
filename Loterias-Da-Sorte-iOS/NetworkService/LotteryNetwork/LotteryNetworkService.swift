@@ -34,7 +34,7 @@ final class LotteryNetworkService: LotteryNetworkServiceable {
     func requestFor(lottery: LotteryGamesNoSpace, completion: @escaping ((Result<GameDetailModel, NetworkError>) -> Void)) {
         let router = Router.lastGame(lottery: lottery).stringURL()
         
-        #if MOCK
+        #if DEBUG
         self.setupForMock(lottery: lottery)
         #endif
         

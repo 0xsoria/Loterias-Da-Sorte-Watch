@@ -43,6 +43,7 @@
 		1502886524722CAF00C794BC /* GameDetailData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1502886424722CAF00C794BC /* GameDetailData.swift */; };
 		15028867247235BA00C794BC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15028866247235BA00C794BC /* Extensions.swift */; };
 		15115E1B247363C00058E308 /* ThirdStyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15115E1A247363C00058E308 /* ThirdStyleView.swift */; };
+		151800AB2537C27000E42561 /* MainNextGameRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151800AA2537C27000E42561 /* MainNextGameRow.swift */; };
 		151F9DAF24723AC90023B57D /* SecondStyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151F9DAE24723AC90023B57D /* SecondStyleView.swift */; };
 		1521CBA8248B35FE00CFBBBF /* ApiConfig.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 1521CBA7248B320A00CFBBBF /* ApiConfig.xcconfig */; };
 		1521CBA9248B360000CFBBBF /* ApiConfig.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 1521CBA7248B320A00CFBBBF /* ApiConfig.xcconfig */; };
@@ -62,7 +63,6 @@
 		154B91CF2526A3D0006C1E45 /* NetworkServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154B91CE2526A3D0006C1E45 /* NetworkServiceProtocol.swift */; };
 		154B91D52526A3E8006C1E45 /* NetworkServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154B91D42526A3E7006C1E45 /* NetworkServiceError.swift */; };
 		154B91E12526A486006C1E45 /* Loterias_Da_Sorte_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154B91E02526A486006C1E45 /* Loterias_Da_Sorte_iOSTests.swift */; };
-		154B921D2526A5E9006C1E45 /* LastGamesResultsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154B921C2526A5E9006C1E45 /* LastGamesResultsInteractor.swift */; };
 		154B92252526B0B9006C1E45 /* LotteryNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154B92242526B0B9006C1E45 /* LotteryNetworkService.swift */; };
 		154B92362526B357006C1E45 /* LotteryColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150288202472120B00C794BC /* LotteryColor.swift */; };
 		154B923C2526B35B006C1E45 /* LotteryGames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1502881E247211CC00C794BC /* LotteryGames.swift */; };
@@ -94,6 +94,13 @@
 		154B92E8252A341C006C1E45 /* FederalLast.json in Resources */ = {isa = PBXBuildFile; fileRef = 154B92E7252A341C006C1E45 /* FederalLast.json */; };
 		154B92EF252A3A8E006C1E45 /* GameDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154B92EE252A3A8E006C1E45 /* GameDetailView.swift */; };
 		154B9306252A4097006C1E45 /* MockNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154B9305252A4097006C1E45 /* MockNetwork.swift */; };
+		154B930D252A4BCB006C1E45 /*  MainViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154B930C252A4BCB006C1E45 /*  MainViewRow.swift */; };
+		154B9313252ABFB2006C1E45 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15028866247235BA00C794BC /* Extensions.swift */; };
+		154B931F25316BA0006C1E45 /* GamesPick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154B931E25316BA0006C1E45 /* GamesPick.swift */; };
+		154B93322534E480006C1E45 /* GamesResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154B93312534E480006C1E45 /* GamesResults.swift */; };
+		15A7EFED253CAB6900105C0C /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A7EFEC253CAB6900105C0C /* Color+Extensions.swift */; };
+		15A7EFF3253CABD600105C0C /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A7EFEC253CAB6900105C0C /* Color+Extensions.swift */; };
+		15A7F000253CC73600105C0C /* GamesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A7EFFF253CC73600105C0C /* GamesModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -185,6 +192,7 @@
 		1502886424722CAF00C794BC /* GameDetailData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailData.swift; sourceTree = "<group>"; };
 		15028866247235BA00C794BC /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		15115E1A247363C00058E308 /* ThirdStyleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdStyleView.swift; sourceTree = "<group>"; };
+		151800AA2537C27000E42561 /* MainNextGameRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNextGameRow.swift; sourceTree = "<group>"; };
 		151F9DAE24723AC90023B57D /* SecondStyleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondStyleView.swift; sourceTree = "<group>"; };
 		1521CBA7248B320A00CFBBBF /* ApiConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = ApiConfig.xcconfig; path = "../Loterias-Da-Sorte-WatchKit App/ApiConfig.xcconfig"; sourceTree = "<group>"; };
 		153AAE7F24773B9000BA6827 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
@@ -207,7 +215,6 @@
 		154B91DE2526A486006C1E45 /* Loterias-Da-Sorte-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Loterias-Da-Sorte-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		154B91E02526A486006C1E45 /* Loterias_Da_Sorte_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loterias_Da_Sorte_iOSTests.swift; sourceTree = "<group>"; };
 		154B91E22526A486006C1E45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		154B921C2526A5E9006C1E45 /* LastGamesResultsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastGamesResultsInteractor.swift; sourceTree = "<group>"; };
 		154B92242526B0B9006C1E45 /* LotteryNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotteryNetworkService.swift; sourceTree = "<group>"; };
 		154B924E2526B3DD006C1E45 /* LotteryName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotteryName.swift; sourceTree = "<group>"; };
 		154B92852528CFDF006C1E45 /* NetworkSuccessSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSuccessSpy.swift; sourceTree = "<group>"; };
@@ -221,6 +228,11 @@
 		154B92E7252A341C006C1E45 /* FederalLast.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = FederalLast.json; sourceTree = "<group>"; };
 		154B92EE252A3A8E006C1E45 /* GameDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailView.swift; sourceTree = "<group>"; };
 		154B9305252A4097006C1E45 /* MockNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetwork.swift; sourceTree = "<group>"; };
+		154B930C252A4BCB006C1E45 /*  MainViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " MainViewRow.swift"; sourceTree = "<group>"; };
+		154B931E25316BA0006C1E45 /* GamesPick.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesPick.swift; sourceTree = "<group>"; };
+		154B93312534E480006C1E45 /* GamesResults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamesResults.swift; sourceTree = "<group>"; };
+		15A7EFEC253CAB6900105C0C /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
+		15A7EFFF253CC73600105C0C /* GamesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -446,6 +458,7 @@
 				154B91C92526A3B6006C1E45 /* NetworkService */,
 				154B924E2526B3DD006C1E45 /* LotteryName.swift */,
 				154B92EE252A3A8E006C1E45 /* GameDetailView.swift */,
+				15A7EFEC253CAB6900105C0C /* Color+Extensions.swift */,
 			);
 			path = "Loterias-Da-Sorte-iOS";
 			sourceTree = "<group>";
@@ -479,8 +492,8 @@
 		154B91ED2526A512006C1E45 /* MainLotteryView */ = {
 			isa = PBXGroup;
 			children = (
-				154B919225242B38006C1E45 /* MainLotteryView.swift */,
-				154B921C2526A5E9006C1E45 /* LastGamesResultsInteractor.swift */,
+				15A7F006253CC76600105C0C /* Home */,
+				15A7EFF9253CC72500105C0C /* GameResultGetter */,
 			);
 			path = MainLotteryView;
 			sourceTree = "<group>";
@@ -567,6 +580,26 @@
 				154B928C2528D068006C1E45 /* SenaLast.json */,
 			);
 			path = "JSON-Files";
+			sourceTree = "<group>";
+		};
+		15A7EFF9253CC72500105C0C /* GameResultGetter */ = {
+			isa = PBXGroup;
+			children = (
+				154B93312534E480006C1E45 /* GamesResults.swift */,
+				15A7EFFF253CC73600105C0C /* GamesModel.swift */,
+			);
+			path = GameResultGetter;
+			sourceTree = "<group>";
+		};
+		15A7F006253CC76600105C0C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				154B930C252A4BCB006C1E45 /*  MainViewRow.swift */,
+				154B919225242B38006C1E45 /* MainLotteryView.swift */,
+				151800AA2537C27000E42561 /* MainNextGameRow.swift */,
+				154B931E25316BA0006C1E45 /* GamesPick.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -793,6 +826,7 @@
 				1502881D2472115100C794BC /* ContentViewData.swift in Sources */,
 				1502883F247224E900C794BC /* QuinaConcourseData.swift in Sources */,
 				150288212472120B00C794BC /* LotteryColor.swift in Sources */,
+				15A7EFF3253CABD600105C0C /* Color+Extensions.swift in Sources */,
 				1502882A2472210D00C794BC /* Requester.swift in Sources */,
 				150288392472244400C794BC /* MyExtensions.swift in Sources */,
 				150288062472101A00C794BC /* ExtensionDelegate.swift in Sources */,
@@ -821,25 +855,31 @@
 				154B924F2526B3DD006C1E45 /* LotteryName.swift in Sources */,
 				154B925B2526C095006C1E45 /* FederalConcourseData.swift in Sources */,
 				154B92B8252A2A4F006C1E45 /* TimemaniaConcourseData.swift in Sources */,
+				154B930D252A4BCB006C1E45 /*  MainViewRow.swift in Sources */,
 				154B919D25242B93006C1E45 /* SavedGamesView.swift in Sources */,
 				154B91A325242BA9006C1E45 /* SettingView.swift in Sources */,
 				154B92B2252A29F2006C1E45 /* DuplaSenaConcourseData.swift in Sources */,
 				154B91D52526A3E8006C1E45 /* NetworkServiceError.swift in Sources */,
+				154B93322534E480006C1E45 /* GamesResults.swift in Sources */,
 				154B92362526B357006C1E45 /* LotteryColor.swift in Sources */,
 				154B927325281172006C1E45 /* GameDetailModel.swift in Sources */,
 				154B92612526C09D006C1E45 /* NextGameWorker.swift in Sources */,
 				154B92482526B391006C1E45 /* Router.swift in Sources */,
 				154B927925281961006C1E45 /* GameDetailData.swift in Sources */,
+				15A7F000253CC73600105C0C /* GamesModel.swift in Sources */,
 				154B91CF2526A3D0006C1E45 /* NetworkServiceProtocol.swift in Sources */,
 				154B917B252426D5006C1E45 /* ContentView.swift in Sources */,
 				154B9179252426D5006C1E45 /* Loterias_Da_Sorte_iOSApp.swift in Sources */,
 				154B9185252426D6006C1E45 /* Loterias_Da_Sorte_iOS.xcdatamodeld in Sources */,
 				154B926D2526C0C0006C1E45 /* LotteryNetworkingWorker.swift in Sources */,
 				154B92552526C074006C1E45 /* SenaConcourseData.swift in Sources */,
-				154B921D2526A5E9006C1E45 /* LastGamesResultsInteractor.swift in Sources */,
 				154B923C2526B35B006C1E45 /* LotteryGames.swift in Sources */,
 				154B92EF252A3A8E006C1E45 /* GameDetailView.swift in Sources */,
+				154B9313252ABFB2006C1E45 /* Extensions.swift in Sources */,
 				154B92AC252A29A8006C1E45 /* LotomaniaConcourseData.swift in Sources */,
+				151800AB2537C27000E42561 /* MainNextGameRow.swift in Sources */,
+				15A7EFED253CAB6900105C0C /* Color+Extensions.swift in Sources */,
+				154B931F25316BA0006C1E45 /* GamesPick.swift in Sources */,
 				154B92422526B380006C1E45 /* PlistKeys.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

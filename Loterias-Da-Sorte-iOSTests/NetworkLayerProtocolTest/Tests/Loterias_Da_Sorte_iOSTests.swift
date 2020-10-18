@@ -11,7 +11,7 @@ import XCTest
 
 final class Loterias_Da_Sorte_iOSTests: XCTestCase {
 
-    var sut: LastGamesResultsInteractor!
+    var sut: GamesResults!
     
     override func setUpWithError() throws {
         //
@@ -22,7 +22,7 @@ final class Loterias_Da_Sorte_iOSTests: XCTestCase {
     }
     
     func testRequestingMegaSenaDataAndDecoding() {
-        self.sut = LastGamesResultsInteractor(service:
+        self.sut = GamesResults(service:
                                                 LotteryNetworkService(networkService: NetworkSpy(fileName: "SenaLast")))
         let expectation = XCTestExpectation(description: "Expect")
         self.sut.requestFromService(lottery: .megasena) { (result: Result<GameDetailModel, NetworkError>) in
@@ -38,7 +38,7 @@ final class Loterias_Da_Sorte_iOSTests: XCTestCase {
     }
     
     func testRequestingQuinaDataAndDecoding() {
-        self.sut = LastGamesResultsInteractor(service:
+        self.sut = GamesResults(service:
                                                 LotteryNetworkService(networkService: NetworkSpy(fileName: "QuinaLast")))
         let expectation = XCTestExpectation(description: "Expect Quina Last")
         self.sut.requestFromService(lottery: .quina) { (result: Result<GameDetailModel, NetworkError>) in
@@ -54,7 +54,7 @@ final class Loterias_Da_Sorte_iOSTests: XCTestCase {
     }
     
     func testRequestingLotoFacilDataAndDecoding() {
-        self.sut = LastGamesResultsInteractor(service:
+        self.sut = GamesResults(service:
                                                 LotteryNetworkService(networkService: NetworkSpy(fileName: "LotoFacilLast")))
         let expectation = XCTestExpectation(description: "Expect Lotofacil Last")
         self.sut.requestFromService(lottery: .lotofacil) { (result: Result<GameDetailModel, NetworkError>) in
@@ -70,7 +70,7 @@ final class Loterias_Da_Sorte_iOSTests: XCTestCase {
     }
     
     func testRequestingLotomaniaDataAndDecoding() {
-        self.sut = LastGamesResultsInteractor(service:
+        self.sut = GamesResults(service:
                                                 LotteryNetworkService(networkService: NetworkSpy(fileName: "LotoManiaLast")))
         let expectation = XCTestExpectation(description: "Expect LotoMania Last")
         self.sut.requestFromService(lottery: .lotomania) { (result: Result<GameDetailModel, NetworkError>) in
@@ -86,7 +86,7 @@ final class Loterias_Da_Sorte_iOSTests: XCTestCase {
     }
     
     func testRequestingDuplaSenaDataAndDecoding() {
-        self.sut = LastGamesResultsInteractor(service:
+        self.sut = GamesResults(service:
                                                 LotteryNetworkService(networkService: NetworkSpy(fileName: "DuplaSenaLast")))
         let expectation = XCTestExpectation(description: "Expect Dupla Last")
         self.sut.requestFromService(lottery: .duplasena) { (result: Result<GameDetailModel, NetworkError>) in
@@ -102,7 +102,7 @@ final class Loterias_Da_Sorte_iOSTests: XCTestCase {
     }
     
     func testRequestingTimeDataAndDecoding() {
-        self.sut = LastGamesResultsInteractor(service:
+        self.sut = GamesResults(service:
                                                 LotteryNetworkService(networkService: NetworkSpy(fileName: "TimeLast")))
         let expectation = XCTestExpectation(description: "Expect Time Last")
         self.sut.requestFromService(lottery: .timemania) { (result: Result<GameDetailModel, NetworkError>) in
@@ -118,7 +118,7 @@ final class Loterias_Da_Sorte_iOSTests: XCTestCase {
     }
     
     func testRequestingDiaDataAndDecoding() {
-        self.sut = LastGamesResultsInteractor(service:
+        self.sut = GamesResults(service:
                                                 LotteryNetworkService(networkService: NetworkSpy(fileName: "DiaLast")))
         let expectation = XCTestExpectation(description: "Expect Dia Last")
         self.sut.requestFromService(lottery: .diadesorte) { (result: Result<GameDetailModel, NetworkError>) in
@@ -134,7 +134,7 @@ final class Loterias_Da_Sorte_iOSTests: XCTestCase {
     }
     
     func testRequestingFederalDataAndDecoding() {
-        self.sut = LastGamesResultsInteractor(service:
+        self.sut = GamesResults(service:
                                                 LotteryNetworkService(networkService: NetworkSpy(fileName: "FederalLast")))
         let expectation = XCTestExpectation(description: "Expect Federal Last")
         self.sut.requestFromService(lottery: .federal) { (result: Result<GameDetailModel, NetworkError>) in
