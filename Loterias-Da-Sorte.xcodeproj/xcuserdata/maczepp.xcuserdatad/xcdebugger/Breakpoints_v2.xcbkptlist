@@ -23,16 +23,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "B7A99B46-6523-42FA-BD49-8E1339A3CC68"
-            shouldBeEnabled = "Yes"
+            uuid = "33967BFE-5847-4F90-8DEC-2008F1FD9067"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Loterias-Da-Sorte-iOS/MainLotteryView/Home/MainViewRow.swift"
+            filePath = "Loterias-Da-Sorte-iOS/GameDetailView/LotteryGameDetailView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "145"
-            endingLineNumber = "145"
-            landmarkName = "loadDetails()"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "cleanGames()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

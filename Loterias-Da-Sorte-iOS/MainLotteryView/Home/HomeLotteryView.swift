@@ -13,7 +13,7 @@ enum GameType {
     case last
 }
 
-struct MainLotteryView: View {
+struct HomeLotteryView: View {
     
     //MARK: - State
     @StateObject var gameResult: GamesResults = GamesResults(service: LotteryNetworkService(networkService: NetworkService()))
@@ -36,7 +36,9 @@ struct MainLotteryView: View {
                 if self.segmentIndex == .last {
                     ForEach(self.gameResult.games, id: \.self) { game in
                         NavigationLink(
-                            destination: GameDetailView(),
+                            destination: LotteryGameDetailView(game: game, onDisappear: {
+                                self.gameResult.cleanGames()
+                            }),
                             label: {
                                 MainViewRow(gameDetail: game, isExpanded: self.gameResult.selection.contains(game), tapAction: {
                                     self.gameResult.checkIfRequestOrNot(game: game, completionError: { result in
@@ -83,6 +85,6 @@ struct MainLotteryView: View {
 
 struct MainLotteryView_Previews: PreviewProvider {
     static var previews: some View {
-        MainLotteryView()
+        HomeLotteryView()
     }
 }
