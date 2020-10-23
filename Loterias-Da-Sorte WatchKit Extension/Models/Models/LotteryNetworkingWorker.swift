@@ -19,6 +19,7 @@ struct LotteryNetworkingWorker {
     var date: String
     var accumulatedValue: String
     var prize: String
+    var allPrizes: [GamePrize]?
     var winners: String
     var duplaSenaSecondSetOfNumbers: [String]?
     var teamOrDay: String?
@@ -29,7 +30,24 @@ struct LotteryNetworkingWorker {
     var acumulou: Bool
     var nextGame: NextGameWorker
     
-    init(lotteryGameString: String, lotteryGame: LotteryGames, lotteryGameNoSpace: LotteryGamesNoSpace, concourseNumber: String, numbers: [String], date: String, accumulatedValue: String, prize: String, winners: String, duplaSenaSecondSetOfNumbers: [String]?, teamOrDay: String?, duplaSenaTeamOrDayPrize: String?, duplaSenaTeamOrDayWinners: String?, federalPrize: [FederalGamePrize]?, rateioProcessamento: Bool, acumulou: Bool, nextGame: NextGameWorker) {
+    init(lotteryGameString: String,
+         lotteryGame: LotteryGames,
+         lotteryGameNoSpace: LotteryGamesNoSpace,
+         concourseNumber: String,
+         numbers: [String],
+         date: String,
+         accumulatedValue: String,
+         prize: String,
+         allPrizes: [GamePrize],
+         winners: String,
+         duplaSenaSecondSetOfNumbers: [String]?,
+         teamOrDay: String?,
+         duplaSenaTeamOrDayPrize: String?,
+         duplaSenaTeamOrDayWinners: String?,
+         federalPrize: [FederalGamePrize]?,
+         rateioProcessamento: Bool,
+         acumulou: Bool,
+         nextGame: NextGameWorker) {
         self.lotteryGameString = lotteryGameString
         self.lotteryGame = lotteryGame
         self.lotteryGameNoSpace = lotteryGameNoSpace
@@ -38,6 +56,7 @@ struct LotteryNetworkingWorker {
         self.date = date.lotteryDateFormat()
         self.accumulatedValue = accumulatedValue
         self.prize = prize.convertToDecimal()
+        self.allPrizes = allPrizes
         self.winners = winners
         self.duplaSenaSecondSetOfNumbers = duplaSenaSecondSetOfNumbers
         self.teamOrDay = teamOrDay
@@ -58,6 +77,7 @@ struct LotteryNetworkingWorker {
         self.date = String()
         self.accumulatedValue = String()
         self.prize = String()
+        self.allPrizes = []
         self.winners = String()
         self.rateioProcessamento = false
         self.acumulou = false
@@ -73,6 +93,7 @@ struct LotteryNetworkingWorker {
         self.date = String()
         self.accumulatedValue = String(0)
         self.prize = String()
+        self.allPrizes = []
         self.winners = String()
         self.duplaSenaSecondSetOfNumbers = nil
         self.teamOrDay = nil
@@ -188,3 +209,41 @@ extension LotteryNetworkingWorker: Hashable {
 }
 
 extension LotteryNetworkingWorker: Identifiable {}
+
+enum PrizeNames: String {
+    case sena = "Sena"
+    case quina = "Quina"
+    case quadra = "Quadra"
+    case terno = "Terno"
+    
+    case time = "Time do coração"
+    case mes = "Mês de sorte"
+    
+    case vinte = "20 Acertos"
+    case dezenove = "19 Acertos"
+    case dezoito = "18 Acertos"
+    case dezesete = "17 Acertos"
+    case dezeseis = "16 Acertos"
+    case quinze = "15 Acertos"
+    case catorze = "14 Acertos"
+    case treze = "13 Acertos"
+    case doze = "12 Acertos"
+    case onze = "11 Acertos"
+    case sete = "7 Acertos"
+    case seis = "6 Acertos"
+    case cinco = "5 Acertos"
+    case quatro = "4 Acertos"
+    case tres = "3 Acertos"
+    case zero = "0 Acertos"
+}
+
+extension LotteryNetworkingWorker {
+    func getPrize(named: PrizeNames) -> (prize: DoubleIntLottery, numberOfWinners: Int) {
+        if let priezes = self.allPrizes {
+            for prize in priezes where prize.nome == named.rawValue {
+                return (prize.valor_total, prize.quantidade_ganhadores)
+            }
+        }
+        return (.int(0), 0)
+    }
+}

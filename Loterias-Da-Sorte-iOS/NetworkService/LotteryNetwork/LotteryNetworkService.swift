@@ -9,7 +9,11 @@
 import Foundation
 
 protocol LotteryNetworkServiceable {
-    func request(lottery: LotteryGamesNoSpace, completion: @escaping ((Result<GameDetailModel, NetworkError>) -> Void))
+    func request(lottery: LotteryGamesNoSpace,
+                 completion: @escaping ((Result<GameDetailModel, NetworkError>) -> Void))
+    func request(with  gameNumber: String,
+                 lottery: LotteryGamesNoSpace,
+                 completion: @escaping ((Result<GameDetailModel, NetworkError>) -> Void))
 }
 
 final class LotteryNetworkService: LotteryNetworkServiceable {
@@ -27,6 +31,33 @@ final class LotteryNetworkService: LotteryNetworkServiceable {
                 completion(.success(dataModel))
             case .failure(let errorModel):
                 completion(.failure(errorModel))
+            }
+        }
+    }
+    
+    func request(with  gameNumber: String,
+                 lottery: LotteryGamesNoSpace,
+                 completion: @escaping ((Result<GameDetailModel, NetworkError>) -> Void)) {
+        guard let number = Int(gameNumber) else {
+            completion(.failure(.url))
+            return
+        }
+        let router = Router.gameWithNumber(number: number, lottery: lottery).stringURL()
+        
+//        #if DEBUG
+//        self.setupForMock(lottery: lottery)
+//        #endif
+        
+        self.networkService.request(url: router) { (result: Result<Data, NetworkError>) in
+            switch result {
+            case .success(let data):
+                DispatchQueue.main.async {
+                    self.checkLottery(lottery: lottery, data: data, completion: completion)
+                }
+            case .failure(let error):
+                DispatchQueue.main.async {
+                    completion(.failure(error))
+                }
             }
         }
     }
@@ -62,58 +93,49 @@ final class LotteryNetworkService: LotteryNetworkServiceable {
         case .megasena:
             if let decoded: SenaConcourseData = self.decoding(type: SenaConcourseData.self, data: data) {
                 completion(.success(GameDetailModel(gameData:
-                                                        decoded.convertToLotteryWorker(),
-                                                    headers: GameDetailData().megaQuinaFacilMania)))
+                                                        decoded.convertToLotteryWorker())))
                 return
             }
             completion(.failure(.invalidJSON))
         case.quina:
             if let decoded: QuinaConcourseData = self.decoding(type: QuinaConcourseData.self, data: data) {
-                completion(.success(GameDetailModel(gameData: decoded.quinaWorkerDataToLotteryWorker(),
-                                                    headers: GameDetailData().megaQuinaFacilMania)))
+                completion(.success(GameDetailModel(gameData: decoded.quinaWorkerDataToLotteryWorker())))
             }
         case .lotofacil:
             if let decoded: LotoFacilConcourseData = self.decoding(type: LotoFacilConcourseData.self, data: data) {
                 completion(.success(GameDetailModel(
                                         gameData: decoded
-                                            .lotoFacilWorkerDataToLotteryWorker(),
-                                        headers: GameDetailData()
-                                            .megaQuinaFacilMania)))
+                                            .lotoFacilWorkerDataToLotteryWorker())))
                 return
             }
             completion(.failure(.invalidJSON))
         case .lotomania:
             if let decoded: LotoManiaConcourseData = self.decoding(type: LotoManiaConcourseData.self, data: data) {
-                completion(.success(GameDetailModel(gameData: decoded.lotomaniaWorkerDataToLotteryWorker(),
-                                                    headers: GameDetailData().megaQuinaFacilMania)))
+                completion(.success(GameDetailModel(gameData: decoded.lotomaniaWorkerDataToLotteryWorker())))
                 return
             }
             completion(.failure(.invalidJSON))
         case .duplasena:
             if let decoded: DuplaSenaConcourseData = self.decoding(type: DuplaSenaConcourseData.self, data: data) {
-                completion(.success(GameDetailModel(gameData: decoded.duplasenaWorkerDataToLotteryWorker(),
-                                                    headers: GameDetailData().duplaSena)))
+                completion(.success(GameDetailModel(gameData: decoded.duplasenaWorkerDataToLotteryWorker())))
                 return
             }
             completion(.failure(.invalidJSON))
         case .timemania:
             if let decoded: TimeManiaConcourseData = self.decoding(type: TimeManiaConcourseData.self, data: data) {
-                completion(.success(GameDetailModel(gameData: decoded.timemaniaWorkerDataToLotteryWorker(),
-                                                    headers: GameDetailData().time)))
+                completion(.success(GameDetailModel(gameData: decoded.timemaniaWorkerDataToLotteryWorker())))
                 return
             }
             completion(.failure(.invalidJSON))
         case .diadesorte:
             if let decoded: DiaDeSorteConcourseData = self.decoding(type: DiaDeSorteConcourseData.self, data: data) {
-                completion(.success(GameDetailModel(gameData: decoded.diadesorteWorkerDataToLotteryWorker(),
-                                                    headers: GameDetailData().dia)))
+                completion(.success(GameDetailModel(gameData: decoded.diadesorteWorkerDataToLotteryWorker())))
                 return
             }
             completion(.failure(.invalidJSON))
         case .federal:
             if let decoded: FederalConcourseData = self.decoding(type: FederalConcourseData.self, data: data) {
-                completion(.success(GameDetailModel(gameData: decoded.federalWorkerDataToLotteryWorker(),
-                                                    headers: GameDetailData().federal)))
+                completion(.success(GameDetailModel(gameData: decoded.federalWorkerDataToLotteryWorker())))
                 return
             }
             completion(.failure(.invalidJSON))

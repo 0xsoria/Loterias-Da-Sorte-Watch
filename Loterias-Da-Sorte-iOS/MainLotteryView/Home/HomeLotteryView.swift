@@ -48,7 +48,6 @@ struct HomeLotteryView: View {
                                     self.gameResult.remove(game: game)
                                 }).animation(.linear(duration: 0.4))
                             })
-                            
                     }.onAppear(perform: {
                         UITableViewCell.appearance().selectionStyle = .none
                     })

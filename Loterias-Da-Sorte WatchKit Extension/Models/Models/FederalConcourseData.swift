@@ -30,6 +30,7 @@ struct FederalConcourseData: Codable {
                                        date: self.data_concurso,
                                        accumulatedValue: String(),
                                        prize: String(),
+                                       allPrizes: [],
                                        winners: String(),
                                        duplaSenaSecondSetOfNumbers: nil,
                                        teamOrDay: nil,

@@ -10,14 +10,13 @@ import Foundation
 
 final class GameModel {
     static var allLotteries: [GameDetailModel] = [
-        GameDetailModel(gameData: LotteryNetworkingWorker(game: .megasena),
-                        headers: GameDetailData().megaQuinaFacilMania),
-        GameDetailModel(gameData: LotteryNetworkingWorker(game: .quina), headers: GameDetailData().megaQuinaFacilMania),
-        GameDetailModel(gameData: LotteryNetworkingWorker(game: .lotofacil), headers: GameDetailData().megaQuinaFacilMania),
-        GameDetailModel(gameData: LotteryNetworkingWorker(game: .lotomania), headers: GameDetailData().megaQuinaFacilMania),
-        GameDetailModel(gameData: LotteryNetworkingWorker(game: .duplasena), headers: GameDetailData().duplaSena),
-        GameDetailModel(gameData: LotteryNetworkingWorker(game: .timemania), headers: GameDetailData().time),
-        GameDetailModel(gameData: LotteryNetworkingWorker(game: .diadesorte), headers: GameDetailData().dia),
-        GameDetailModel(gameData: LotteryNetworkingWorker(game: .federal), headers: GameDetailData().federal)
+        GameDetailModel(gameData: LotteryNetworkingWorker(game: .megasena)),
+        GameDetailModel(gameData: LotteryNetworkingWorker(game: .quina)),
+        GameDetailModel(gameData: LotteryNetworkingWorker(game: .lotofacil)),
+        GameDetailModel(gameData: LotteryNetworkingWorker(game: .lotomania)),
+        GameDetailModel(gameData: LotteryNetworkingWorker(game: .duplasena)),
+        GameDetailModel(gameData: LotteryNetworkingWorker(game: .timemania)),
+        GameDetailModel(gameData: LotteryNetworkingWorker(game: .diadesorte)),
+        GameDetailModel(gameData: LotteryNetworkingWorker(game: .federal))
     ]
 }
