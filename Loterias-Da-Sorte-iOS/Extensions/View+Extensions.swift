@@ -15,6 +15,7 @@ extension View {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         alert.addTextField() { textField in
             textField.placeholder = placeholder
+            textField.keyboardType = .numberPad
         }
         alert.addAction(UIAlertAction(title: actionTitle, style: .default, handler: { _ in
             guard let text = alert.textFields?.first?.text else { return }
