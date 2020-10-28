@@ -30,11 +30,16 @@ struct LotteryGameDetailView: View {
             self.searchNewGame(with: game.gameData.concourseNumber)
             self.cleanGames()
             UITableViewCell.appearance().selectionStyle = .none
-        }).navigationBarItems(trailing: Button(action: {
+        }).navigationBarItems(leading: Button(action: {
+            self.shareLotteryGame()
+        }, label: {
+            Image(systemName: "square.and.arrow.up.fill")
+        }),trailing: Button(action: {
             self.alert.toggle()
         }, label: {
             Image(systemName: "magnifyingglass.circle.fill")
-        })).actionSheet(isPresented: self.$alert) {
+        }))
+        .actionSheet(isPresented: self.$alert) {
             ActionSheet(title: Text("Deseja ver algum jogo específico?"),
                         message: Text("Toque em procurar e digite o número do jogo que você deseja ver"),
                         buttons: [.default(Text("Procurar"),
@@ -55,13 +60,21 @@ struct LotteryGameDetailView: View {
     
     var newList: some View {
         List {
-            ForEach(self.gameResults.game!.gameDetailContent) { item in
+            ForEach(self.gameResults.game?.gameDetailContent ?? []) { item in
                 VStack(alignment: .leading, spacing: 10) {
                     Text(item.title).font(.title)
                     Text(item.content).font(.title2)
                 }.foregroundColor(self.game.gameData.lotteryGame
                                     .colorFromGame().newColor)
             }
+        }
+    }
+    
+    private func shareLotteryGame() {
+        if let game = self.gameResults.game?.gameData {
+            let sharedContent = ShareDataContent(game: game).sharedString(lotteryGame: game.lotteryGame)
+            let activityController = UIActivityViewController(activityItems: [sharedContent], applicationActivities: nil)
+            UIApplication.shared.windows.first?.rootViewController?.present(activityController, animated: true, completion: nil)
         }
     }
     

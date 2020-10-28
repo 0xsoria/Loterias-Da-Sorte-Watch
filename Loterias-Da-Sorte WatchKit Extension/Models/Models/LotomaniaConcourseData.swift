@@ -69,7 +69,7 @@ struct LotoManiaConcourseData: Codable {
     
     func setWinners(data: [GamePrize], winners: LotomaniaWinners) -> String {
         for game in data where game.nome == winners.rawValue {
-            return game.valor_total.returnString()
+            return String(game.quantidade_ganhadores)
         }
         return String()
     }
