@@ -10,6 +10,39 @@
 import SwiftUI
 import UIKit
 
+extension UINavigationController {
+    private func keyWindow() -> UIWindow? {
+        return UIApplication.shared.connectedScenes
+        .filter {$0.activationState == .foregroundActive}
+        .compactMap {$0 as? UIWindowScene}
+        .first?.windows.filter {$0.isKeyWindow}.first
+    }
+
+    func topMostViewController() -> UIViewController? {
+        guard let rootController = keyWindow()?.rootViewController else {
+            return nil
+        }
+        return topMostViewController(for: rootController)
+    }
+
+    private func topMostViewController(for controller: UIViewController) -> UIViewController {
+        if let presentedController = controller.presentedViewController {
+            return topMostViewController(for: presentedController)
+        } else if let navigationController = controller as? UINavigationController {
+            guard let topController = navigationController.topViewController else {
+                return navigationController
+            }
+            return topMostViewController(for: topController)
+        } else if let tabController = controller as? UITabBarController {
+            guard let topController = tabController.selectedViewController else {
+                return tabController
+            }
+            return topMostViewController(for: topController)
+        }
+        return controller
+    }
+}
+
 extension View {
     func showAlertWithTextField(with title: String, message: String?, placeholder: String, actionTitle: String, cancelTitle: String, action: @escaping ((String) -> Void)) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
