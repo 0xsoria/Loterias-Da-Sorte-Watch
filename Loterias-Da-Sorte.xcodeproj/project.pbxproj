@@ -48,8 +48,6 @@
 		1519598F254259F4008587B1 /* GameDetailBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15195987254259EE008587B1 /* GameDetailBuilder.swift */; };
 		1519599725427376008587B1 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1519599625427376008587B1 /* View+Extensions.swift */; };
 		151F9DAF24723AC90023B57D /* SecondStyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151F9DAE24723AC90023B57D /* SecondStyleView.swift */; };
-		1521CBA8248B35FE00CFBBBF /* ApiConfig.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 1521CBA7248B320A00CFBBBF /* ApiConfig.xcconfig */; };
-		1521CBA9248B360000CFBBBF /* ApiConfig.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 1521CBA7248B320A00CFBBBF /* ApiConfig.xcconfig */; };
 		153AAE8024773B9000BA6827 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153AAE7F24773B9000BA6827 /* SettingsView.swift */; };
 		153AAE842477445D00BA6827 /* NextGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153AAE832477445D00BA6827 /* NextGameView.swift */; };
 		153AAE8A2477693700BA6827 /* GameDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153AAE892477693700BA6827 /* GameDetailModel.swift */; };
@@ -81,7 +79,6 @@
 		154B927F25281B25006C1E45 /* QuinaConcourseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1502883E247224E900C794BC /* QuinaConcourseData.swift */; };
 		154B92862528CFDF006C1E45 /* NetworkSuccessSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154B92852528CFDF006C1E45 /* NetworkSuccessSpy.swift */; };
 		154B928D2528D068006C1E45 /* SenaLast.json in Resources */ = {isa = PBXBuildFile; fileRef = 154B928C2528D068006C1E45 /* SenaLast.json */; };
-		154B9299252A1842006C1E45 /* ApiConfig.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 1521CBA7248B320A00CFBBBF /* ApiConfig.xcconfig */; };
 		154B92A0252A1DD6006C1E45 /* QuinaLast.json in Resources */ = {isa = PBXBuildFile; fileRef = 154B929F252A1DD6006C1E45 /* QuinaLast.json */; };
 		154B92A6252A28E5006C1E45 /* LotofacilConcourseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150288402472251000C794BC /* LotofacilConcourseData.swift */; };
 		154B92AC252A29A8006C1E45 /* LotomaniaConcourseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150288422472254500C794BC /* LotomaniaConcourseData.swift */; };
@@ -786,7 +783,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1210;
-				LastUpgradeCheck = 1150;
+				LastUpgradeCheck = 1210;
 				ORGANIZATIONNAME = "Gabriel Sória Souza";
 				TargetAttributes = {
 					150287E82472101900C794BC = {
@@ -854,7 +851,6 @@
 			files = (
 				150287F62472101A00C794BC /* Assets.xcassets in Resources */,
 				150287F42472101900C794BC /* Interface.storyboard in Resources */,
-				1521CBA9248B360000CFBBBF /* ApiConfig.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -864,7 +860,6 @@
 			files = (
 				1502880D2472101B00C794BC /* Preview Assets.xcassets in Resources */,
 				1502880A2472101B00C794BC /* Assets.xcassets in Resources */,
-				1521CBA8248B35FE00CFBBBF /* ApiConfig.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -875,7 +870,6 @@
 				154B92DA252A328C006C1E45 /* TimeLast.json in Resources */,
 				154B928D2528D068006C1E45 /* SenaLast.json in Resources */,
 				154B92CC252A3043006C1E45 /* LotoManiaLast.json in Resources */,
-				154B9299252A1842006C1E45 /* ApiConfig.xcconfig in Resources */,
 				154B92D3252A3208006C1E45 /* DuplaSenaLast.json in Resources */,
 				154B9180252426D6006C1E45 /* Preview Assets.xcassets in Resources */,
 				154B92E8252A341C006C1E45 /* FederalLast.json in Resources */,
@@ -1080,6 +1074,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -1141,6 +1136,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -1412,6 +1408,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
