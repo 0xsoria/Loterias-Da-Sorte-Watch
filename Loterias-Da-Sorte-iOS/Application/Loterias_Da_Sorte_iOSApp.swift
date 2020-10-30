@@ -22,7 +22,7 @@ struct Loterias_Da_Sorte_iOSApp: App {
                     }
                 SettingView()
                     .tabItem {
-                        Text("Configurações")
+                        Text("Informações")
                         Image("settings")
                     }
             }
