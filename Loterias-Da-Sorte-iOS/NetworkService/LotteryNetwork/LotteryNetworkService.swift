@@ -44,9 +44,9 @@ final class LotteryNetworkService: LotteryNetworkServiceable {
         }
         let router = Router.gameWithNumber(number: number, lottery: lottery).stringURL()
         
-//        #if DEBUG
-//        self.setupForMock(lottery: lottery)
-//        #endif
+        #if DEBUG
+        self.setupForMock(lottery: lottery)
+        #endif
         
         self.networkService.request(url: router) { (result: Result<Data, NetworkError>) in
             switch result {
