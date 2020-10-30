@@ -36,6 +36,7 @@ struct LotoFacilConcourseData: Codable {
                                        date: self.data_concurso,
                                        accumulatedValue: self.valor_acumulado.returnString(),
                                        prize: self.prizeSetter(data: self.premiacao, winner: .quinze),
+                                       allPrizes: self.premiacao,
                                        winners: self.winnersSetter(data: self.premiacao, winner: .quinze),
                                        duplaSenaSecondSetOfNumbers: nil,
                                        teamOrDay: nil,

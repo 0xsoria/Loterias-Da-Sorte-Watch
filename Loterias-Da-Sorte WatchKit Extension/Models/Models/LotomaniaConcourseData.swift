@@ -34,7 +34,8 @@ struct LotoManiaConcourseData: Codable {
                                        date: self.data_concurso,
                                        accumulatedValue: self.valor_acumulado.returnString(),
                                        prize: self.prizeSetter(data: self.premiacao,
-                                                                     winners: .vinte),
+                                                               winners: .vinte),
+                                       allPrizes: self.premiacao,
                                        winners: self.winnersSetter(data: self.premiacao, winners: .vinte),
                                        duplaSenaSecondSetOfNumbers: nil,
                                        teamOrDay: nil,
@@ -68,7 +69,7 @@ struct LotoManiaConcourseData: Codable {
     
     func setWinners(data: [GamePrize], winners: LotomaniaWinners) -> String {
         for game in data where game.nome == winners.rawValue {
-            return game.valor_total.returnString()
+            return String(game.quantidade_ganhadores)
         }
         return String()
     }

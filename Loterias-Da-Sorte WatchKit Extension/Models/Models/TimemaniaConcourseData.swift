@@ -36,6 +36,7 @@ struct TimeManiaConcourseData: Codable {
                                        date: self.data_concurso,
                                        accumulatedValue: self.valor_acumulado.returnString(),
                                        prize: self.prizeSetter(data: self.premiacao, winner: .sete),
+                                       allPrizes: self.premiacao,
                                        winners: self.winnersSetter(data: self.premiacao, winner: .sete),
                                        duplaSenaSecondSetOfNumbers: nil,
                                        teamOrDay: self.nome_time_coracao,

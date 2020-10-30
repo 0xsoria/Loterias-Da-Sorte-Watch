@@ -37,7 +37,7 @@ struct QuinaConcourseData: Codable {
                                                    
                                                    prize: self.prizeSetter(data: self.premiacao,
                                                                            winner: .quina),
-                                                   
+                                                   allPrizes: self.premiacao,
                                                    winners: self.winnersSetter(data: self.premiacao, winner: .quina),
                                                    duplaSenaSecondSetOfNumbers: nil,
                                                    teamOrDay: nil,
