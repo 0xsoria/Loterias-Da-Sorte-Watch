@@ -30,7 +30,7 @@ final class SettingsRowActions {
     }
     
     func rateInAppStore() {
-        guard let url = URL(string: "https://apps.apple.com/br/app/loterias-da-sorte/id1514701643?itsct=apps_box&itscg=30200") else { return }
+        guard let url = URL(string: "https://apps.apple.com/us/app/loterias-da-sorte/id1536497809") else { return }
         UIApplication.shared.open(url)
     }
     
