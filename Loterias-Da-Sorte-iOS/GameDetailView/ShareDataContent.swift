@@ -23,7 +23,7 @@ struct ShareDataContent {
 
                 Quantidade de ganhadores: \(self.game.winners)
 
-                Baixe o app https://apps.apple.com/br/app/loterias-da-sorte/id1514701643?itsct=apps_box&itscg=30200 para mais detalhes.
+                Baixe o app https://apps.apple.com/us/app/loterias-da-sorte/id1536497809 para mais detalhes.
                 """
             return returnString
         case .timemania, .diadesorte, .duplasena:
@@ -38,7 +38,7 @@ struct ShareDataContent {
 
                 Quantidade de ganhadores: \(self.game.winners)
 
-                Baixe o app https://apps.apple.com/br/app/loterias-da-sorte/id1514701643?itsct=apps_box&itscg=30200 para mais detalhes.
+                Baixe o app https://apps.apple.com/us/app/loterias-da-sorte/id1536497809 para mais detalhes.
                 """
             return returnString
         case .federal:
@@ -49,7 +49,7 @@ struct ShareDataContent {
 
                 Prêmio Bilhete 1: \(self.game.getFirstPrize(prize: .first, data: self.game.federalPrize ?? []))
 
-                Baixe o app https://apps.apple.com/br/app/loterias-da-sorte/id1514701643?itsct=apps_box&itscg=30200 para mais detalhes.
+                Baixe o app https://apps.apple.com/us/app/loterias-da-sorte/id1536497809 para mais detalhes.
                 """
             return returnString
         }
