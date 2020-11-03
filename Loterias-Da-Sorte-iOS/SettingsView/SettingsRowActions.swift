@@ -20,7 +20,7 @@ final class SettingsRowActions {
     }
     
     func openAbout() {
-        guard let url = URL(string: "https://www.loteriasdasorte.app/sobre") else { return }
+        guard let url = URL(string: "https://www.loteriasdasorte.app/") else { return }
         UIApplication.shared.open(url)
     }
     
@@ -35,12 +35,12 @@ final class SettingsRowActions {
     }
     
     func openPrivacy() {
-        guard let url = URL(string: "https://www.loteriasdasorte.app/politica-de-privacidade") else { return }
+        guard let url = URL(string: "https://www.loteriasdasorte.app/") else { return }
         UIApplication.shared.open(url)
     }
     
     func openTerms() {
-        guard let url = URL(string: "https://www.loteriasdasorte.app/termos-de-uso") else { return }
+        guard let url = URL(string: "https://www.loteriasdasorte.app/") else { return }
         UIApplication.shared.open(url)
     }
 }

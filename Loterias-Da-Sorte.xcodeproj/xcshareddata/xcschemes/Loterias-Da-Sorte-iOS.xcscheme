@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "154B9175252426D5006C1E45"
-               BuildableName = "Loterias-Da-Sorte-iOS.app"
-               BlueprintName = "Loterias-Da-Sorte-iOS"
+               BuildableName = "Loterias Da Sorte.app"
+               BlueprintName = "Loterias Da Sorte"
                ReferencedContainer = "container:Loterias-Da-Sorte.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -65,8 +65,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "154B9175252426D5006C1E45"
-            BuildableName = "Loterias-Da-Sorte-iOS.app"
-            BlueprintName = "Loterias-Da-Sorte-iOS"
+            BuildableName = "Loterias Da Sorte.app"
+            BlueprintName = "Loterias Da Sorte"
             ReferencedContainer = "container:Loterias-Da-Sorte.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -82,8 +82,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "154B9175252426D5006C1E45"
-            BuildableName = "Loterias-Da-Sorte-iOS.app"
-            BlueprintName = "Loterias-Da-Sorte-iOS"
+            BuildableName = "Loterias Da Sorte.app"
+            BlueprintName = "Loterias Da Sorte"
             ReferencedContainer = "container:Loterias-Da-Sorte.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -93,7 +93,7 @@
    </AnalyzeAction>
    <ArchiveAction
       buildConfiguration = "Release"
-      customArchiveName = "Loterias-Da-Sorte"
+      customArchiveName = "Loterias Da Sorte"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>

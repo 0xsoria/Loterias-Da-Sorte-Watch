@@ -278,7 +278,7 @@
 		153AAE7F24773B9000BA6827 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		153AAE832477445D00BA6827 /* NextGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextGameView.swift; sourceTree = "<group>"; };
 		153AAE892477693700BA6827 /* GameDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailModel.swift; sourceTree = "<group>"; };
-		154B9176252426D5006C1E45 /* Loterias-Da-Sorte-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Loterias-Da-Sorte-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		154B9176252426D5006C1E45 /* Loterias Da Sorte.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Loterias Da Sorte.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		154B9178252426D5006C1E45 /* Loterias_Da_Sorte_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loterias_Da_Sorte_iOSApp.swift; sourceTree = "<group>"; };
 		154B917A252426D5006C1E45 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		154B917C252426D6006C1E45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -329,6 +329,7 @@
 		15A4D8AA253E61C000B1CD7D /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
 		15A7EFEC253CAB6900105C0C /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
 		15A7EFFF253CC73600105C0C /* GamesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesModel.swift; sourceTree = "<group>"; };
+		15B5A199254CEB6E00F25894 /* Loterias-Da-Sorte-iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Loterias-Da-Sorte-iOS.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -389,7 +390,7 @@
 				150287E92472101900C794BC /* Loterias-Da-Sorte.app */,
 				150287ED2472101900C794BC /* Loterias-Da-Sorte WatchKit App.app */,
 				150287FC2472101A00C794BC /* Loterias-Da-Sorte WatchKit Extension.appex */,
-				154B9176252426D5006C1E45 /* Loterias-Da-Sorte-iOS.app */,
+				154B9176252426D5006C1E45 /* Loterias Da Sorte.app */,
 				154B91DE2526A486006C1E45 /* Loterias-Da-Sorte-iOSTests.xctest */,
 				15A4D899253E60D400B1CD7D /* Loterias-Da-Sorte-iOSUITests.xctest */,
 				154BD76B254BB958001FE852 /* LoteriasDaSorteAppClip.app */,
@@ -560,6 +561,7 @@
 		154B9177252426D5006C1E45 /* Loterias-Da-Sorte-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				15B5A199254CEB6E00F25894 /* Loterias-Da-Sorte-iOS.entitlements */,
 				154B91FA2526A52E006C1E45 /* Application */,
 				154B917C252426D6006C1E45 /* Assets.xcassets */,
 				15A2BB81253CDBDD00417979 /* Extensions */,
@@ -824,9 +826,9 @@
 			productReference = 150287FC2472101A00C794BC /* Loterias-Da-Sorte WatchKit Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
 		};
-		154B9175252426D5006C1E45 /* Loterias-Da-Sorte-iOS */ = {
+		154B9175252426D5006C1E45 /* Loterias Da Sorte */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 154B9189252426D6006C1E45 /* Build configuration list for PBXNativeTarget "Loterias-Da-Sorte-iOS" */;
+			buildConfigurationList = 154B9189252426D6006C1E45 /* Build configuration list for PBXNativeTarget "Loterias Da Sorte" */;
 			buildPhases = (
 				154B9172252426D5006C1E45 /* Sources */,
 				154B9173252426D5006C1E45 /* Frameworks */,
@@ -838,9 +840,9 @@
 			dependencies = (
 				154BD779254BB95A001FE852 /* PBXTargetDependency */,
 			);
-			name = "Loterias-Da-Sorte-iOS";
+			name = "Loterias Da Sorte";
 			productName = "Loterias-Da-Sorte-iOS";
-			productReference = 154B9176252426D5006C1E45 /* Loterias-Da-Sorte-iOS.app */;
+			productReference = 154B9176252426D5006C1E45 /* Loterias Da Sorte.app */;
 			productType = "com.apple.product-type.application";
 		};
 		154B91DD2526A486006C1E45 /* Loterias-Da-Sorte-iOSTests */ = {
@@ -953,7 +955,7 @@
 				150287E82472101900C794BC /* Loterias-Da-Sorte */,
 				150287EC2472101900C794BC /* Loterias-Da-Sorte WatchKit App */,
 				150287FB2472101A00C794BC /* Loterias-Da-Sorte WatchKit Extension */,
-				154B9175252426D5006C1E45 /* Loterias-Da-Sorte-iOS */,
+				154B9175252426D5006C1E45 /* Loterias Da Sorte */,
 				154B91DD2526A486006C1E45 /* Loterias-Da-Sorte-iOSTests */,
 				15A4D898253E60D400B1CD7D /* Loterias-Da-Sorte-iOSUITests */,
 				154BD76A254BB958001FE852 /* LoteriasDaSorteAppClip */,
@@ -1208,7 +1210,7 @@
 		};
 		154B91E42526A486006C1E45 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 154B9175252426D5006C1E45 /* Loterias-Da-Sorte-iOS */;
+			target = 154B9175252426D5006C1E45 /* Loterias Da Sorte */;
 			targetProxy = 154B91E32526A486006C1E45 /* PBXContainerItemProxy */;
 		};
 		154BD779254BB95A001FE852 /* PBXTargetDependency */ = {
@@ -1218,7 +1220,7 @@
 		};
 		15A4D89F253E60D400B1CD7D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 154B9175252426D5006C1E45 /* Loterias-Da-Sorte-iOS */;
+			target = 154B9175252426D5006C1E45 /* Loterias Da Sorte */;
 			targetProxy = 15A4D89E253E60D400B1CD7D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -1484,8 +1486,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_ENTITLEMENTS = "Loterias-Da-Sorte-iOS/Loterias-Da-Sorte-iOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 19;
 				DEVELOPMENT_ASSET_PATHS = "\"Loterias-Da-Sorte-iOS/Preview Content\"";
 				DEVELOPMENT_TEAM = H929RNU2C4;
 				ENABLE_PREVIEWS = YES;
@@ -1509,8 +1512,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_ENTITLEMENTS = "Loterias-Da-Sorte-iOS/Loterias-Da-Sorte-iOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 19;
 				DEVELOPMENT_ASSET_PATHS = "\"Loterias-Da-Sorte-iOS/Preview Content\"";
 				DEVELOPMENT_TEAM = H929RNU2C4;
 				ENABLE_PREVIEWS = YES;
@@ -1702,8 +1706,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_ENTITLEMENTS = "Loterias-Da-Sorte-iOS/Loterias-Da-Sorte-iOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 19;
 				DEVELOPMENT_ASSET_PATHS = "\"Loterias-Da-Sorte-iOS/Preview Content\"";
 				DEVELOPMENT_TEAM = H929RNU2C4;
 				ENABLE_PREVIEWS = YES;
@@ -1749,6 +1754,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = LoteriasDaSorteAppClip/LoteriasDaSorteAppClip.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 19;
 				DEVELOPMENT_ASSET_PATHS = "\"LoteriasDaSorteAppClip/Preview Content\"";
 				DEVELOPMENT_TEAM = H929RNU2C4;
 				ENABLE_PREVIEWS = YES;
@@ -1772,6 +1778,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = LoteriasDaSorteAppClip/LoteriasDaSorteAppClip.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 19;
 				DEVELOPMENT_ASSET_PATHS = "\"LoteriasDaSorteAppClip/Preview Content\"";
 				DEVELOPMENT_TEAM = H929RNU2C4;
 				ENABLE_PREVIEWS = YES;
@@ -1795,6 +1802,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = LoteriasDaSorteAppClip/LoteriasDaSorteAppClip.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 19;
 				DEVELOPMENT_ASSET_PATHS = "\"LoteriasDaSorteAppClip/Preview Content\"";
 				DEVELOPMENT_TEAM = H929RNU2C4;
 				ENABLE_PREVIEWS = YES;
@@ -1917,7 +1925,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		154B9189252426D6006C1E45 /* Build configuration list for PBXNativeTarget "Loterias-Da-Sorte-iOS" */ = {
+		154B9189252426D6006C1E45 /* Build configuration list for PBXNativeTarget "Loterias Da Sorte" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				154B9187252426D6006C1E45 /* Debug */,
