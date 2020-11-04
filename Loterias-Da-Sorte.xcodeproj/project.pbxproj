@@ -274,7 +274,6 @@
 		15195987254259EE008587B1 /* GameDetailBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailBuilder.swift; sourceTree = "<group>"; };
 		1519599625427376008587B1 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 		151F9DAE24723AC90023B57D /* SecondStyleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondStyleView.swift; sourceTree = "<group>"; };
-		1521CBA7248B320A00CFBBBF /* ApiConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = ApiConfig.xcconfig; path = "../Loterias-Da-Sorte-WatchKit App/ApiConfig.xcconfig"; sourceTree = "<group>"; };
 		153AAE7F24773B9000BA6827 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		153AAE832477445D00BA6827 /* NextGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextGameView.swift; sourceTree = "<group>"; };
 		153AAE892477693700BA6827 /* GameDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailModel.swift; sourceTree = "<group>"; };
@@ -411,7 +410,6 @@
 		150288002472101A00C794BC /* Loterias-Da-Sorte WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				1521CBA7248B320A00CFBBBF /* ApiConfig.xcconfig */,
 				150288092472101B00C794BC /* Assets.xcassets */,
 				151F9DAB24723A160023B57D /* Complication */,
 				151F9DAD24723A4F0023B57D /* Delegate */,
@@ -1239,7 +1237,6 @@
 /* Begin XCBuildConfiguration section */
 		1502880F2472101B00C794BC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1521CBA7248B320A00CFBBBF /* ApiConfig.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1301,7 +1298,6 @@
 		};
 		150288102472101B00C794BC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1521CBA7248B320A00CFBBBF /* ApiConfig.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1357,7 +1353,6 @@
 		};
 		150288122472101B00C794BC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1521CBA7248B320A00CFBBBF /* ApiConfig.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
@@ -1383,7 +1378,6 @@
 		};
 		150288132472101B00C794BC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1521CBA7248B320A00CFBBBF /* ApiConfig.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
@@ -1409,7 +1403,6 @@
 		};
 		150288162472101B00C794BC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1521CBA7248B320A00CFBBBF /* ApiConfig.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1431,7 +1424,6 @@
 		};
 		150288172472101B00C794BC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1521CBA7248B320A00CFBBBF /* ApiConfig.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1453,7 +1445,6 @@
 		};
 		1502881A2472101B00C794BC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1521CBA7248B320A00CFBBBF /* ApiConfig.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 5;
@@ -1467,7 +1458,6 @@
 		};
 		1502881B2472101B00C794BC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1521CBA7248B320A00CFBBBF /* ApiConfig.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 5;
@@ -1577,7 +1567,6 @@
 		};
 		154B92F5252A3F7D006C1E45 /* MOCK */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1521CBA7248B320A00CFBBBF /* ApiConfig.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1639,7 +1628,6 @@
 		};
 		154B92F6252A3F7D006C1E45 /* MOCK */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1521CBA7248B320A00CFBBBF /* ApiConfig.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 5;
@@ -1653,7 +1641,6 @@
 		};
 		154B92F7252A3F7D006C1E45 /* MOCK */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1521CBA7248B320A00CFBBBF /* ApiConfig.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1675,7 +1662,6 @@
 		};
 		154B92F8252A3F7D006C1E45 /* MOCK */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1521CBA7248B320A00CFBBBF /* ApiConfig.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
