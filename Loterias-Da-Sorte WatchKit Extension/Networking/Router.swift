@@ -19,7 +19,22 @@ enum Router {
         case .lastGame(let lotteryGame):
             return "/app/resultado?loteria=\(lotteryGame.rawValue)&token=\(PlistKey.lotteryAPIKEY.getData())"
         case .gameWithNumber(let number, let game):
-            return "/app/resultado?loteria=\(game.rawValue)&token=\(PlistKey.lotteryAPIKEY.getData())&=concurso\(number)"
+            return "/app/resultado?loteria=\(game.rawValue)&token=\(PlistKey.lotteryAPIKEY.getData())&concurso=\(number)"
+        }
+    }
+    
+    func stringURL() -> String {
+        switch self {
+        case .lastGame(let game):
+            var base = Router.lotteryBaseURL
+            let parameters = Router.lastGame(lottery: game).path
+            base.append(parameters)
+            return base
+        case .gameWithNumber(let number, let lottery):
+            var base = Router.lotteryBaseURL
+            let parameters = Router.gameWithNumber(number: number, lottery: lottery).path
+            base.append(parameters)
+            return base
         }
     }
     

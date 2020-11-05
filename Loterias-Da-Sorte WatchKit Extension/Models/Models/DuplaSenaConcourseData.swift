@@ -38,6 +38,7 @@ struct DuplaSenaConcourseData: Codable {
                                        date: self.data_concurso,
                                        accumulatedValue: self.valor_acumulado.returnString(),
                                        prize: self.prizeSetter(data: self.premiacao, winners: .sena),
+                                       allPrizes: self.premiacao,
                                        winners: self.winnersSetter(data: self.premiacao, winners: .sena),
                                        duplaSenaSecondSetOfNumbers: self.dezenas_2,
                                        teamOrDay: nil,

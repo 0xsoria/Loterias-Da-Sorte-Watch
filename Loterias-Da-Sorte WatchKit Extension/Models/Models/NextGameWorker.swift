@@ -19,7 +19,7 @@ struct NextGameWorker {
         self.lotteryGame = lotteryGame
         self.lotteryGameNoSpace = lotteryGameNoSpace
         self.date = date.lotteryDateFormat()
-        self.prize = prize
+        self.prize = prize.convertToDecimal()
         self.concourseNumber = concourseNumber
     }
 }
