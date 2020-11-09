@@ -7,32 +7,32 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "B48DD9F2-C859-401A-9717-07F1396EED99"
-            shouldBeEnabled = "No"
+            uuid = "4F2B296F-1355-4186-8CCE-C2A2241B7C2A"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Loterias-Da-Sorte WatchKit Extension/Networking/NextGameDetailRequester.swift"
+            filePath = "../../../../Library/Developer/Xcode/DerivedData/Loterias-Da-Sorte-ebqicsfxdawoodcmhcikhdirxkce/SourcePackages/checkouts/Network/Sources/Network/MockNetwork.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
-            landmarkName = "request(lottery:)"
-            landmarkType = "7">
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "CE7C11B2-ADFA-49D6-B61A-496A9DD7D7FD"
+            uuid = "717D2E1E-734F-4FC3-AAD6-C997E99FDD9E"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Loterias-Da-Sorte-iOS/MainLotteryView/GameResultGetter/GamesResults.swift"
+            filePath = "Lottery/Sources/Lottery/Network/LotteryNetworkService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
-            landmarkName = "getLastResultsFor(lottery:completionError:)"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
+            landmarkName = "setupForMock(lottery:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

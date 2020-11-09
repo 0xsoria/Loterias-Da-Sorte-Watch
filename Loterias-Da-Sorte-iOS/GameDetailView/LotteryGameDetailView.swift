@@ -6,6 +6,8 @@
 //  Copyright © 2020 Gabriel Sória Souza. All rights reserved.
 //
 
+import Lottery
+import Network
 import SwiftUI
 
 struct LotteryGameDetailView: View {
@@ -95,6 +97,6 @@ struct LotteryGameDetailView: View {
 
 struct GameDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        Text("")
+        LotteryGameDetailView(game: GameDetailModel(gameData: MockModel.mockedData()), onDisappear: {})
     }
 }
