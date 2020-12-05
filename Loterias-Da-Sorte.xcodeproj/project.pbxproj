@@ -27,10 +27,8 @@
 		1502885F2472284800C794BC /* GameDetailRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1502885E2472284800C794BC /* GameDetailRequester.swift */; };
 		1502886324722BC800C794BC /* FirstStyleTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1502886224722BC800C794BC /* FirstStyleTable.swift */; };
 		15028867247235BA00C794BC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15028866247235BA00C794BC /* Extensions.swift */; };
-		15115E1B247363C00058E308 /* ThirdStyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15115E1A247363C00058E308 /* ThirdStyleView.swift */; };
 		151800AB2537C27000E42561 /* MainNextGameRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151800AA2537C27000E42561 /* MainNextGameRow.swift */; };
 		1519599725427376008587B1 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1519599625427376008587B1 /* View+Extensions.swift */; };
-		151F9DAF24723AC90023B57D /* SecondStyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151F9DAE24723AC90023B57D /* SecondStyleView.swift */; };
 		153AAE8024773B9000BA6827 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153AAE7F24773B9000BA6827 /* SettingsView.swift */; };
 		153AAE842477445D00BA6827 /* NextGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153AAE832477445D00BA6827 /* NextGameView.swift */; };
 		154B9179252426D5006C1E45 /* Loterias_Da_Sorte_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154B9178252426D5006C1E45 /* Loterias_Da_Sorte_iOSApp.swift */; };
@@ -91,6 +89,17 @@
 		15618B74255397F5005D0728 /* Lottery in Frameworks */ = {isa = PBXBuildFile; productRef = 15618B73255397F5005D0728 /* Lottery */; };
 		15618B7625539802005D0728 /* Lottery in Frameworks */ = {isa = PBXBuildFile; productRef = 15618B7525539802005D0728 /* Lottery */; };
 		15618B7825539844005D0728 /* Network in Frameworks */ = {isa = PBXBuildFile; productRef = 15618B7725539844005D0728 /* Network */; };
+		157D7234257C039C00810FAC /* FederalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CC00E52558D1E900761CBE /* FederalView.swift */; };
+		157D7243257C0C4800810FAC /* GameDetailResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1560AFF62547CB62001B703A /* GameDetailResult.swift */; };
+		157D724B257C0F0000810FAC /* GamesResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CC00CD255645E700761CBE /* GamesResults.swift */; };
+		157D725A257C13B400810FAC /* LotoFacilLast.json in Resources */ = {isa = PBXBuildFile; fileRef = 154B92C4252A2EF2006C1E45 /* LotoFacilLast.json */; };
+		157D7262257C13B800810FAC /* TimeLast.json in Resources */ = {isa = PBXBuildFile; fileRef = 154B92D9252A328C006C1E45 /* TimeLast.json */; };
+		157D726A257C13BC00810FAC /* FederalLast.json in Resources */ = {isa = PBXBuildFile; fileRef = 154B92E7252A341C006C1E45 /* FederalLast.json */; };
+		157D726B257C13BC00810FAC /* LotoManiaLast.json in Resources */ = {isa = PBXBuildFile; fileRef = 154B92CB252A3043006C1E45 /* LotoManiaLast.json */; };
+		157D726C257C13BC00810FAC /* DiaLast.json in Resources */ = {isa = PBXBuildFile; fileRef = 154B92E0252A33BC006C1E45 /* DiaLast.json */; };
+		157D726D257C13BC00810FAC /* SenaLast.json in Resources */ = {isa = PBXBuildFile; fileRef = 154B928C2528D068006C1E45 /* SenaLast.json */; };
+		157D726E257C13BC00810FAC /* DuplaSenaLast.json in Resources */ = {isa = PBXBuildFile; fileRef = 154B92D2252A3208006C1E45 /* DuplaSenaLast.json */; };
+		157D726F257C13BC00810FAC /* QuinaLast.json in Resources */ = {isa = PBXBuildFile; fileRef = 154B929F252A1DD6006C1E45 /* QuinaLast.json */; };
 		15A2BB6B253CDA3A00417979 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15A2BB6A253CDA3A00417979 /* LaunchScreen.storyboard */; };
 		15A4D89C253E60D400B1CD7D /* Loterias_Da_Sorte_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A4D89B253E60D400B1CD7D /* Loterias_Da_Sorte_iOSUITests.swift */; };
 		15A4D8AB253E61C000B1CD7D /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A4D8AA253E61C000B1CD7D /* SnapshotHelper.swift */; };
@@ -205,10 +214,8 @@
 		1502885E2472284800C794BC /* GameDetailRequester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailRequester.swift; sourceTree = "<group>"; };
 		1502886224722BC800C794BC /* FirstStyleTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstStyleTable.swift; sourceTree = "<group>"; };
 		15028866247235BA00C794BC /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		15115E1A247363C00058E308 /* ThirdStyleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdStyleView.swift; sourceTree = "<group>"; };
 		151800AA2537C27000E42561 /* MainNextGameRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNextGameRow.swift; sourceTree = "<group>"; };
 		1519599625427376008587B1 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
-		151F9DAE24723AC90023B57D /* SecondStyleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondStyleView.swift; sourceTree = "<group>"; };
 		153AAE7F24773B9000BA6827 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		153AAE832477445D00BA6827 /* NextGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextGameView.swift; sourceTree = "<group>"; };
 		154B9176252426D5006C1E45 /* Loterias Da Sorte.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Loterias Da Sorte.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -361,7 +368,6 @@
 				1502880E2472101B00C794BC /* Info.plist */,
 				151F9DA9247239F30023B57D /* LotteryNamesView */,
 				151F9DA7247239C00023B57D /* MainView */,
-				1502884C247225C200C794BC /* Models */,
 				15028828247220FC00C794BC /* Networking */,
 				153AAE8824775ADE00BA6827 /* NextGame */,
 				1502880B2472101B00C794BC /* Preview Content */,
@@ -389,21 +395,6 @@
 			path = Networking;
 			sourceTree = "<group>";
 		};
-		15028833247223DE00C794BC /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		1502884C247225C200C794BC /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				15028833247223DE00C794BC /* Models */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
 		151F9DA7247239C00023B57D /* MainView */ = {
 			isa = PBXGroup;
 			children = (
@@ -418,8 +409,6 @@
 			children = (
 				1502882624721E5F00C794BC /* GameDetailView.swift */,
 				1502886224722BC800C794BC /* FirstStyleTable.swift */,
-				15115E1A247363C00058E308 /* ThirdStyleView.swift */,
-				151F9DAE24723AC90023B57D /* SecondStyleView.swift */,
 			);
 			path = DetailViews;
 			sourceTree = "<group>";
@@ -894,7 +883,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				157D726D257C13BC00810FAC /* SenaLast.json in Resources */,
+				157D726C257C13BC00810FAC /* DiaLast.json in Resources */,
+				157D726B257C13BC00810FAC /* LotoManiaLast.json in Resources */,
+				157D726E257C13BC00810FAC /* DuplaSenaLast.json in Resources */,
+				157D7262257C13B800810FAC /* TimeLast.json in Resources */,
+				157D726A257C13BC00810FAC /* FederalLast.json in Resources */,
+				157D725A257C13B400810FAC /* LotoFacilLast.json in Resources */,
 				1502880D2472101B00C794BC /* Preview Assets.xcassets in Resources */,
+				157D726F257C13BC00810FAC /* QuinaLast.json in Resources */,
 				1502880A2472101B00C794BC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -955,9 +952,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				151F9DAF24723AC90023B57D /* SecondStyleView.swift in Sources */,
 				150288042472101A00C794BC /* HostingController.swift in Sources */,
-				15115E1B247363C00058E308 /* ThirdStyleView.swift in Sources */,
 				153AAE8024773B9000BA6827 /* SettingsView.swift in Sources */,
 				1502882524721DB500C794BC /* TypeOfGame.swift in Sources */,
 				1502886324722BC800C794BC /* FirstStyleTable.swift in Sources */,
@@ -965,6 +960,7 @@
 				1502882724721E5F00C794BC /* GameDetailView.swift in Sources */,
 				150288082472101A00C794BC /* ComplicationController.swift in Sources */,
 				150288302472217D00C794BC /* LotteryNetworkingError.swift in Sources */,
+				157D7234257C039C00810FAC /* FederalView.swift in Sources */,
 				150288022472101A00C794BC /* ContentView.swift in Sources */,
 				1502881D2472115100C794BC /* ContentViewData.swift in Sources */,
 				15A7EFF3253CABD600105C0C /* Color+Extensions.swift in Sources */,
@@ -973,6 +969,8 @@
 				15A616542554E1B300C9FB37 /* Lottery+Extensions.swift in Sources */,
 				150288062472101A00C794BC /* ExtensionDelegate.swift in Sources */,
 				15028867247235BA00C794BC /* Extensions.swift in Sources */,
+				157D724B257C0F0000810FAC /* GamesResults.swift in Sources */,
+				157D7243257C0C4800810FAC /* GameDetailResult.swift in Sources */,
 				153AAE842477445D00BA6827 /* NextGameView.swift in Sources */,
 				1502885F2472284800C794BC /* GameDetailRequester.swift in Sources */,
 			);
@@ -1232,7 +1230,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
 			};
 			name = Debug;
 		};
@@ -1258,7 +1256,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
 			};
 			name = Release;
 		};
@@ -1279,7 +1277,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
 			};
 			name = Debug;
 		};
@@ -1300,7 +1298,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
 			};
 			name = Release;
 		};
@@ -1520,7 +1518,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
 			};
 			name = MOCK;
 		};
@@ -1546,7 +1544,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
 			};
 			name = MOCK;
 		};

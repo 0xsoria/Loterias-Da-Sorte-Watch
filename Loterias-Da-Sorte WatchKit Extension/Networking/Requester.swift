@@ -6,6 +6,7 @@
 //  Copyright © 2020 Gabriel Sória Souza. All rights reserved.
 //
 
+import Lottery
 import Foundation
 
 final class Requester {

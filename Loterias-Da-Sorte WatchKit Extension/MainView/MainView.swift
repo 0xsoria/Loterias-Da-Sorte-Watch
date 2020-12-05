@@ -23,10 +23,13 @@ struct MainView: View {
     }
     
     private func viewSetter(type: TypeOfGame) -> some View {
-        if type == .settings {
-            return AnyView(SettingsView())
+        Group {
+            if type == .settings {
+                SettingsView()
+            } else {
+                ContentView(typeOfGame: type)
+            }
         }
-        return AnyView(ContentView(typeOfGame: type))
     }
 }
 

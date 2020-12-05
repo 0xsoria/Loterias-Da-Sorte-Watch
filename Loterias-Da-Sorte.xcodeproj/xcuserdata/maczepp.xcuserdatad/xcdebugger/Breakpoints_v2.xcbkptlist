@@ -7,32 +7,64 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "4F2B296F-1355-4186-8CCE-C2A2241B7C2A"
-            shouldBeEnabled = "Yes"
+            uuid = "262064B8-0662-4A41-AE25-104DE17CEA3C"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "../../../../Library/Developer/Xcode/DerivedData/Loterias-Da-Sorte-ebqicsfxdawoodcmhcikhdirxkce/SourcePackages/checkouts/Network/Sources/Network/MockNetwork.swift"
+            filePath = "Loterias-Da-Sorte-iOS/GameDetailView/LotteryGameDetailView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "20"
-            endingLineNumber = "20"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "newList"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "262064B8-0662-4A41-AE25-104DE17CEA3C - 888bcc9ddc581d9c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;Lottery.GameDetail&gt;, Foundation.UUID, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0&gt; in Loterias_Da_Sorte.LotteryGameDetailView.newList.getter : some"
+                  moduleName = "Loterias Da Sorte"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maczepp/Desktop/Last.nosync/Watch/Loterias-Da-Sorte/Loterias-Da-Sorte-iOS/GameDetailView/LotteryGameDetailView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "65"
+                  endingLineNumber = "65"
+                  offsetFromSymbolStart = "248">
+               </Location>
+               <Location
+                  uuid = "262064B8-0662-4A41-AE25-104DE17CEA3C - a4738d3fe4d5c292"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Lottery.GameDetail) -&gt; &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0 in closure #1 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;Lottery.GameDetail&gt;, Foundation.UUID, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0&gt; in Loterias_Da_Sorte.LotteryGameDetailView.newList.getter : some"
+                  moduleName = "Loterias Da Sorte"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maczepp/Desktop/Last.nosync/Watch/Loterias-Da-Sorte/Loterias-Da-Sorte-iOS/GameDetailView/LotteryGameDetailView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "65"
+                  endingLineNumber = "65"
+                  offsetFromSymbolStart = "0">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "717D2E1E-734F-4FC3-AAD6-C997E99FDD9E"
-            shouldBeEnabled = "Yes"
+            uuid = "60048587-7C10-44A0-8DB4-FDF25DCD40DE"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Lottery/Sources/Lottery/Network/LotteryNetworkService.swift"
+            filePath = "Loterias-Da-Sorte WatchKit Extension/Networking/GameDetailRequester.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "88"
-            endingLineNumber = "88"
-            landmarkName = "setupForMock(lottery:)"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "getResultsFor(lottery:completionError:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
