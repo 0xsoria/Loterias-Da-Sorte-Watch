@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Network",
+        "repositoryURL": "https://github.com/0xsoria/Network.git",
+        "state": {
+          "branch": null,
+          "revision": "57bb90a3d45256359f05b391bf80ed2ea55a7a03",
+          "version": "1.0.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

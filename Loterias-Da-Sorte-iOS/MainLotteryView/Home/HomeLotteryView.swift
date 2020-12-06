@@ -6,12 +6,9 @@
 //  Copyright © 2020 Gabriel Sória Souza. All rights reserved.
 //
 
+import Lottery
+import Network
 import SwiftUI
-
-enum GameType {
-    case next
-    case last
-}
 
 struct HomeLotteryView: View {
     

@@ -19,11 +19,9 @@
 	<key>CFBundleShortVersionString</key>
 	<string>1.1</string>
 	<key>CFBundleVersion</key>
-	<string>5</string>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>CLKComplicationPrincipalClass</key>
 	<string>$(PRODUCT_MODULE_NAME).ComplicationController</string>
-	<key>CLKComplicationSupportedFamilies</key>
-	<array/>
 	<key>LOTTERY_API_KEY</key>
 	<string>$(LOTTERY_API_KEY)</string>
 	<key>LOTTERY_API_URL</key>
@@ -45,6 +43,8 @@
 		<key>NSExtensionPointIdentifier</key>
 		<string>com.apple.watchkit</string>
 	</dict>
+	<key>WKCompanionAppBundleIdentifier</key>
+	<string>com.LoteriasDaSorte.0xSoria</string>
 	<key>WKExtensionDelegateClassName</key>
 	<string>$(PRODUCT_MODULE_NAME).ExtensionDelegate</string>
 	<key>WKWatchOnly</key>
