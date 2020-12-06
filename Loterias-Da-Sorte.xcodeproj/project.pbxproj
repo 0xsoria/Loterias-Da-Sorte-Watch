@@ -84,9 +84,6 @@
 		1560B0072549102C001B703A /* SettingsViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1560B0062549102C001B703A /* SettingsViewRow.swift */; };
 		15618B51255395F6005D0728 /* Network in Frameworks */ = {isa = PBXBuildFile; productRef = 15618B50255395F6005D0728 /* Network */; };
 		15618B5A2553962A005D0728 /* Network in Frameworks */ = {isa = PBXBuildFile; productRef = 15618B592553962A005D0728 /* Network */; };
-		15618B72255397EF005D0728 /* Lottery in Frameworks */ = {isa = PBXBuildFile; productRef = 15618B71255397EF005D0728 /* Lottery */; };
-		15618B74255397F5005D0728 /* Lottery in Frameworks */ = {isa = PBXBuildFile; productRef = 15618B73255397F5005D0728 /* Lottery */; };
-		15618B7625539802005D0728 /* Lottery in Frameworks */ = {isa = PBXBuildFile; productRef = 15618B7525539802005D0728 /* Lottery */; };
 		15618B7825539844005D0728 /* Network in Frameworks */ = {isa = PBXBuildFile; productRef = 15618B7725539844005D0728 /* Network */; };
 		157D7234257C039C00810FAC /* FederalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CC00E52558D1E900761CBE /* FederalView.swift */; };
 		157D7243257C0C4800810FAC /* GameDetailResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1560AFF62547CB62001B703A /* GameDetailResult.swift */; };
@@ -100,6 +97,9 @@
 		157D726E257C13BC00810FAC /* DuplaSenaLast.json in Resources */ = {isa = PBXBuildFile; fileRef = 154B92D2252A3208006C1E45 /* DuplaSenaLast.json */; };
 		157D726F257C13BC00810FAC /* QuinaLast.json in Resources */ = {isa = PBXBuildFile; fileRef = 154B929F252A1DD6006C1E45 /* QuinaLast.json */; };
 		157D7282257CFC5300810FAC /* Loterias-Da-Sorte WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 150287ED2472101900C794BC /* Loterias-Da-Sorte WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		157D7332257D1AA200810FAC /* Lottery in Frameworks */ = {isa = PBXBuildFile; productRef = 157D7331257D1AA200810FAC /* Lottery */; };
+		157D733A257D1AB500810FAC /* Lottery in Frameworks */ = {isa = PBXBuildFile; productRef = 157D7339257D1AB500810FAC /* Lottery */; };
+		157D733C257D1ABB00810FAC /* Lottery in Frameworks */ = {isa = PBXBuildFile; productRef = 157D733B257D1ABB00810FAC /* Lottery */; };
 		15A2BB6B253CDA3A00417979 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15A2BB6A253CDA3A00417979 /* LaunchScreen.storyboard */; };
 		15A4D89C253E60D400B1CD7D /* Loterias_Da_Sorte_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A4D89B253E60D400B1CD7D /* Loterias_Da_Sorte_iOSUITests.swift */; };
 		15A4D8AB253E61C000B1CD7D /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A4D8AA253E61C000B1CD7D /* SnapshotHelper.swift */; };
@@ -255,7 +255,6 @@
 		1560AFF62547CB62001B703A /* GameDetailResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailResult.swift; sourceTree = "<group>"; };
 		1560AFFE25490C2A001B703A /* ShareDataContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareDataContent.swift; sourceTree = "<group>"; };
 		1560B0062549102C001B703A /* SettingsViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewRow.swift; sourceTree = "<group>"; };
-		15618B62255397A3005D0728 /* Lottery */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Lottery; sourceTree = "<group>"; };
 		159E9CC025537455000B7224 /* ApiConfig.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = ApiConfig.xcconfig; sourceTree = "<group>"; };
 		15A2BB6A253CDA3A00417979 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		15A4D899253E60D400B1CD7D /* Loterias-Da-Sorte-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Loterias-Da-Sorte-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -275,7 +274,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15618B7625539802005D0728 /* Lottery in Frameworks */,
+				157D733A257D1AB500810FAC /* Lottery in Frameworks */,
 				15618B7825539844005D0728 /* Network in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,7 +283,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15618B72255397EF005D0728 /* Lottery in Frameworks */,
+				157D7332257D1AA200810FAC /* Lottery in Frameworks */,
 				15618B51255395F6005D0728 /* Network in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,7 +299,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15618B74255397F5005D0728 /* Lottery in Frameworks */,
+				157D733C257D1ABB00810FAC /* Lottery in Frameworks */,
 				15618B5A2553962A005D0728 /* Network in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -318,7 +317,6 @@
 		150287E22472101900C794BC = {
 			isa = PBXGroup;
 			children = (
-				15618B62255397A3005D0728 /* Lottery */,
 				150287F12472101900C794BC /* Loterias-Da-Sorte-WatchKit App */,
 				150288002472101A00C794BC /* Loterias-Da-Sorte WatchKit Extension */,
 				154B9177252426D5006C1E45 /* Loterias-Da-Sorte-iOS */,
@@ -688,8 +686,8 @@
 			);
 			name = "Loterias-Da-Sorte WatchKit Extension";
 			packageProductDependencies = (
-				15618B7525539802005D0728 /* Lottery */,
 				15618B7725539844005D0728 /* Network */,
+				157D7339257D1AB500810FAC /* Lottery */,
 			);
 			productName = "Loterias-Da-Sorte WatchKit Extension";
 			productReference = 150287FC2472101A00C794BC /* Loterias-Da-Sorte WatchKit Extension.appex */;
@@ -714,7 +712,7 @@
 			name = "Loterias Da Sorte";
 			packageProductDependencies = (
 				15618B50255395F6005D0728 /* Network */,
-				15618B71255397EF005D0728 /* Lottery */,
+				157D7331257D1AA200810FAC /* Lottery */,
 			);
 			productName = "Loterias-Da-Sorte-iOS";
 			productReference = 154B9176252426D5006C1E45 /* Loterias Da Sorte.app */;
@@ -753,7 +751,7 @@
 			name = LoteriasDaSorteAppClip;
 			packageProductDependencies = (
 				15618B592553962A005D0728 /* Network */,
-				15618B73255397F5005D0728 /* Lottery */,
+				157D733B257D1ABB00810FAC /* Lottery */,
 			);
 			productName = LoteriasDaSorteAppClip;
 			productReference = 154BD76B254BB958001FE852 /* LoteriasDaSorteAppClip.app */;
@@ -825,6 +823,7 @@
 			mainGroup = 150287E22472101900C794BC;
 			packageReferences = (
 				15618B4F255395F6005D0728 /* XCRemoteSwiftPackageReference "Network" */,
+				157D7330257D1AA200810FAC /* XCRemoteSwiftPackageReference "Lottery" */,
 			);
 			productRefGroup = 150287EA2472101900C794BC /* Products */;
 			projectDirPath = "";
@@ -1757,6 +1756,14 @@
 				minimumVersion = 1.0.0;
 			};
 		};
+		157D7330257D1AA200810FAC /* XCRemoteSwiftPackageReference "Lottery" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/0xsoria/Lottery.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1770,22 +1777,25 @@
 			package = 15618B4F255395F6005D0728 /* XCRemoteSwiftPackageReference "Network" */;
 			productName = Network;
 		};
-		15618B71255397EF005D0728 /* Lottery */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = Lottery;
-		};
-		15618B73255397F5005D0728 /* Lottery */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = Lottery;
-		};
-		15618B7525539802005D0728 /* Lottery */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = Lottery;
-		};
 		15618B7725539844005D0728 /* Network */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 15618B4F255395F6005D0728 /* XCRemoteSwiftPackageReference "Network" */;
 			productName = Network;
+		};
+		157D7331257D1AA200810FAC /* Lottery */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 157D7330257D1AA200810FAC /* XCRemoteSwiftPackageReference "Lottery" */;
+			productName = Lottery;
+		};
+		157D7339257D1AB500810FAC /* Lottery */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 157D7330257D1AA200810FAC /* XCRemoteSwiftPackageReference "Lottery" */;
+			productName = Lottery;
+		};
+		157D733B257D1ABB00810FAC /* Lottery */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 157D7330257D1AA200810FAC /* XCRemoteSwiftPackageReference "Lottery" */;
+			productName = Lottery;
 		};
 /* End XCSwiftPackageProductDependency section */
 

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   LastUpgradeVersion = "1220"
+   version = "1.3">
+   <BuildAction
+      parallelizeBuildables = "YES"
+      buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "150287EC2472101900C794BC"
+               BuildableName = "Loterias-Da-Sorte WatchKit App.app"
+               BlueprintName = "Loterias-Da-Sorte WatchKit App"
+               ReferencedContainer = "container:Loterias-Da-Sorte.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "150287E82472101900C794BC"
+               BuildableName = "Loterias-Da-Sorte.app"
+               BlueprintName = "Loterias-Da-Sorte"
+               ReferencedContainer = "container:Loterias-Da-Sorte.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <TestAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      shouldUseLaunchSchemeArgsEnv = "YES">
+      <Testables>
+      </Testables>
+   </TestAction>
+   <LaunchAction
+      buildConfiguration = "Release"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      launchStyle = "0"
+      useCustomWorkingDirectory = "NO"
+      ignoresPersistentStateOnLaunch = "NO"
+      debugDocumentVersioning = "YES"
+      debugServiceExtension = "internal"
+      allowLocationSimulation = "YES">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.Carousel"
+         RemotePath = "/Loterias Da Sorte">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "150287EC2472101900C794BC"
+            BuildableName = "Loterias-Da-Sorte WatchKit App.app"
+            BlueprintName = "Loterias-Da-Sorte WatchKit App"
+            ReferencedContainer = "container:Loterias-Da-Sorte.xcodeproj">
+         </BuildableReference>
+      </RemoteRunnable>
+   </LaunchAction>
+   <ProfileAction
+      buildConfiguration = "Release"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      savedToolIdentifier = ""
+      useCustomWorkingDirectory = "NO"
+      debugDocumentVersioning = "YES">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.Carousel"
+         RemotePath = "/Loterias Da Sorte">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "150287EC2472101900C794BC"
+            BuildableName = "Loterias-Da-Sorte WatchKit App.app"
+            BlueprintName = "Loterias-Da-Sorte WatchKit App"
+            ReferencedContainer = "container:Loterias-Da-Sorte.xcodeproj">
+         </BuildableReference>
+      </RemoteRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "150287EC2472101900C794BC"
+            BuildableName = "Loterias-Da-Sorte WatchKit App.app"
+            BlueprintName = "Loterias-Da-Sorte WatchKit App"
+            ReferencedContainer = "container:Loterias-Da-Sorte.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+   </ProfileAction>
+   <AnalyzeAction
+      buildConfiguration = "Debug">
+   </AnalyzeAction>
+   <ArchiveAction
+      buildConfiguration = "Release"
+      revealArchiveInOrganizer = "YES">
+   </ArchiveAction>
+</Scheme>
