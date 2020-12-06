@@ -100,6 +100,8 @@
 		157D726D257C13BC00810FAC /* SenaLast.json in Resources */ = {isa = PBXBuildFile; fileRef = 154B928C2528D068006C1E45 /* SenaLast.json */; };
 		157D726E257C13BC00810FAC /* DuplaSenaLast.json in Resources */ = {isa = PBXBuildFile; fileRef = 154B92D2252A3208006C1E45 /* DuplaSenaLast.json */; };
 		157D726F257C13BC00810FAC /* QuinaLast.json in Resources */ = {isa = PBXBuildFile; fileRef = 154B929F252A1DD6006C1E45 /* QuinaLast.json */; };
+		157D7282257CFC5300810FAC /* Loterias-Da-Sorte WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 150287ED2472101900C794BC /* Loterias-Da-Sorte WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		157D7285257CFC5300810FAC /* Loterias-Da-Sorte WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 150287FC2472101A00C794BC /* Loterias-Da-Sorte WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		15A2BB6B253CDA3A00417979 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15A2BB6A253CDA3A00417979 /* LaunchScreen.storyboard */; };
 		15A4D89C253E60D400B1CD7D /* Loterias_Da_Sorte_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A4D89B253E60D400B1CD7D /* Loterias_Da_Sorte_iOSUITests.swift */; };
 		15A4D8AB253E61C000B1CD7D /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A4D8AA253E61C000B1CD7D /* SnapshotHelper.swift */; };
@@ -145,6 +147,20 @@
 			remoteGlobalIDString = 154BD76A254BB958001FE852;
 			remoteInfo = LoteriasDaSorteAppClip;
 		};
+		157D7283257CFC5300810FAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 150287E32472101900C794BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 150287EC2472101900C794BC;
+			remoteInfo = "Loterias-Da-Sorte WatchKit App";
+		};
+		157D7286257CFC5300810FAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 150287E32472101900C794BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 150287FB2472101A00C794BC;
+			remoteInfo = "Loterias-Da-Sorte WatchKit Extension";
+		};
 		15A4D89E253E60D400B1CD7D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 150287E32472101900C794BC /* Project object */;
@@ -186,6 +202,28 @@
 				154BD77A254BB95A001FE852 /* LoteriasDaSorteAppClip.app in Embed App Clips */,
 			);
 			name = "Embed App Clips";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		157D7288257CFC5400810FAC /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				157D7282257CFC5300810FAC /* Loterias-Da-Sorte WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		157D7289257CFC5400810FAC /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				157D7285257CFC5300810FAC /* Loterias-Da-Sorte WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -722,11 +760,15 @@
 				154B9173252426D5006C1E45 /* Frameworks */,
 				154B9174252426D5006C1E45 /* Resources */,
 				154BD77F254BB95A001FE852 /* Embed App Clips */,
+				157D7288257CFC5400810FAC /* Embed Watch Content */,
+				157D7289257CFC5400810FAC /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				154BD779254BB95A001FE852 /* PBXTargetDependency */,
+				157D7284257CFC5300810FAC /* PBXTargetDependency */,
+				157D7287257CFC5300810FAC /* PBXTargetDependency */,
 			);
 			name = "Loterias Da Sorte";
 			packageProductDependencies = (
@@ -1071,6 +1113,16 @@
 			target = 154BD76A254BB958001FE852 /* LoteriasDaSorteAppClip */;
 			targetProxy = 154BD778254BB95A001FE852 /* PBXContainerItemProxy */;
 		};
+		157D7284257CFC5300810FAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 150287EC2472101900C794BC /* Loterias-Da-Sorte WatchKit App */;
+			targetProxy = 157D7283257CFC5300810FAC /* PBXContainerItemProxy */;
+		};
+		157D7287257CFC5300810FAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 150287FB2472101A00C794BC /* Loterias-Da-Sorte WatchKit Extension */;
+			targetProxy = 157D7286257CFC5300810FAC /* PBXContainerItemProxy */;
+		};
 		15A4D89F253E60D400B1CD7D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 154B9175252426D5006C1E45 /* Loterias Da Sorte */;
@@ -1214,7 +1266,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Loterias-Da-Sorte WatchKit Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = H929RNU2C4;
 				ENABLE_PREVIEWS = YES;
@@ -1224,7 +1276,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Gabriel-Soria-Souza.Loterias-Da-Sorte.watchkitapp.watchkitextension";
+				PRODUCT_BUNDLE_IDENTIFIER = com.LoteriasDaSorte.0xSoria.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -1240,7 +1292,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Loterias-Da-Sorte WatchKit Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = H929RNU2C4;
 				ENABLE_PREVIEWS = YES;
@@ -1250,7 +1302,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Gabriel-Soria-Souza.Loterias-Da-Sorte.watchkitapp.watchkitextension";
+				PRODUCT_BUNDLE_IDENTIFIER = com.LoteriasDaSorte.0xSoria.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -1266,12 +1318,12 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = H929RNU2C4;
 				IBSC_MODULE = Loterias_Da_Sorte_WatchKit_Extension;
 				INFOPLIST_FILE = "Loterias-Da-Sorte-WatchKit App/Info.plist";
 				MARKETING_VERSION = 1.1;
-				PRODUCT_BUNDLE_IDENTIFIER = "Gabriel-Soria-Souza.Loterias-Da-Sorte.watchkitapp";
+				PRODUCT_BUNDLE_IDENTIFIER = com.LoteriasDaSorte.0xSoria.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -1287,12 +1339,12 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = H929RNU2C4;
 				IBSC_MODULE = Loterias_Da_Sorte_WatchKit_Extension;
 				INFOPLIST_FILE = "Loterias-Da-Sorte-WatchKit App/Info.plist";
 				MARKETING_VERSION = 1.1;
-				PRODUCT_BUNDLE_IDENTIFIER = "Gabriel-Soria-Souza.Loterias-Da-Sorte.watchkitapp";
+				PRODUCT_BUNDLE_IDENTIFIER = com.LoteriasDaSorte.0xSoria.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -1338,7 +1390,7 @@
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CODE_SIGN_ENTITLEMENTS = "Loterias-Da-Sorte-iOS/Loterias-Da-Sorte-iOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 19;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Loterias-Da-Sorte-iOS/Preview Content\"";
 				DEVELOPMENT_TEAM = H929RNU2C4;
 				ENABLE_PREVIEWS = YES;
@@ -1348,6 +1400,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.LoteriasDaSorte.0xSoria;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -1365,7 +1418,7 @@
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CODE_SIGN_ENTITLEMENTS = "Loterias-Da-Sorte-iOS/Loterias-Da-Sorte-iOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 19;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Loterias-Da-Sorte-iOS/Preview Content\"";
 				DEVELOPMENT_TEAM = H929RNU2C4;
 				ENABLE_PREVIEWS = YES;
@@ -1375,6 +1428,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.LoteriasDaSorte.0xSoria;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -1507,12 +1561,12 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = H929RNU2C4;
 				IBSC_MODULE = Loterias_Da_Sorte_WatchKit_Extension;
 				INFOPLIST_FILE = "Loterias-Da-Sorte-WatchKit App/Info.plist";
 				MARKETING_VERSION = 1.1;
-				PRODUCT_BUNDLE_IDENTIFIER = "Gabriel-Soria-Souza.Loterias-Da-Sorte.watchkitapp";
+				PRODUCT_BUNDLE_IDENTIFIER = com.LoteriasDaSorte.0xSoria.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -1528,7 +1582,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Loterias-Da-Sorte WatchKit Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = H929RNU2C4;
 				ENABLE_PREVIEWS = YES;
@@ -1538,7 +1592,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Gabriel-Soria-Souza.Loterias-Da-Sorte.watchkitapp.watchkitextension";
+				PRODUCT_BUNDLE_IDENTIFIER = com.LoteriasDaSorte.0xSoria.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -1558,7 +1612,7 @@
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CODE_SIGN_ENTITLEMENTS = "Loterias-Da-Sorte-iOS/Loterias-Da-Sorte-iOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 19;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Loterias-Da-Sorte-iOS/Preview Content\"";
 				DEVELOPMENT_TEAM = H929RNU2C4;
 				ENABLE_PREVIEWS = YES;
@@ -1568,6 +1622,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.LoteriasDaSorte.0xSoria;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -1605,7 +1660,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = LoteriasDaSorteAppClip/LoteriasDaSorteAppClip.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 19;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"LoteriasDaSorteAppClip/Preview Content\"";
 				DEVELOPMENT_TEAM = H929RNU2C4;
 				ENABLE_PREVIEWS = YES;
@@ -1615,6 +1670,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.LoteriasDaSorte.0xSoria.Clip;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -1630,7 +1686,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = LoteriasDaSorteAppClip/LoteriasDaSorteAppClip.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 19;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"LoteriasDaSorteAppClip/Preview Content\"";
 				DEVELOPMENT_TEAM = H929RNU2C4;
 				ENABLE_PREVIEWS = YES;
@@ -1640,6 +1696,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.LoteriasDaSorte.0xSoria.Clip;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -1655,7 +1712,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = LoteriasDaSorteAppClip/LoteriasDaSorteAppClip.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 19;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"LoteriasDaSorteAppClip/Preview Content\"";
 				DEVELOPMENT_TEAM = H929RNU2C4;
 				ENABLE_PREVIEWS = YES;
@@ -1665,6 +1722,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.LoteriasDaSorte.0xSoria.Clip;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
