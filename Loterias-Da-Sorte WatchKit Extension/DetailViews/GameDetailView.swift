@@ -6,6 +6,8 @@
 //  Copyright © 2020 Gabriel Sória Souza. All rights reserved.
 //
 
+import Lottery
+import Network
 import SwiftUI
 
 struct GameDetail {
@@ -16,44 +18,55 @@ struct GameDetail {
 struct GameDetailView: View {
     
     private let gameDetailData: GameDetail
-    @ObservedObject var gameDetailRequester = GameDetailRequester()
+    @State var loading = true
+    @StateObject var gameDetailRequester = GameDetailRequester(service: LotteryNetworkService(networkService: NetworkService()))
     
     init(gameDetailData: GameDetail) {
         self.gameDetailData = gameDetailData
-        self.gameDetailRequester.lottery = gameDetailData.lottery
+    }
+    
+    var newList: some View {
+        List {
+            ForEach(self.gameDetailRequester.game?.gameDetailContent ?? []) { item in
+                VStack(alignment: .leading) {
+                    Text(item.title)
+                    Text(item.content)
+                }.foregroundColor(self.gameDetailData.lottery.colorFromGame().newColor)
+                .navigationBarTitle(self.gameDetailData.lottery.rawValue)
+            }
+        }
+    }
+    
+    var nextList: some View {
+        Group {
+            if let game = self.gameDetailRequester.game {
+                NextGameView(gameModel: game)
+            } else {
+                Text("Erro ao carregar 😩")
+            }
+        }
+    }
+    
+    var gameDetail: some View {
+        Group {
+            if self.loading {
+                Text("Carregando resultados...").onAppear(perform: {
+                    self.gameDetailRequester.getResultsFor(lottery: self.gameDetailData.lottery.convertToLotteryNoSpace(), completionError: { error in
+                        self.loading = error
+                    })
+                })
+            } else {
+                if self.gameDetailData.typeOfGame == .last {
+                    self.newList
+                } else {
+                    self.nextList
+                }
+            }
+        }
     }
     
     var body: some View {
-        if let data = self.gameDetailRequester.returnData {
-            return AnyView(self.lastOrNextVIew(typeOfGame: self.gameDetailData.typeOfGame, model: data))
-            
-        }
-        return AnyView(Text("Carregando resultados...").onAppear(perform: {
-            self.gameDetailRequester.request(lottery: self.gameDetailData.lottery)
-        }))
-    }
-    
-    func viewDefinition(lottery: GameDetailModel) -> some View {
-        switch lottery.gameData.lotteryGame {
-        case .megasena, .quina, .lotofacil, .lotomania:
-            return AnyView(FirstStyleTable(game: lottery))
-        case .duplasena, .timemania, .diadesorte:
-            return AnyView(SecondStyleView(game: lottery))
-        case .federal:
-            return AnyView(ThirdStyleView(game: lottery))
-        }
-    }
-    
-    func lastOrNextVIew(typeOfGame: TypeOfGame, model: GameDetailModel) -> some View {
-        switch typeOfGame {
-        case .last:
-            return AnyView(self.viewDefinition(lottery: model))
-        case .next:
-            return AnyView(NextGameView(gameModel: model))
-        case .settings:
-            return AnyView(Text("Erro"))
-            
-        }
+        gameDetail
     }
 }
 

@@ -38,30 +38,3 @@ extension Date {
     }
 }
 
-extension String {
-    func convertToDecimal() -> String {
-        let numberFormatter = NumberFormatter()
-        numberFormatter.numberStyle = .currency
-        numberFormatter.locale = Locale(identifier: "pt_BR")
-        
-        if let prizeAsNumber = Double(self) {
-            return numberFormatter.string(from: NSNumber(value: prizeAsNumber)) ?? self
-        } else if let prizeAsInt = Int(self) {
-            return numberFormatter.string(from: NSNumber(value: prizeAsInt)) ?? self
-        } else {
-            return self
-        }
-    }
-    
-    func lotteryDateFormat() -> String {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "dd/MM/yyyy"
-        
-        let formatter = ISO8601DateFormatter()
-        if let date = formatter.date(from: self) {
-            return dateFormatter.string(from: date)
-        } else {
-            return self
-        }
-    }
-}

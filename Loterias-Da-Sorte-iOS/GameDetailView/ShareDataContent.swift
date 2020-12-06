@@ -6,10 +6,11 @@
 //  Copyright © 2020 Gabriel Sória Souza. All rights reserved.
 //
 
+import Lottery
 import Foundation
 
 struct ShareDataContent {
-    let game: LotteryNetworkingWorker
+    let game: LotteryModel
     
     func sharedString(lotteryGame: LotteryGames) -> String {
         switch lotteryGame {
@@ -17,7 +18,7 @@ struct ShareDataContent {
             let returnString = """
                 Resultado do concurso \(self.game.concourseNumber)
 
-                Dezenas: \(arrayDataStringToStringWithThreeSpaces(content: self.game.numbers))
+                Dezenas: \(game.numbersString))
 
                 Premiação: \(self.game.prize)
 
@@ -30,9 +31,9 @@ struct ShareDataContent {
             let returnString = """
                 Resultado do concurso \(self.game.concourseNumber)
 
-                Dezenas: \(arrayDataStringToStringWithThreeSpaces(content: self.game.numbers))
+                Dezenas: \(game.numbersString))
 
-                \(self.specialDataString(game: self.game.lotteryGame)) \(self.game.teamOrDay ?? arrayDataStringToStringWithThreeSpaces(content: self.game.duplaSenaSecondSetOfNumbers ?? []))
+                \(self.specialDataString(game: self.game.lotteryGame)) \(self.game.teamOrDay ?? game.numbersString))
 
                 Premiação: \(self.game.prize)
 

@@ -6,6 +6,7 @@
 //  Copyright © 2020 Gabriel Sória Souza. All rights reserved.
 //
 
+import Lottery
 import SwiftUI
 
 struct NextGameView: View {
@@ -28,14 +29,9 @@ struct NextGameView: View {
             }
             VStack(alignment: .leading) {
                 Text("Prêmio Estimado")
-                Text(self.gameModel.gameData.nextGame.prize.convertToDecimal())
+                Text(self.gameModel.gameData.nextGame.prize)
             }
-        }.foregroundColor(self.gameModel.gameData.lotteryGame.colorFromGame().newColor).navigationBarTitle(self.gameModel.gameData.lotteryGame.rawValue)
-    }
-}
-
-struct NextGameView_Previews: PreviewProvider {
-    static var previews: some View {
-        NextGameView(gameModel: GameDetailModel(gameData: LotteryNetworkingWorker(), headers: []))
+        }.foregroundColor(self.gameModel.gameData.lotteryGame.colorFromGame().newColor)
+        .navigationBarTitle(self.gameModel.gameData.lotteryGame.rawValue)
     }
 }

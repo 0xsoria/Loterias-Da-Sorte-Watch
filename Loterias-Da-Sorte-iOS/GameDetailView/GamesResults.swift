@@ -7,6 +7,8 @@
 //
 
 import Foundation
+import Lottery
+import Network
 import SwiftUI
 
 protocol GamesResultable: ObservableObject {

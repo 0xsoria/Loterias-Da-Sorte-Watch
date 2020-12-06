@@ -6,50 +6,8 @@
 //  Copyright © 2020 Gabriel Sória Souza. All rights reserved.
 //
 
+import Lottery
 import Foundation
-
-public func arrayDataToStringWithDash(content: [Int]) -> String {
-    let str = content.reduce("") { $0 + "-\($1)" }
-    guard !str.isEmpty else {
-        return str
-    }
-    return gettingSpacesInTheBeginingOfStr(str: str)
-}
-
-public func arrayDataToStringWithSpaceAndComma(content: [Int]) -> String {
-    let str = content.reduce("") { $0 + ", \($1)" }
-    guard !str.isEmpty else {
-        return str
-    }
-    return gettingSpacesInTheBeginingOfStr(str: str)
-}
-
-public func arrayDataToStringWithThreeSpaces(content: [Int]) -> String {
-    let str = content.reduce("") { $0 + "   \($1)" }
-    guard !str.isEmpty else {
-        return str
-    }
-    return gettingSpacesInTheBeginingOfStr(str: str)
-}
-
-public func arrayDataStringToStringWithThreeSpaces(content: [String]) -> String {
-    let str = content.reduce("") { $0 + "   \($1)" }
-    guard !str.isEmpty else {
-        return str
-    }
-    return gettingSpacesInTheBeginingOfStr(str: str)
-}
-
-public func gettingSpacesInTheBeginingOfStr(str: String) -> String {
-    var returnStr = str
-    guard !returnStr.isEmpty else {
-        return returnStr
-    }
-    while returnStr.first == " " || returnStr.first == "," {
-        returnStr.removeFirst()
-    }
-    return returnStr
-}
 
 func coloringItem(lottery: LotteryGames) -> LotteryColor {
     switch lottery {
