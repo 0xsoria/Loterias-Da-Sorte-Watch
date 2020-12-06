@@ -21,7 +21,7 @@ struct LotteryGameDetailView: View {
     var body: some View {
         Group {
             if self.gameResults.game != nil {
-                self.newList
+                self.listWithButtonStack
             } else {
                 ProgressView()
                     .scaleEffect(1.5)
@@ -54,10 +54,31 @@ struct LotteryGameDetailView: View {
             Alert(title: Text("Ops!"),
                   message: Text("Erro ao carregar o jogo, tente novamente!"),
                   primaryButton: .default(Text("Tentar novamente"), action: {
-                self.searchNewGame(with: self.gameResults.game?.gameData.concourseNumber ?? "")
-            }), secondaryButton: .default(Text("Cancelar")))
+                    self.searchNewGame(with: self.gameResults.game?.gameData.concourseNumber ?? "")
+                  }), secondaryButton: .default(Text("Cancelar")))
         })
         .navigationBarTitle(self.game.gameData.lotteryGame.rawValue, displayMode: .inline)
+    }
+    
+    var listWithButtonStack: some View {
+        GeometryReader { geo in
+            VStack {
+                HStack {
+                    Button(action: {
+                        self.searchGame(number: -1)
+                    }, label: {
+                        Image(systemName: "arrowshape.turn.up.left.fill")
+                    }).padding(.leading)
+                    Spacer()
+                    Button(action: {
+                        self.searchGame(number: 1)
+                    }, label: {
+                        Image(systemName: "arrowshape.turn.up.right.fill")
+                    }).padding(.trailing)
+                }.frame(width: geo.size.width, height: 35, alignment: .center)
+                self.newList
+            }
+        }
     }
     
     var newList: some View {
@@ -86,6 +107,13 @@ struct LotteryGameDetailView: View {
                 self.errorLoadingAlert = true
             }
         })
+    }
+    
+    private func searchGame(number: Int) {
+        guard let game = self.gameResults.game,
+              let concourseNumber =  Int(game.gameData.concourseNumber) else { return }
+        let sum =  concourseNumber + number
+        self.searchNewGame(with: String(sum))
     }
     
     private func cleanGames() {
