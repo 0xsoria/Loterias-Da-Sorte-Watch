@@ -63,7 +63,7 @@ struct MainNextGameRow: View {
                     .font(.largeTitle)
                 Text("Concurso \(self.gameDetail.gameData.nextGame.concourseNumber)")
                 Text(self.gameDetail.gameData.nextGame.date)
-                Text("Premio estimado: \(self.gameDetail.gameData.nextGame.prize)").font(.title3)
+                Text("Prêmio estimado: \(self.gameDetail.gameData.nextGame.prize)").font(.title3)
             }.font(.title2)
             .multilineTextAlignment(.center)
             Spacer()
