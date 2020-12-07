@@ -6,8 +6,10 @@
 //  Copyright © 2020 Gabriel Sória Souza. All rights reserved.
 //
 
+import Lottery
+import Network
 import XCTest
-@testable import Loterias_Da_Sorte_iOS
+@testable import Loterias_Da_Sorte
 
 final class Loterias_Da_Sorte_iOSTests: XCTestCase {
 
@@ -19,6 +21,12 @@ final class Loterias_Da_Sorte_iOSTests: XCTestCase {
 
     override func tearDownWithError() throws {
         //
+    }
+    
+    func testMock() {
+        let mock = LotteryMock()
+        let data = mock.mockData(fileName: .megasena)
+        XCTAssertTrue(data.lotteryGame == .megasena)
     }
     
     func testRequestingMegaSenaDataAndDecoding() {

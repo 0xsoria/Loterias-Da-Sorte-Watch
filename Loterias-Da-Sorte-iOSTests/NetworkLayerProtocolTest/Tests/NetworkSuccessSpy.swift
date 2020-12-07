@@ -6,8 +6,9 @@
 //  Copyright © 2020 Gabriel Sória Souza. All rights reserved.
 //
 
+import Network
 import Foundation
-@testable import Loterias_Da_Sorte_iOS
+@testable import Loterias_Da_Sorte
 
 final class NetworkSpy: NetworkServiceable {
     
