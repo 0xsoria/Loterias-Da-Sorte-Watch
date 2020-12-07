@@ -75,7 +75,7 @@ struct LotteryGameDetailView: View {
                     }, label: {
                         Image(systemName: "arrowshape.turn.up.right.fill")
                     }).padding(.trailing)
-                }.frame(width: geo.size.width, height: 35, alignment: .center)
+                }.frame(width: geo.size.width, height: 45, alignment: .center)
                 self.newList
             }
         }
