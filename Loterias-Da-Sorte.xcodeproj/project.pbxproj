@@ -26,30 +26,6 @@
 		1502885F2472284800C794BC /* GameDetailRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1502885E2472284800C794BC /* GameDetailRequester.swift */; };
 		1502886324722BC800C794BC /* FirstStyleTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1502886224722BC800C794BC /* FirstStyleTable.swift */; };
 		15028867247235BA00C794BC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15028866247235BA00C794BC /* Extensions.swift */; };
-		1514506E257D1CBE006A1A14 /* TimeLast.json in Resources */ = {isa = PBXBuildFile; fileRef = 15145066257D1CBD006A1A14 /* TimeLast.json */; };
-		1514506F257D1CBE006A1A14 /* TimeLast.json in Resources */ = {isa = PBXBuildFile; fileRef = 15145066257D1CBD006A1A14 /* TimeLast.json */; };
-		15145070257D1CBE006A1A14 /* TimeLast.json in Resources */ = {isa = PBXBuildFile; fileRef = 15145066257D1CBD006A1A14 /* TimeLast.json */; };
-		15145071257D1CBE006A1A14 /* FederalLast.json in Resources */ = {isa = PBXBuildFile; fileRef = 15145067257D1CBD006A1A14 /* FederalLast.json */; };
-		15145072257D1CBE006A1A14 /* FederalLast.json in Resources */ = {isa = PBXBuildFile; fileRef = 15145067257D1CBD006A1A14 /* FederalLast.json */; };
-		15145073257D1CBE006A1A14 /* FederalLast.json in Resources */ = {isa = PBXBuildFile; fileRef = 15145067257D1CBD006A1A14 /* FederalLast.json */; };
-		15145074257D1CBE006A1A14 /* DiaLast.json in Resources */ = {isa = PBXBuildFile; fileRef = 15145068257D1CBD006A1A14 /* DiaLast.json */; };
-		15145075257D1CBE006A1A14 /* DiaLast.json in Resources */ = {isa = PBXBuildFile; fileRef = 15145068257D1CBD006A1A14 /* DiaLast.json */; };
-		15145076257D1CBE006A1A14 /* DiaLast.json in Resources */ = {isa = PBXBuildFile; fileRef = 15145068257D1CBD006A1A14 /* DiaLast.json */; };
-		15145077257D1CBE006A1A14 /* QuinaLast.json in Resources */ = {isa = PBXBuildFile; fileRef = 15145069257D1CBE006A1A14 /* QuinaLast.json */; };
-		15145078257D1CBE006A1A14 /* QuinaLast.json in Resources */ = {isa = PBXBuildFile; fileRef = 15145069257D1CBE006A1A14 /* QuinaLast.json */; };
-		15145079257D1CBE006A1A14 /* QuinaLast.json in Resources */ = {isa = PBXBuildFile; fileRef = 15145069257D1CBE006A1A14 /* QuinaLast.json */; };
-		1514507A257D1CBE006A1A14 /* SenaLast.json in Resources */ = {isa = PBXBuildFile; fileRef = 1514506A257D1CBE006A1A14 /* SenaLast.json */; };
-		1514507B257D1CBE006A1A14 /* SenaLast.json in Resources */ = {isa = PBXBuildFile; fileRef = 1514506A257D1CBE006A1A14 /* SenaLast.json */; };
-		1514507C257D1CBE006A1A14 /* SenaLast.json in Resources */ = {isa = PBXBuildFile; fileRef = 1514506A257D1CBE006A1A14 /* SenaLast.json */; };
-		1514507D257D1CBE006A1A14 /* LotoFacilLast.json in Resources */ = {isa = PBXBuildFile; fileRef = 1514506B257D1CBE006A1A14 /* LotoFacilLast.json */; };
-		1514507E257D1CBE006A1A14 /* LotoFacilLast.json in Resources */ = {isa = PBXBuildFile; fileRef = 1514506B257D1CBE006A1A14 /* LotoFacilLast.json */; };
-		1514507F257D1CBE006A1A14 /* LotoFacilLast.json in Resources */ = {isa = PBXBuildFile; fileRef = 1514506B257D1CBE006A1A14 /* LotoFacilLast.json */; };
-		15145080257D1CBE006A1A14 /* LotoManiaLast.json in Resources */ = {isa = PBXBuildFile; fileRef = 1514506C257D1CBE006A1A14 /* LotoManiaLast.json */; };
-		15145081257D1CBE006A1A14 /* LotoManiaLast.json in Resources */ = {isa = PBXBuildFile; fileRef = 1514506C257D1CBE006A1A14 /* LotoManiaLast.json */; };
-		15145082257D1CBE006A1A14 /* LotoManiaLast.json in Resources */ = {isa = PBXBuildFile; fileRef = 1514506C257D1CBE006A1A14 /* LotoManiaLast.json */; };
-		15145083257D1CBE006A1A14 /* DuplaSenaLast.json in Resources */ = {isa = PBXBuildFile; fileRef = 1514506D257D1CBE006A1A14 /* DuplaSenaLast.json */; };
-		15145084257D1CBE006A1A14 /* DuplaSenaLast.json in Resources */ = {isa = PBXBuildFile; fileRef = 1514506D257D1CBE006A1A14 /* DuplaSenaLast.json */; };
-		15145085257D1CBE006A1A14 /* DuplaSenaLast.json in Resources */ = {isa = PBXBuildFile; fileRef = 1514506D257D1CBE006A1A14 /* DuplaSenaLast.json */; };
 		151800AB2537C27000E42561 /* MainNextGameRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151800AA2537C27000E42561 /* MainNextGameRow.swift */; };
 		1519599725427376008587B1 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1519599625427376008587B1 /* View+Extensions.swift */; };
 		153AAE8024773B9000BA6827 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153AAE7F24773B9000BA6827 /* SettingsView.swift */; };
@@ -108,6 +84,34 @@
 		15A616562554E1B300C9FB37 /* Lottery+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A616532554E1B300C9FB37 /* Lottery+Extensions.swift */; };
 		15A7EFED253CAB6900105C0C /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A7EFEC253CAB6900105C0C /* Color+Extensions.swift */; };
 		15A7EFF3253CABD600105C0C /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A7EFEC253CAB6900105C0C /* Color+Extensions.swift */; };
+		15B565D42586B41500A6E720 /* SavedGamesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B565D22586B41500A6E720 /* SavedGamesList.swift */; };
+		15B565D52586B41500A6E720 /* SavedGamesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B565D22586B41500A6E720 /* SavedGamesList.swift */; };
+		15B565EA2586B57000A6E720 /* LotoFacilLast.json in Resources */ = {isa = PBXBuildFile; fileRef = 15B565E22586B56F00A6E720 /* LotoFacilLast.json */; };
+		15B565EB2586B57000A6E720 /* LotoFacilLast.json in Resources */ = {isa = PBXBuildFile; fileRef = 15B565E22586B56F00A6E720 /* LotoFacilLast.json */; };
+		15B565EC2586B57000A6E720 /* LotoFacilLast.json in Resources */ = {isa = PBXBuildFile; fileRef = 15B565E22586B56F00A6E720 /* LotoFacilLast.json */; };
+		15B565ED2586B57000A6E720 /* LotoManiaLast.json in Resources */ = {isa = PBXBuildFile; fileRef = 15B565E32586B56F00A6E720 /* LotoManiaLast.json */; };
+		15B565EE2586B57000A6E720 /* LotoManiaLast.json in Resources */ = {isa = PBXBuildFile; fileRef = 15B565E32586B56F00A6E720 /* LotoManiaLast.json */; };
+		15B565EF2586B57000A6E720 /* LotoManiaLast.json in Resources */ = {isa = PBXBuildFile; fileRef = 15B565E32586B56F00A6E720 /* LotoManiaLast.json */; };
+		15B565F02586B57000A6E720 /* DuplaSenaLast.json in Resources */ = {isa = PBXBuildFile; fileRef = 15B565E42586B56F00A6E720 /* DuplaSenaLast.json */; };
+		15B565F12586B57000A6E720 /* DuplaSenaLast.json in Resources */ = {isa = PBXBuildFile; fileRef = 15B565E42586B56F00A6E720 /* DuplaSenaLast.json */; };
+		15B565F22586B57000A6E720 /* DuplaSenaLast.json in Resources */ = {isa = PBXBuildFile; fileRef = 15B565E42586B56F00A6E720 /* DuplaSenaLast.json */; };
+		15B565F32586B57000A6E720 /* SenaLast.json in Resources */ = {isa = PBXBuildFile; fileRef = 15B565E52586B57000A6E720 /* SenaLast.json */; };
+		15B565F42586B57000A6E720 /* SenaLast.json in Resources */ = {isa = PBXBuildFile; fileRef = 15B565E52586B57000A6E720 /* SenaLast.json */; };
+		15B565F52586B57000A6E720 /* SenaLast.json in Resources */ = {isa = PBXBuildFile; fileRef = 15B565E52586B57000A6E720 /* SenaLast.json */; };
+		15B565F62586B57000A6E720 /* FederalLast.json in Resources */ = {isa = PBXBuildFile; fileRef = 15B565E62586B57000A6E720 /* FederalLast.json */; };
+		15B565F72586B57000A6E720 /* FederalLast.json in Resources */ = {isa = PBXBuildFile; fileRef = 15B565E62586B57000A6E720 /* FederalLast.json */; };
+		15B565F82586B57000A6E720 /* FederalLast.json in Resources */ = {isa = PBXBuildFile; fileRef = 15B565E62586B57000A6E720 /* FederalLast.json */; };
+		15B565F92586B57000A6E720 /* DiaLast.json in Resources */ = {isa = PBXBuildFile; fileRef = 15B565E72586B57000A6E720 /* DiaLast.json */; };
+		15B565FA2586B57000A6E720 /* DiaLast.json in Resources */ = {isa = PBXBuildFile; fileRef = 15B565E72586B57000A6E720 /* DiaLast.json */; };
+		15B565FB2586B57000A6E720 /* DiaLast.json in Resources */ = {isa = PBXBuildFile; fileRef = 15B565E72586B57000A6E720 /* DiaLast.json */; };
+		15B565FC2586B57000A6E720 /* QuinaLast.json in Resources */ = {isa = PBXBuildFile; fileRef = 15B565E82586B57000A6E720 /* QuinaLast.json */; };
+		15B565FD2586B57000A6E720 /* QuinaLast.json in Resources */ = {isa = PBXBuildFile; fileRef = 15B565E82586B57000A6E720 /* QuinaLast.json */; };
+		15B565FE2586B57000A6E720 /* QuinaLast.json in Resources */ = {isa = PBXBuildFile; fileRef = 15B565E82586B57000A6E720 /* QuinaLast.json */; };
+		15B565FF2586B57000A6E720 /* TimeLast.json in Resources */ = {isa = PBXBuildFile; fileRef = 15B565E92586B57000A6E720 /* TimeLast.json */; };
+		15B566002586B57000A6E720 /* TimeLast.json in Resources */ = {isa = PBXBuildFile; fileRef = 15B565E92586B57000A6E720 /* TimeLast.json */; };
+		15B566012586B57000A6E720 /* TimeLast.json in Resources */ = {isa = PBXBuildFile; fileRef = 15B565E92586B57000A6E720 /* TimeLast.json */; };
+		15B566162586B6AB00A6E720 /* HighlightButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B566152586B6AB00A6E720 /* HighlightButtonStyle.swift */; };
+		15B566172586B6AB00A6E720 /* HighlightButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B566152586B6AB00A6E720 /* HighlightButtonStyle.swift */; };
 		15BC934B2585B0B9001CF1E3 /* SaveGameRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BC934A2585B0B9001CF1E3 /* SaveGameRowView.swift */; };
 		15BC93532585C478001CF1E3 /* SaveGameCompleteGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BC93522585C478001CF1E3 /* SaveGameCompleteGrid.swift */; };
 		15BC935B2585C65F001CF1E3 /* SavedGamesDataForRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BC935A2585C65E001CF1E3 /* SavedGamesDataForRow.swift */; };
@@ -217,14 +221,6 @@
 		1502885E2472284800C794BC /* GameDetailRequester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailRequester.swift; sourceTree = "<group>"; };
 		1502886224722BC800C794BC /* FirstStyleTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstStyleTable.swift; sourceTree = "<group>"; };
 		15028866247235BA00C794BC /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		15145066257D1CBD006A1A14 /* TimeLast.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TimeLast.json; sourceTree = "<group>"; };
-		15145067257D1CBD006A1A14 /* FederalLast.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = FederalLast.json; sourceTree = "<group>"; };
-		15145068257D1CBD006A1A14 /* DiaLast.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DiaLast.json; sourceTree = "<group>"; };
-		15145069257D1CBE006A1A14 /* QuinaLast.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = QuinaLast.json; sourceTree = "<group>"; };
-		1514506A257D1CBE006A1A14 /* SenaLast.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SenaLast.json; sourceTree = "<group>"; };
-		1514506B257D1CBE006A1A14 /* LotoFacilLast.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LotoFacilLast.json; sourceTree = "<group>"; };
-		1514506C257D1CBE006A1A14 /* LotoManiaLast.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LotoManiaLast.json; sourceTree = "<group>"; };
-		1514506D257D1CBE006A1A14 /* DuplaSenaLast.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DuplaSenaLast.json; sourceTree = "<group>"; };
 		151800AA2537C27000E42561 /* MainNextGameRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNextGameRow.swift; sourceTree = "<group>"; };
 		1519599625427376008587B1 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 		153AAE7F24773B9000BA6827 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
@@ -267,6 +263,16 @@
 		15A4D8AA253E61C000B1CD7D /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
 		15A616532554E1B300C9FB37 /* Lottery+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lottery+Extensions.swift"; sourceTree = "<group>"; };
 		15A7EFEC253CAB6900105C0C /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
+		15B565D22586B41500A6E720 /* SavedGamesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedGamesList.swift; sourceTree = "<group>"; };
+		15B565E22586B56F00A6E720 /* LotoFacilLast.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LotoFacilLast.json; sourceTree = "<group>"; };
+		15B565E32586B56F00A6E720 /* LotoManiaLast.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LotoManiaLast.json; sourceTree = "<group>"; };
+		15B565E42586B56F00A6E720 /* DuplaSenaLast.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DuplaSenaLast.json; sourceTree = "<group>"; };
+		15B565E52586B57000A6E720 /* SenaLast.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SenaLast.json; sourceTree = "<group>"; };
+		15B565E62586B57000A6E720 /* FederalLast.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = FederalLast.json; sourceTree = "<group>"; };
+		15B565E72586B57000A6E720 /* DiaLast.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DiaLast.json; sourceTree = "<group>"; };
+		15B565E82586B57000A6E720 /* QuinaLast.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = QuinaLast.json; sourceTree = "<group>"; };
+		15B565E92586B57000A6E720 /* TimeLast.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TimeLast.json; sourceTree = "<group>"; };
+		15B566152586B6AB00A6E720 /* HighlightButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlightButtonStyle.swift; sourceTree = "<group>"; };
 		15B5A199254CEB6E00F25894 /* Loterias-Da-Sorte-iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Loterias-Da-Sorte-iOS.entitlements"; sourceTree = "<group>"; };
 		15BC934A2585B0B9001CF1E3 /* SaveGameRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveGameRowView.swift; sourceTree = "<group>"; };
 		15BC93522585C478001CF1E3 /* SaveGameCompleteGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveGameCompleteGrid.swift; sourceTree = "<group>"; };
@@ -399,21 +405,6 @@
 			path = Networking;
 			sourceTree = "<group>";
 		};
-		15145092257D1CD6006A1A14 /* JSON-Files */ = {
-			isa = PBXGroup;
-			children = (
-				15145068257D1CBD006A1A14 /* DiaLast.json */,
-				1514506D257D1CBE006A1A14 /* DuplaSenaLast.json */,
-				15145067257D1CBD006A1A14 /* FederalLast.json */,
-				1514506B257D1CBE006A1A14 /* LotoFacilLast.json */,
-				1514506C257D1CBE006A1A14 /* LotoManiaLast.json */,
-				15145069257D1CBE006A1A14 /* QuinaLast.json */,
-				1514506A257D1CBE006A1A14 /* SenaLast.json */,
-				15145066257D1CBD006A1A14 /* TimeLast.json */,
-			);
-			path = "JSON-Files";
-			sourceTree = "<group>";
-		};
 		151F9DA7247239C00023B57D /* MainView */ = {
 			isa = PBXGroup;
 			children = (
@@ -493,7 +484,7 @@
 		154B9177252426D5006C1E45 /* Loterias-Da-Sorte-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				15145092257D1CD6006A1A14 /* JSON-Files */,
+				15B5660E2586B58300A6E720 /* JSON */,
 				15B5A199254CEB6E00F25894 /* Loterias-Da-Sorte-iOS.entitlements */,
 				154B91FA2526A52E006C1E45 /* Application */,
 				154B917C252426D6006C1E45 /* Assets.xcassets */,
@@ -539,11 +530,8 @@
 		154B91F32526A519006C1E45 /* SavedGamesView */ = {
 			isa = PBXGroup;
 			children = (
-				154B919C25242B93006C1E45 /* SavedGamesView.swift */,
-				15BC934A2585B0B9001CF1E3 /* SaveGameRowView.swift */,
-				15BC93522585C478001CF1E3 /* SaveGameCompleteGrid.swift */,
-				15BC935A2585C65E001CF1E3 /* SavedGamesDataForRow.swift */,
-				15BC93622586AD86001CF1E3 /* SelectedValues.swift */,
+				15B565CB2586B3FE00A6E720 /* Detail */,
+				15B565D22586B41500A6E720 /* SavedGamesList.swift */,
 			);
 			path = SavedGamesView;
 			sourceTree = "<group>";
@@ -662,6 +650,34 @@
 				15CC00EF2558D32000761CBE /* CompleteRow.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		15B565CB2586B3FE00A6E720 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				154B919C25242B93006C1E45 /* SavedGamesView.swift */,
+				15BC934A2585B0B9001CF1E3 /* SaveGameRowView.swift */,
+				15BC93522585C478001CF1E3 /* SaveGameCompleteGrid.swift */,
+				15BC935A2585C65E001CF1E3 /* SavedGamesDataForRow.swift */,
+				15BC93622586AD86001CF1E3 /* SelectedValues.swift */,
+				15B566152586B6AB00A6E720 /* HighlightButtonStyle.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		15B5660E2586B58300A6E720 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				15B565E72586B57000A6E720 /* DiaLast.json */,
+				15B565E42586B56F00A6E720 /* DuplaSenaLast.json */,
+				15B565E62586B57000A6E720 /* FederalLast.json */,
+				15B565E22586B56F00A6E720 /* LotoFacilLast.json */,
+				15B565E32586B56F00A6E720 /* LotoManiaLast.json */,
+				15B565E82586B57000A6E720 /* QuinaLast.json */,
+				15B565E52586B57000A6E720 /* SenaLast.json */,
+				15B565E92586B57000A6E720 /* TimeLast.json */,
+			);
+			path = JSON;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -865,16 +881,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15145077257D1CBE006A1A14 /* QuinaLast.json in Resources */,
-				1514506E257D1CBE006A1A14 /* TimeLast.json in Resources */,
+				15B565ED2586B57000A6E720 /* LotoManiaLast.json in Resources */,
 				1502880D2472101B00C794BC /* Preview Assets.xcassets in Resources */,
-				1514507D257D1CBE006A1A14 /* LotoFacilLast.json in Resources */,
-				1514507A257D1CBE006A1A14 /* SenaLast.json in Resources */,
+				15B565F32586B57000A6E720 /* SenaLast.json in Resources */,
+				15B565F92586B57000A6E720 /* DiaLast.json in Resources */,
+				15B565F02586B57000A6E720 /* DuplaSenaLast.json in Resources */,
 				1502880A2472101B00C794BC /* Assets.xcassets in Resources */,
-				15145080257D1CBE006A1A14 /* LotoManiaLast.json in Resources */,
-				15145083257D1CBE006A1A14 /* DuplaSenaLast.json in Resources */,
-				15145074257D1CBE006A1A14 /* DiaLast.json in Resources */,
-				15145071257D1CBE006A1A14 /* FederalLast.json in Resources */,
+				15B565FF2586B57000A6E720 /* TimeLast.json in Resources */,
+				15B565EA2586B57000A6E720 /* LotoFacilLast.json in Resources */,
+				15B565FC2586B57000A6E720 /* QuinaLast.json in Resources */,
+				15B565F62586B57000A6E720 /* FederalLast.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -882,17 +898,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15145084257D1CBE006A1A14 /* DuplaSenaLast.json in Resources */,
-				15145081257D1CBE006A1A14 /* LotoManiaLast.json in Resources */,
-				1514507E257D1CBE006A1A14 /* LotoFacilLast.json in Resources */,
-				1514507B257D1CBE006A1A14 /* SenaLast.json in Resources */,
-				1514506F257D1CBE006A1A14 /* TimeLast.json in Resources */,
-				15145078257D1CBE006A1A14 /* QuinaLast.json in Resources */,
-				15145072257D1CBE006A1A14 /* FederalLast.json in Resources */,
+				15B566002586B57000A6E720 /* TimeLast.json in Resources */,
+				15B565FD2586B57000A6E720 /* QuinaLast.json in Resources */,
+				15B565F42586B57000A6E720 /* SenaLast.json in Resources */,
+				15B565EE2586B57000A6E720 /* LotoManiaLast.json in Resources */,
+				15B565F72586B57000A6E720 /* FederalLast.json in Resources */,
+				15B565F12586B57000A6E720 /* DuplaSenaLast.json in Resources */,
 				154B9180252426D6006C1E45 /* Preview Assets.xcassets in Resources */,
 				15A2BB6B253CDA3A00417979 /* LaunchScreen.storyboard in Resources */,
-				15145075257D1CBE006A1A14 /* DiaLast.json in Resources */,
 				154B917D252426D6006C1E45 /* Assets.xcassets in Resources */,
+				15B565FA2586B57000A6E720 /* DiaLast.json in Resources */,
+				15B565EB2586B57000A6E720 /* LotoFacilLast.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -907,16 +923,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15145079257D1CBE006A1A14 /* QuinaLast.json in Resources */,
-				15145070257D1CBE006A1A14 /* TimeLast.json in Resources */,
+				15B565EF2586B57000A6E720 /* LotoManiaLast.json in Resources */,
 				154BD775254BB95A001FE852 /* Preview Assets.xcassets in Resources */,
-				1514507F257D1CBE006A1A14 /* LotoFacilLast.json in Resources */,
-				1514507C257D1CBE006A1A14 /* SenaLast.json in Resources */,
+				15B565F52586B57000A6E720 /* SenaLast.json in Resources */,
+				15B565FB2586B57000A6E720 /* DiaLast.json in Resources */,
+				15B565F22586B57000A6E720 /* DuplaSenaLast.json in Resources */,
 				154BD772254BB95A001FE852 /* Assets.xcassets in Resources */,
-				15145082257D1CBE006A1A14 /* LotoManiaLast.json in Resources */,
-				15145085257D1CBE006A1A14 /* DuplaSenaLast.json in Resources */,
-				15145076257D1CBE006A1A14 /* DiaLast.json in Resources */,
-				15145073257D1CBE006A1A14 /* FederalLast.json in Resources */,
+				15B566012586B57000A6E720 /* TimeLast.json in Resources */,
+				15B565EC2586B57000A6E720 /* LotoFacilLast.json in Resources */,
+				15B565FE2586B57000A6E720 /* QuinaLast.json in Resources */,
+				15B565F82586B57000A6E720 /* FederalLast.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -962,6 +978,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15B566162586B6AB00A6E720 /* HighlightButtonStyle.swift in Sources */,
 				154B92672526C0AA006C1E45 /* MyExtensions.swift in Sources */,
 				154B9182252426D6006C1E45 /* Persistence.swift in Sources */,
 				154B919325242B38006C1E45 /* HomeLotteryView.swift in Sources */,
@@ -984,6 +1001,7 @@
 				154BD715254A59D4001FE852 /* SendEmailHelper.swift in Sources */,
 				154B9179252426D5006C1E45 /* Loterias_Da_Sorte_iOSApp.swift in Sources */,
 				154B9185252426D6006C1E45 /* Loterias_Da_Sorte_iOS.xcdatamodeld in Sources */,
+				15B565D42586B41500A6E720 /* SavedGamesList.swift in Sources */,
 				1560AFF72547CB62001B703A /* GameDetailResult.swift in Sources */,
 				154B92EF252A3A8E006C1E45 /* LotteryGameDetailView.swift in Sources */,
 				154B9313252ABFB2006C1E45 /* Extensions.swift in Sources */,
@@ -1006,6 +1024,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15B566172586B6AB00A6E720 /* HighlightButtonStyle.swift in Sources */,
 				154BD8A4254BBD58001FE852 /* ShareDataContent.swift in Sources */,
 				15CC00E72558D1E900761CBE /* FederalView.swift in Sources */,
 				154BD864254BBC87001FE852 /* MainNextGameRow.swift in Sources */,
@@ -1019,6 +1038,7 @@
 				154BD86C254BBC8E001FE852 /* HomeLotteryView.swift in Sources */,
 				154BD89C254BBD35001FE852 /* View+Extensions.swift in Sources */,
 				154BD884254BBD05001FE852 /* GamesPick.swift in Sources */,
+				15B565D52586B41500A6E720 /* SavedGamesList.swift in Sources */,
 				15CC00F12558D32000761CBE /* CompleteRow.swift in Sources */,
 				154BD85C254BBC75001FE852 /* MainViewRow.swift in Sources */,
 				15A616562554E1B300C9FB37 /* Lottery+Extensions.swift in Sources */,

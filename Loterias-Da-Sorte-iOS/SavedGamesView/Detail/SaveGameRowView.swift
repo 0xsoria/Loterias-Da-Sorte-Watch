@@ -38,22 +38,6 @@ struct SaveGameRowView: View {
     }
 }
 
-struct HighlightButtonStyle: ButtonStyle {
-    
-    var defaultColor: Color
-    var isSelected: Bool
-    
-    init(defaultColor: Color, isSelected: Bool) {
-        self.defaultColor = defaultColor
-        self.isSelected = isSelected
-    }
-    
-    func makeBody(configuration: Self.Configuration) -> some View {
-        configuration.label
-            .foregroundColor(configuration.isPressed ? .black : .white)
-    }
-}
-
 struct SaveGameRowView_Previews: PreviewProvider {
     static var previews: some View {
         SaveGameRowView(gameData: GameDetailRow(color: .green,

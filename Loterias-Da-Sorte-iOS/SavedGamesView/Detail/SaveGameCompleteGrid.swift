@@ -31,7 +31,6 @@ struct SaveGameCompleteGrid_Previews: PreviewProvider {
     @State var nbrs = [String]()
     
     static var previews: some View {
-        Text("")
         SaveGameCompleteGrid(data: SavedGamesDataForRow.getNumbers(for: .megasena),
                              lotteryColor: LotteryGames.megasena.colorFromGame().newColor).environmentObject(SelectedValues())
     }

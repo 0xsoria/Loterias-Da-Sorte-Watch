@@ -20,6 +20,10 @@ struct Loterias_Da_Sorte_iOSApp: App {
                         Text("Loterias")
                         Image("bw")
                     }
+                SavedGamesList().tabItem {
+                    Text("Meus Jogos")
+                    Image(systemName: "text.badge.plus")
+                }
                 SettingView()
                     .tabItem {
                         Text("Informações")
