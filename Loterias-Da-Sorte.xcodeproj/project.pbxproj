@@ -111,6 +111,7 @@
 		15BC934B2585B0B9001CF1E3 /* SaveGameRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BC934A2585B0B9001CF1E3 /* SaveGameRowView.swift */; };
 		15BC93532585C478001CF1E3 /* SaveGameCompleteGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BC93522585C478001CF1E3 /* SaveGameCompleteGrid.swift */; };
 		15BC935B2585C65F001CF1E3 /* SavedGamesDataForRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BC935A2585C65E001CF1E3 /* SavedGamesDataForRow.swift */; };
+		15BC93632586AD86001CF1E3 /* SelectedValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BC93622586AD86001CF1E3 /* SelectedValues.swift */; };
 		15CC00CE255645E700761CBE /* GamesResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CC00CD255645E700761CBE /* GamesResults.swift */; };
 		15CC00CF255645E700761CBE /* GamesResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CC00CD255645E700761CBE /* GamesResults.swift */; };
 		15CC00E62558D1E900761CBE /* FederalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CC00E52558D1E900761CBE /* FederalView.swift */; };
@@ -270,6 +271,7 @@
 		15BC934A2585B0B9001CF1E3 /* SaveGameRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveGameRowView.swift; sourceTree = "<group>"; };
 		15BC93522585C478001CF1E3 /* SaveGameCompleteGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveGameCompleteGrid.swift; sourceTree = "<group>"; };
 		15BC935A2585C65E001CF1E3 /* SavedGamesDataForRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedGamesDataForRow.swift; sourceTree = "<group>"; };
+		15BC93622586AD86001CF1E3 /* SelectedValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedValues.swift; sourceTree = "<group>"; };
 		15CC00CD255645E700761CBE /* GamesResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesResults.swift; sourceTree = "<group>"; };
 		15CC00E52558D1E900761CBE /* FederalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FederalView.swift; sourceTree = "<group>"; };
 		15CC00EF2558D32000761CBE /* CompleteRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteRow.swift; sourceTree = "<group>"; };
@@ -541,6 +543,7 @@
 				15BC934A2585B0B9001CF1E3 /* SaveGameRowView.swift */,
 				15BC93522585C478001CF1E3 /* SaveGameCompleteGrid.swift */,
 				15BC935A2585C65E001CF1E3 /* SavedGamesDataForRow.swift */,
+				15BC93622586AD86001CF1E3 /* SelectedValues.swift */,
 			);
 			path = SavedGamesView;
 			sourceTree = "<group>";
@@ -967,6 +970,7 @@
 				15CC00F02558D32000761CBE /* CompleteRow.swift in Sources */,
 				154B930D252A4BCB006C1E45 /* MainViewRow.swift in Sources */,
 				15BC93532585C478001CF1E3 /* SaveGameCompleteGrid.swift in Sources */,
+				15BC93632586AD86001CF1E3 /* SelectedValues.swift in Sources */,
 				15BC935B2585C65F001CF1E3 /* SavedGamesDataForRow.swift in Sources */,
 				154B919D25242B93006C1E45 /* SavedGamesView.swift in Sources */,
 				154B91A325242BA9006C1E45 /* SettingView.swift in Sources */,
